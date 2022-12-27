@@ -186,8 +186,8 @@ bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #BD93F9 #BD93F9 #292B37 #BD93F9   #BD93F9
-client.focused_inactive #282A36 #282A36 #BD93F9 #282A36   #282A36
-client.unfocused        #282A36 #292B37 #BD93F9 #282A36   #282A36
+client.focused_inactive #44475A #44475A #BD93F9 #44475A   #44475A
+client.unfocused        #44475A #44475A #BD93F9 #44475A   #44475A
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -207,10 +207,15 @@ bindsym Print exec --no-startup-id flameshot gui
 # run at startup 
 exec_always --no-startup-id picom &
 exec .screenlayout/default.sh
-exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 
 # runs the last set background
 # feh --bg-fill /media/Pictures/Wallpapers/picture.jpg
-exec --no-startup-id exec bash $HOME/.fehbg
+# exec --no-startup-id exec bash $HOME/.fehbg
+
+# set background to solid colour
+exec --no-startup-id hsetroot -solid "#282A36"
+
+exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
+
 
 
