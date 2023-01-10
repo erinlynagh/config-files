@@ -5,7 +5,7 @@ This just contains everything I would need to set up an arch install w systemd b
 
 TIPS:
 - when you're installing use e2label (or the command for the specific volume type) to label the drives. It makes mounting easier and makes the systemd boot files easier to configure.
-- install i3, its the best, maybe try worm again?
+- install i3, its the best, maybe try worm or berry again?
 - use systemd-boot, fuck grub
 - install nvidia-dkms and linux-headers, especially when using custom (like zen kernel), make sure to install headers
   - it only worked by uninstalling and reinstalling linux, after installing dkms
