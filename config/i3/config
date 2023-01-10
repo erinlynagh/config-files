@@ -203,6 +203,9 @@ gaps outer 5
 # keyboard shortcuts
 # bindsym $mod+Shift+c exec --no-startup-id cclip
 bindsym Print exec --no-startup-id flameshot gui
+bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
+bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
+
 
 # run at startup 
 exec_always --no-startup-id picom &
@@ -216,6 +219,5 @@ exec .screenlayout/default.sh
 exec --no-startup-id hsetroot -solid "#282A36"
 
 exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
-
 
 
