@@ -35,7 +35,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Use pactl & pulsemixer to adjust volume in PulseAudio.
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 --max-volume 150
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 --max-volume 125
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
@@ -202,6 +202,7 @@ gaps outer 5
 # keyboard shortcuts
 # bindsym $mod+Shift+c exec --no-startup-id cclip
 bindsym Print exec --no-startup-id flameshot gui
+bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
 bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
 
@@ -211,17 +212,20 @@ bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 20
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 20
 
-# run at startup 
+bindsym Shift+Escape exec alacritty -e btop
 exec_always --no-startup-id picom &
 exec .screenlayout/default.sh
 
 # runs the last set background
-# feh --bg-fill /media/Pictures/Wallpapers/picture.jpg
+#  --bg-fill /media/Pictures/Wallpapers/picture.jpg
 # exec --no-startup-id exec bash $HOME/.fehbg
 
+exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*.webp
 # set background to solid colour
-exec --no-startup-id hsetroot -solid "#282A36"
+# exec --no-startup-id hsetroot -solid "#282A36"
 
 exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
+
+exec_always alttab
 
 exec alacritty -e yay
