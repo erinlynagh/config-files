@@ -219,8 +219,8 @@ exec .screenlayout/default.sh
 # runs the last set background
 #  --bg-fill /media/Pictures/Wallpapers/picture.jpg
 # exec --no-startup-id exec bash $HOME/.fehbg
+exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
 
-exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*.webp
 # set background to solid colour
 # exec --no-startup-id hsetroot -solid "#282A36"
 
@@ -229,3 +229,8 @@ exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 exec_always alttab
 
 exec alacritty -e yay
+
+# Screen Order
+workspace 1 output DP-0
+workspace 2 output HDMI-0
+workspace 3 output DP-2
