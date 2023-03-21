@@ -92,6 +92,7 @@ retroarch 1.14.0-2
 retroarch-assets-ozone 1:439-1
 retroarch-assets-xmb 1:439-1
 rofi 1.7.5-1
+rsync 3.2.7-3
 simplescreenrecorder 0.4.4-2
 speedtest++ 1.14.r71.0f63cfb-1
 steam 1.0.0.76-1

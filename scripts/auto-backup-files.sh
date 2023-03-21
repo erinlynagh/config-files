@@ -1,15 +1,13 @@
 #/bin/bash
 
-#import libraries
-source ./findExclusions.sh
-
 #sanity check
-if [ ! -f ./timestamp ]; then
+if [ ! -f ./logs/timestamp ]; then
     echo -n "0" > timestamp
+    mv timestamp ./logs
 fi
 
 #global variables
-lastBackup=$(cat timestamp)
+lastBackup=$(cat ./logs/timestamp)
 homeDir=/media/git/i3-config-files/scripts
 logDir=/media/git/i3-config-files/scripts/logs
 sourceConfDir=~/.config
@@ -87,17 +85,25 @@ changedConfigFilesPrint(){
 }
 
 backupConfigDir () {
+    echo "modified config files:"
+    changedConfigFilesPrint
     changedConfigFilesPrint > copiedConfigFiles.log
+    echo "copying config files..."
     rsync -rv --files-from="copiedConfigFiles.log" $1 $2
+    echo "updating log files"
     mv copiedConfigFiles.log $logDir
+    cd $2
+    rm *.log
 }
 
-#Start Backups
-echo "1"
+#Start Config Backup
 cd $sourceConfDir
 backupConfigDir $sourceConfDir $destConfDir
-
+home
+echo "config files updated, updating installed package list"
+cd ..
+yay -Qe > packages.txt
 home
 echo -n $EPOCHSECONDS > timestamp
-
-echo "files updated :3"
+mv timestamp ./logs
+echo "backup complete, timestamp has been logged"
