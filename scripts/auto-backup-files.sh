@@ -91,11 +91,20 @@ backupConfigDir () {
 
 #Start Config Backup
 cd $sourceConfDir
-backupConfigDir $sourceConfDir $destConfDir
-home
-echo "config files updated, updating installed package list"
-cd ..
-yay -Qe > packages.txt
-echo "backup complete"
-home
-lazygit
+
+#Check
+if [[ $1 != "-r"  ]]; then
+    echo "the following config files will be added to github:"
+    changedConfigFilesPrint
+    echo "type -r to run the backup for real"
+    exit;
+    elif [[ $1 == "-r" ]]; then
+    backupConfigDir $sourceConfDir $destConfDir
+    home
+    echo "config files updated, updating installed package list"
+    cd ..
+    yay -Qe > packages.txt
+    echo "backup complete"
+    home
+    lazygit
+fi
