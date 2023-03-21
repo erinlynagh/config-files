@@ -1,13 +1,6 @@
 #/bin/bash
 
-#sanity check
-if [ ! -f ./logs/timestamp ]; then
-    echo -n "0" > timestamp
-    mv timestamp ./logs
-fi
-
 #global variables
-lastBackup=$(cat /media/git/i3-config-files/scripts/logs/timestamp)
 homeDir=/media/git/i3-config-files/scripts
 logDir=/media/git/i3-config-files/scripts/logs
 sourceConfDir=~/.config
@@ -81,7 +74,7 @@ changedConfigFilesPrint(){
     -path ./vlc -prune -o \
     -path ./xgrabcolorrc -prune -o \
     -path ./yay -prune \) \
-    -o -newermt @$lastBackup -print | tail -n +3
+    -o -print | tail -n +3
 }
 
 backupConfigDir () {
@@ -103,7 +96,4 @@ home
 echo "config files updated, updating installed package list"
 cd ..
 yay -Qe > packages.txt
-home
-echo -n $EPOCHSECONDS > timestamp
-mv timestamp ./logs
-echo "backup complete, timestamp has been logged"
+echo "backup complete"
