@@ -97,3 +97,5 @@ echo "config files updated, updating installed package list"
 cd ..
 yay -Qe > packages.txt
 echo "backup complete"
+home
+lazygit
