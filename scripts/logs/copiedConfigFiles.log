@@ -48,6 +48,7 @@
 ./fish/conf.d/nvm.fish
 ./fish/conf.d/omf.fish
 ./copiedConfigFiles.log
+./test.txt
 ./i3status
 ./i3status/config
 ./alacritty
