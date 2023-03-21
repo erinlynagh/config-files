@@ -88,7 +88,7 @@ changedConfigFilesPrint(){
 
 backupConfigDir () {
     changedConfigFilesPrint > copiedConfigFiles.log
-    rsync -rv --files-from="copiedConfigFiles.log" $1 $2 --delete --ignore-errors
+    rsync -rv --files-from="copiedConfigFiles.log" $1 $2
     mv copiedConfigFiles.log $logDir
 }
 
