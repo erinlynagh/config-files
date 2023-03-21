@@ -7,7 +7,7 @@ if [ ! -f ./logs/timestamp ]; then
 fi
 
 #global variables
-lastBackup=$(cat ./logs/timestamp)
+lastBackup=$(cat /media/git/i3-config-files/scripts/logs/timestamp)
 homeDir=/media/git/i3-config-files/scripts
 logDir=/media/git/i3-config-files/scripts/logs
 sourceConfDir=~/.config
@@ -93,7 +93,7 @@ backupConfigDir () {
     echo "updating log files"
     mv copiedConfigFiles.log $logDir
     cd $2
-    rm *.log
+    rm copiedConfigFiles.log
 }
 
 #Start Config Backup
