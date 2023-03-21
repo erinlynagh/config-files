@@ -1,18 +1,33 @@
 #!/bin/bash
 
-cd /media/git/i3-config-files/scripts
-old=$(cat timestamp)
-echo $old
+#global variables
+lastBackup=$(cat timestamp)
+homeDir=/media/git/i3-config-files/scripts
+sourceConfDir=~/.config/
+destConfDir=/media/git/i3-config-files/config
 
-cd ~/.config
-newfiles=$(find -newermt @$old)
+#functions
+home () {
+    cd $homeDir
+}
 
-rsync -rp --files-from=<(find -newermt @$old) ~/.config/ /media/git/i3-config-files/config
+changedFiles() {
+    find -newermt @$lastBackup
+}
 
-cd /media/git/i3-config-files/scripts
+backupDir () {
+    cd $1
+    rsync -rv --files-from=<(changedFiles) $1 $2 # $(find -newermt @$lastBackup) is used to find all files that have been modified since the last backup
+}
+
+#Start Backups
+
+backupDir $sourceConfDir $destConfDir
+
+home
 source deleteConfigFiles.sh
 
-cd /media/git/i3-config-files/scripts
-echo -n $EPOCHSECONDS > timestamp
+home
+#echo -n $EPOCHSECONDS > timestamp
 
 echo "check git for diff now"
