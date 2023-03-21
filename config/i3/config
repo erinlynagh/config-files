@@ -229,7 +229,6 @@ exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 exec_always alttab
 
 exec alacritty -e yay
-
 # Tab by Default
 workspace_layout tabbed
 
@@ -237,5 +236,4 @@ workspace_layout tabbed
 workspace 1 output DP-0
 workspace 2 output HDMI-0
 workspace 3 output DP-2
-
 
