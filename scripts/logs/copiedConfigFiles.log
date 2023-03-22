@@ -32,6 +32,7 @@
 ./fish/functions/edit-config.fish
 ./fish/functions/neofetch.fish
 ./fish/functions/speedtest.fish
+./fish/functions/dcss=bash.fish
 ./fish/functions/_nvm_index_update.fish
 ./fish/functions/fix-bg.fish
 ./fish/functions/nvm.fish
@@ -44,6 +45,7 @@
 ./fish/functions/gp.fish
 ./fish/functions/dcss.fish
 ./fish/functions/fisher.fish
+./fish/functions/dcssr.fish
 ./fish/conf.d
 ./fish/conf.d/nvm.fish
 ./fish/conf.d/omf.fish

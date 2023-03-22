@@ -36,7 +36,7 @@ fuse2fs 1.47.0-1
 galculator 2.1.4-8
 gcc 12.2.1-2
 git 2.40.0-1
-github-cli 2.24.3-1
+github-cli 2.25.1-1
 gnome-keyring 1:42.1-2
 gnu-free-fonts 20120503-8
 godot 4.0-2
@@ -98,7 +98,7 @@ speedtest++ 1.14.r71.0f63cfb-1
 steam 1.0.0.76-1
 subversion 1.14.2-6
 sudo 1.9.13.p3-1
-telegram-desktop 4.7.0-1
+telegram-desktop 4.7.1-1
 tere 1.4.0-1
 texinfo 7.0.2-2
 transmission-gtk 4.0.1-2
