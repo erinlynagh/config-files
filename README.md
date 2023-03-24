@@ -12,3 +12,5 @@ TIPS:
 - use ly (yay -s ly) to manager the login
 - starship for prompt
 - make sure to install network manager, not iw it doesnt't work
+
+systemctl enable --now systemd-timesyncd.service ## sets time to sync to a network
