@@ -100,5 +100,6 @@ if [[ $1 != "-r"  ]]; then
     cd ..
     yay -Qqe > packages.txt
     home
+    git pull
     lazygit
 fi
