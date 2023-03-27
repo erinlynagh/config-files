@@ -1,0 +1,18 @@
+
+# default settings
+name = Erin
+combo = MiBe, Gnoll Fighter, Spriggan Hunter, DjFe
+
+name_bypasses_menu = true
+restart_after_game = maybe
+
+# for non-casters
+rest_wait_both = true
+
+# to make u better
+autofight_stop = 85
+autofight_caught = true
+
+# general settings
+trap_item_highlight = reverse
+autopickup_search = true 
