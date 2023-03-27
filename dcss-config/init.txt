@@ -1,10 +1,9 @@
 
 # default settings
 name = Erin
-combo = MiBe, Gnoll Fighter, Spriggan Hunter, DjFe
+combo = MiBe . hand axe, Gnoll Fighter. war axe, Spriggan Hunter, DjFe
 
 name_bypasses_menu = true
-restart_after_game = maybe
 
 # for non-casters
 rest_wait_both = true
