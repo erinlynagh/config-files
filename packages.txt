@@ -14,6 +14,7 @@ blueberry
 bluez
 bluez-utils
 brave-bin
+brogue-ce
 btop
 chrome-remote-desktop
 copyq
