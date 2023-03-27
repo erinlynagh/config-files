@@ -1,10 +1,10 @@
 #/bin/bash
 
 #global variables
-homeDir=/media/git/i3-config-files/scripts
-logDir=/media/git/i3-config-files/scripts/logs
+homeDir=/media/git/config-files/scripts
+logDir=/media/git/config-files/scripts/logs
 sourceConfDir=~/.config
-destConfDir=/media/git/i3-config-files/config
+destConfDir=/media/git/config-files/config
 
 ## TODO: Dry Run
 
