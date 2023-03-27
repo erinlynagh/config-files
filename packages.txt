@@ -20,14 +20,12 @@ copyq
 crawl-tiles
 debtap
 debugedit
-discord
 discord-screenaudio
 dmenu
 fakeroot
 fastfetch-git
 feh
 file-roller
-filelight
 fish
 flameshot-git
 flex
@@ -40,13 +38,11 @@ github-cli
 gnome-keyring
 gnu-free-fonts
 godot
-gpick
 groff
 handlr
 heroic-games-launcher-bin
 hsetroot
 i3-wm
-i3blocks
 i3lock
 joyutils
 lazygit
@@ -98,7 +94,6 @@ ttf-dejavu
 ttf-hack
 ttf-ms-win11-auto
 ttf-twemoji-color-git
-twmn-git
 visual-studio-code-bin
 vlc
 which
@@ -106,7 +101,6 @@ wired
 xclip
 xdelta3
 xf86-video-vesa
-xgrabcolor
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
