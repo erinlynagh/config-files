@@ -1,12 +1,12 @@
-# default settings
+# my current default settings
 name = Erin
-combo = MiBe . hand axe, Gnoll Fighter. war axe, Spriggan Hunter, DjFe, Troll Gladiator, GrEe
+combo = MiBe . hand axe, Gnoll Fighter . war axe, Spriggan Hunter, DjFe, Troll Gladiator . claws, GrEe
 name_bypasses_menu = true
 
 # for non-casters
 rest_wait_both = true
 
-# to make u better
+# to make u stop being bad
 autofight_stop = 100
 autofight_caught = true
 explore_delay = 90
@@ -16,8 +16,15 @@ explore_wall_bias = 5
 trap_item_highlight = reverse
 autopickup_search = true 
 
+# Custom Character Stuff
+
+# uncomment for random random random
+# OPTION = species:gnoll, background:wanderer
+
+# uncomment for random "good" character
+# OPTION = background:random, species:viable, weapon:viable
 
 # edit for specific character
-# species = Oc
-# background = Cj
-# weapon = viable
+# species = Hu
+# background = Fi
+# weapon = war axe, flail, trident
