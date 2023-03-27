@@ -64,7 +64,6 @@ make
 micro
 mpv
 nano
-natural-scrolling-forever
 networkmanager
 noto-fonts
 nvidia-dkms
