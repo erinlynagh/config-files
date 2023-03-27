@@ -106,7 +106,6 @@ ttf-hack 3.003-3
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-twemoji-color-git 1:14.0.2.r0.ge451b5d-1
 twmn-git 193.58ca77d-1
-unnethack 5.3.2-3
 visual-studio-code-bin 1.76.2-1
 vlc 3.0.18-8
 which 2.21-6
