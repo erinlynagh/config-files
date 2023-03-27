@@ -78,12 +78,8 @@ changedConfigFilesPrint(){
 }
 
 backupConfigDir () {
-    echo "modified config files:"
-    changedConfigFilesPrint
     changedConfigFilesPrint > copiedConfigFiles.log
-    echo "copying config files..."
-    rsync -rv --files-from="copiedConfigFiles.log" $1 $2
-    echo "updating log files"
+    rsync -r --files-from="copiedConfigFiles.log" $1 $2
     mv copiedConfigFiles.log $logDir
     cd $2
     rm copiedConfigFiles.log
@@ -96,15 +92,13 @@ cd $sourceConfDir
 if [[ $1 != "-r"  ]]; then
     echo "the following config files will be added to github:"
     changedConfigFilesPrint
-    echo "type -r to run the backup for real"
+    echo "use -r to run the backup"
     exit;
     elif [[ $1 == "-r" ]]; then
     backupConfigDir $sourceConfDir $destConfDir
     home
-    echo "config files updated, updating installed package list"
     cd ..
     yay -Qqe > packages.txt
-    echo "backup complete"
     home
     lazygit
 fi
