@@ -53,10 +53,6 @@ lazygit 0.37.0-1
 lf 28-1
 libgnome-keyring 3.12.0+13+g4f8ab73-3
 libretro-database-git 1:1.14.0.r8.g3e565a4a-1
-libretro-dolphin 33042-1
-libretro-mgba 8797-1
-libretro-parallel-n64-git 1:r5243.a03fdcba-1
-libretro-snes9x 2181-1
 libtool 2.4.7+4+g1ec8fa28-2
 light 1.2.2-3
 linux 6.2.8.arch1-1
@@ -87,9 +83,6 @@ polkit-dumb-agent-git r23.c65248e-1
 polybar 3.6.3-3
 pulsemixer 1.5.1-3
 rbw 1.5.0-1
-retroarch 1.15.0-1
-retroarch-assets-ozone 1:439-1
-retroarch-assets-xmb 1:439-1
 rofi 1.7.5-1
 rsync 3.2.7-4
 simplescreenrecorder 0.4.4-2
