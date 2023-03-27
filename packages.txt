@@ -17,6 +17,7 @@ brave-bin
 btop
 chrome-remote-desktop
 copyq
+crawl-ncurses
 crawl-tiles
 debtap
 debugedit
