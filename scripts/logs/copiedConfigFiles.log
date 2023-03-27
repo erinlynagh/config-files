@@ -32,7 +32,6 @@
 ./fish/functions/edit-config.fish
 ./fish/functions/neofetch.fish
 ./fish/functions/speedtest.fish
-./fish/functions/dcss=bash.fish
 ./fish/functions/randomize-wallpapers.fish
 ./fish/functions/_nvm_index_update.fish
 ./fish/functions/fix-bg.fish
