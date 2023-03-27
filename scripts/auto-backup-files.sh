@@ -103,7 +103,7 @@ if [[ $1 != "-r"  ]]; then
     home
     echo "config files updated, updating installed package list"
     cd ..
-    yay -Qe > packages.txt
+    yay -Qqe > packages.txt
     echo "backup complete"
     home
     lazygit
