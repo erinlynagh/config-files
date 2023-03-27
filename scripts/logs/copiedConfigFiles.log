@@ -44,6 +44,7 @@
 ./fish/functions/backup.fish
 ./fish/functions/gtg.fish
 ./fish/functions/lg.fish
+./fish/functions/yay-clean-packages.fish
 ./fish/functions/gp.fish
 ./fish/functions/dcss.fish
 ./fish/functions/fisher.fish
