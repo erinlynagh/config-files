@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Application
-TryExec=crawl-tiles
-Exec=crawl-tiles
+Exec=/media/git/personal/dcss_morgue/cp_morgues.sh
 Terminal=false
 Categories=Games
 
