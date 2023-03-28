@@ -64,7 +64,6 @@ micro
 mpv
 nano
 networkmanager
-noto-fonts
 nvidia-dkms
 nvidia-settings
 otf-font-awesome
@@ -90,6 +89,7 @@ telegram-desktop
 tere
 texinfo
 transmission-gtk
+ttf-c64-fonts
 ttf-dejavu
 ttf-hack
 ttf-ms-win11-auto
