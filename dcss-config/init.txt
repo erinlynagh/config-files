@@ -5,7 +5,7 @@ name = Erin
 name_bypasses_menu = true
 
 # for non-casters
-rest_wait_both = true
+# rest_wait_both = true
 
 # to make u stop being bad
 autofight_stop = 100

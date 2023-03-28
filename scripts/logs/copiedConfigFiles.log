@@ -29,6 +29,7 @@
 ./fish/themes
 ./fish/functions
 ./fish/functions/_nvm_version_activate.fish
+./fish/functions/dcss-trunk.fish
 ./fish/functions/edit-config.fish
 ./fish/functions/neofetch.fish
 ./fish/functions/speedtest.fish
@@ -49,7 +50,6 @@
 ./fish/functions/gp.fish
 ./fish/functions/dcss.fish
 ./fish/functions/fisher.fish
-./fish/functions/dcssr.fish
 ./fish/conf.d
 ./fish/conf.d/nvm.fish
 ./fish/conf.d/omf.fish
