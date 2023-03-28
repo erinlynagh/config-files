@@ -38,6 +38,7 @@
 ./fish/functions/fix-bg.fish
 ./fish/functions/nvm.fish
 ./fish/functions/d.fish
+./fish/functions/dcss-28.fish
 ./fish/functions/_nvm_list.fish
 ./fish/functions/_nvm_version_deactivate.fish
 ./fish/functions/edit-dcss.fish

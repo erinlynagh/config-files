@@ -1,6 +1,7 @@
 # my current default settings
 name = Erin
-combo = MiBe . hand axe, Gnoll Fighter . war axe, Spriggan Hunter, DjFe, Troll Gladiator . claws, GrEe, HoCa . hand axe, OgAM, DgTm, VSFi . trident
+# combo = MiBe . hand axe, Gnoll Fighter . war axe, Spriggan Hunter, DjFe, Troll Gladiator . claws, GrEe, HoCa . hand axe, OgAM, DgTm, VSFi . trident
+# combo = MiBe . hand axe, Gnoll Fighter . war axe, DjFe, Troll Gladiator . claws, HoCa . hand axe, OgAM, VSFi . trident
 name_bypasses_menu = true
 
 # for non-casters
@@ -15,6 +16,8 @@ explore_wall_bias = 10
 # general settings
 trap_item_highlight = reverse
 autopickup_search = true 
+# probably a bad idea to turn this on
+# show_more = true
 
 # Custom Character Stuff
 
@@ -25,6 +28,6 @@ autopickup_search = true
 # OPTION = background:random, species:viable, weapon:viable
 
 # edit for specific character
-# species = Hu
-# background = Fi
-# weapon = war axe, flail, trident
+#species = Troll
+#background = Gladiator
+#weapon = claws
