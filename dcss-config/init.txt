@@ -1,3 +1,5 @@
+# https://crawl.kelbi.org/crawl/rcfiles/crawl-git/Nomi.rc
+
 # my current default settings
 name = Erin
 
@@ -7,7 +9,7 @@ name = Erin
 # to make u stop being bad
 autofight_stop = 100
 autofight_caught = true
-explore_delay = 70
+explore_delay = 60
 explore_wall_bias = 10
 
 # general settings
@@ -26,7 +28,7 @@ force_more_message += Space warps horribly around you
 force_more_message += hits you.*distortion
 force_more_message += Space bends around you
 force_more_message += fumble
-force_more_message += shaft
+#force_more_message += shaft
 force_more_message += wearing a (* shield|buckler)
 #force_more_message += trap
 
@@ -153,26 +155,26 @@ ae += <dart
       
       if max_hp_increased or max_hp_decreased then
         if max_hp_increased then 
-          crawl.mpr("<green>You now have " .. current_hp .. "/" .. max_hp .. "hp.</green>")
+          crawl.mpr("<green>(" .. current_hp .. "/" .. max_hp .. ")</green>")
         else
-          crawl.mpr("<yellow>You now have " .. current_hp .. "/" .. max_hp .. " hp.</yellow>")
+          crawl.mpr("<yellow>(" .. current_hp .. "/" .. max_hp .. " )</yellow>")
         end
       else
         --On losing health
         if (current_hp < previous_hp) then
           if current_hp <= (max_hp * 0.30) then
-            crawl.mpr("<red>You take " .. hp_difference .. " damage,</red><lightred> and have " .. current_hp .. "/" .. max_hp .. " hp.</lightred>")
+            crawl.mpr("<red>You take " .. hp_difference .. " damage </red><lightred> (" .. current_hp .. "/" .. max_hp .. ")</lightred>")
           elseif current_hp <= (max_hp * 0.50) then
-            crawl.mpr("<red>You take " .. hp_difference .. " damage, and have " .. current_hp .. "/" .. max_hp .. " hp.</red>")
+            crawl.mpr("<red>You take " .. hp_difference .. " damage (" .. current_hp .. "/" .. max_hp .. ")</red>")
           elseif current_hp <= (max_hp *  0.70) then
-            crawl.mpr("<red>You take " .. hp_difference .. " damage,</red><yellow> and have " .. current_hp .. "/" .. max_hp .. " hp.</yellow>")
+            crawl.mpr("<red>You take " .. hp_difference .. " damage </red><yellow> (" .. current_hp .. "/" .. max_hp .. ")</yellow>")
           elseif current_hp <= (max_hp * 0.90) then
-            crawl.mpr("<red>You take " .. hp_difference .. " damage,</red><lightgrey> and have " .. current_hp .. "/" .. max_hp .. " hp.</lightgrey>")
+            crawl.mpr("<red>You take " .. hp_difference .. " damage </red><lightgrey>(" .. current_hp .. "/" .. max_hp .. ")</lightgrey>")
           else
-            crawl.mpr("<red>You take " .. hp_difference .. " damage,</red><green> and have " .. current_hp .. "/" .. max_hp .. " hp.</green>")
+            crawl.mpr("<red>You take " .. hp_difference .. " damage </red><green> (" .. current_hp .. "/" .. max_hp .. ")</green>")
           end
           if hp_difference > (max_hp * 0.20) then
-            crawl.mpr("<lightred>MY FAVORITE EYEBALLS!!</lightred>")
+            crawl.mpr("<lightred>Ouch! That really hurt!</lightred>")
           end
         end
   
@@ -182,19 +184,16 @@ ae += <dart
           local health_inturn = (0 - hp_difference)
           if (health_inturn > 1) and not (current_hp == max_hp) then
             if current_hp <= (max_hp * 0.30) then
-              crawl.mpr("<green>You regained " .. health_inturn .. " hp,</green><lightred> and now have " .. current_hp .. "/" .. max_hp .. " hp.</lightred>")
+              crawl.mpr("<green>You recover " .. health_inturn .. " health</green><lightred> (" .. current_hp .. "/" .. max_hp .. ")</lightred>")
             elseif current_hp <= (max_hp * 0.50) then
-              crawl.mpr("<green>You regained " .. health_inturn .. " hp,</green><red> and now have " .. current_hp .. "/" .. max_hp .. " hp.</red>")
+              crawl.mpr("<green>You recover " .. health_inturn .. " health</green><red> (" .. current_hp .. "/" .. max_hp .. ")</red>")
             elseif current_hp <= (max_hp *  0.70) then
-              crawl.mpr("<green>You regained " .. health_inturn .. " hp,</green><yellow> and now have " .. current_hp .. "/" .. max_hp .. " hp.</yellow>")
+              crawl.mpr("<green>You recover " .. health_inturn .. " health</green><yellow> (" .. current_hp .. "/" .. max_hp .. ")</yellow>")
             elseif current_hp <= (max_hp * 0.90) then
-              crawl.mpr("<green>You regained " .. health_inturn .. " hp,</green><lightgrey> and now have " .. current_hp .. "/" .. max_hp .. " hp.</lightgrey>")
+              crawl.mpr("<green>You recover " .. health_inturn .. " health</green><lightgrey> (" .. current_hp .. "/" .. max_hp .. ")</lightgrey>")
             else
-              crawl.mpr("<green>You regained " .. health_inturn .. " hp, and now have " .. current_hp .. "/" .. max_hp .. " hp.</green>")
+              crawl.mpr("<green>You recover " .. health_inturn .. " health (" .. current_hp .. "/" .. max_hp .. ")</green>")
             end
-          end
-          if (current_hp == max_hp) then
-            crawl.mpr("<green>Health restored: " .. current_hp .. "</green>")
           end
         end
  
@@ -204,14 +203,12 @@ ae += <dart
           local mp_inturn = (0 - mp_difference)
           if (mp_inturn > 1) and not (current_mp == max_mp) then
             if current_mp < (max_mp * 0.25) then 
-              crawl.mpr("<lightcyan>You regained " .. mp_inturn .. " mp,</lightcyan><red> and now have " .. current_mp .. "/" .. max_mp .. " mp.</red>")
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><red> (" .. current_mp .. "/" .. max_mp .. ")</red>")
             elseif current_mp < (max_mp * 0.50) then 
-              crawl.mpr("<lightcyan>You regained " .. mp_inturn .. " mp,</lightcyan><yellow> and now have " .. current_mp .. "/" .. max_mp .. " mp.</yellow>")            else
-              crawl.mpr("<lightcyan>You regained " .. mp_inturn .. " mp,</lightcyan><green> and now have " .. current_mp .. "/" .. max_mp .. " mp.</green>")
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><yellow> (" .. current_mp .. "/" .. max_mp .. ")</yellow>")            
+            else
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><green> (" .. current_mp .. "/" .. max_mp .. ")</green>")
             end
-          end
-          if (current_mp == max_mp) then
-            crawl.mpr("<lightcyan>MP restored: " .. current_mp .. "</lightcyan>")
           end
         end
   
@@ -236,47 +233,3 @@ ae += <dart
 end
 >
 
-
-
-<
--- Equipment autopickup (by Medar and various others)
-local function pickup_equipment(it, name)
-  if it.is_useless then return end
-
-  local class = it.class(true)
-  if class == "armour" then
-    local good_slots = {cloak="Cloak", helmet="Helmet",
-                        gloves="Gloves", boots="Boots"}
-    st, _ = it.subtype()
-
-    -- Autopickup found aux armour if 1) we don't have any or 2) it's artefact,
-    -- or 3) if we don't have artefact or ego armour, and the found armour is
-    -- ego.
-    if good_slots[st] ~= nil then
-      if good_slots[st] == "Gloves" and you.has_claws() > 0 then return end
-
-      if it.artefact then return true end
-
-      local cur = items.equipped_at(good_slots[st])
-      if cur == nil then return true end
-
-      if cur.branded or cur.artefact then return end
-      if it.branded then return true end
-      -- Autopickup found body armour of the same kind we're wearing, according
-      -- to conditions (2) and (3) above used for aux slots.
-    elseif st == "body" then
-      local cur = items.equipped_at("armour")
-      if cur == nil then return end
-      if cur.name("qual") ~= it.name("qual") then return end
-
-      if it.artefact then return true end
-
-      if cur.branded or cur.artefact then return end
-      if it.branded then return true end
-    end
-  end
-  return
-end
-
-add_autopickup_func(pickup_equipment)
->

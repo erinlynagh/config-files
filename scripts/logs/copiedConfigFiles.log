@@ -42,6 +42,7 @@
 ./fish/functions/dcss-28.fish
 ./fish/functions/_nvm_list.fish
 ./fish/functions/_nvm_version_deactivate.fish
+./fish/functions/dcss-trunk-update.fish
 ./fish/functions/edit-dcss.fish
 ./fish/functions/backup.fish
 ./fish/functions/gtg.fish
