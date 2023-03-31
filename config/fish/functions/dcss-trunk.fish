@@ -1,4 +1,4 @@
-function dcss-trunk --wraps='cd /media/Games/crawl/crawl-ref/source&&./crawl' --wraps='cd /media/Games/crawl&&exec /crawl-ref/source/crawl' --wraps='cd /media/Games/crawl&&exec ,/crawl-ref/source/crawl' --wraps='cd /media/Games/crawl&&exec ./crawl-ref/source/crawl' --description 'alias dcss-trunk=cd /media/Games/crawl&&exec ./crawl-ref/source/crawl'
-  cd /media/Games/crawl&&exec ./crawl-ref/source/crawl $argv
+function dcss-trunk --wraps='cd /media/Games/crawl&&exec ~/playtrunk.sh' --wraps='~/playtrunk.sh' --description 'alias dcss-trunk=~/playtrunk.sh'
+  ~/playtrunk.sh $argv
         
 end
