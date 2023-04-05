@@ -3,13 +3,13 @@
 # my current default settings
 name = Erin
 
-# for non-casters
-# rest_wait_both = true
+# no point in not waiting?
+rest_wait_both = true
 
 # to make u stop being bad
-autofight_stop = 100
+autofight_stop = 80
 autofight_caught = true
-explore_delay = 60
+explore_delay = 20
 explore_wall_bias = 10
 
 # general settings
@@ -203,11 +203,11 @@ ae += <dart
           local mp_inturn = (0 - mp_difference)
           if (mp_inturn > 1) and not (current_mp == max_mp) then
             if current_mp < (max_mp * 0.25) then 
-              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><red> (" .. current_mp .. "/" .. max_mp .. ")</red>")
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><red> (" .. current_mp .. "/" .. max_mp .. ")</red>")
             elseif current_mp < (max_mp * 0.50) then 
-              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><yellow> (" .. current_mp .. "/" .. max_mp .. ")</yellow>")            
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><yellow> (" .. current_mp .. "/" .. max_mp .. ")</yellow>")            
             else
-              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " mp</lightcyan><green> (" .. current_mp .. "/" .. max_mp .. ")</green>")
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><green> (" .. current_mp .. "/" .. max_mp .. ")</green>")
             end
           end
         end
@@ -215,11 +215,11 @@ ae += <dart
         --On losing magic
         if current_mp < previous_mp then
           if current_mp <= (max_mp / 5) then
-            crawl.mpr("<lightcyan>You now have </lightcyan><red>" .. current_mp .. "/" ..max_mp .." mp.</red>")      
+            crawl.mpr("<lightcyan>You now have </lightcyan><red>" .. current_mp .. "/" ..max_mp .." magic.</red>")      
           elseif current_mp <= (max_mp / 2) then
-            crawl.mpr("<lightcyan>You now have </lightcyan><yellow>" .. current_mp .. "/" ..max_mp .." mp.</yellow>")
+            crawl.mpr("<lightcyan>You now have </lightcyan><yellow>" .. current_mp .. "/" ..max_mp .." magic.</yellow>")
           else
-            crawl.mpr("<lightcyan>You now have </lightcyan><green>" .. current_mp .. "/" ..max_mp .." mp.</green>")
+            crawl.mpr("<lightcyan>You now have </lightcyan><green>" .. current_mp .. "/" ..max_mp .." magic.</green>")
           end
         end
       end
