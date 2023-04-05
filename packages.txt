@@ -89,6 +89,7 @@ sudo
 telegram-desktop
 tere
 texinfo
+touchpad_config
 transmission-gtk
 ttf-c64-fonts
 ttf-dejavu
