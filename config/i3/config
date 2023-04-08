@@ -243,6 +243,8 @@ exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
 
 exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 
+# exec touchpad_config -e 19
+
 exec_always alttab
 
 exec alacritty -e yay
