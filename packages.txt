@@ -18,6 +18,7 @@ brogue-ce
 btop
 chrome-remote-desktop
 copyq
+crawl-ncurses
 crawl-tiles
 debtap
 debugedit
