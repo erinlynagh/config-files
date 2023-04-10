@@ -62,7 +62,6 @@ ly
 m4
 make
 micro
-mpv
 mullvad-vpn-bin
 nano
 networkmanager

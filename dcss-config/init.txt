@@ -3,20 +3,18 @@
 # my current default settings
 name = Erin
 
-# no point in not waiting?
-rest_wait_both = true
-
 # to make u stop being bad
 autofight_stop = 80
 autofight_caught = true
 explore_delay = 20
-explore_wall_bias = 10
+#explore_wall_bias = 10
 
 # general settings
 trap_item_highlight = reverse
 autopickup_search = true 
 default_manual_training = true
 item_slot += identify:r
+show_more = false
 
 # messages, show more, etc 
 force_more_message += floating eye
@@ -53,7 +51,7 @@ ignore = Jiyva alters your body
 
 # autopickups
 ae := autopickup_exceptions
-ae += scrolls? of (vulnerability|amnesia|enchant|brand)
+#ae += scrolls? of (vulnerability|amnesia|enchant|brand)
 ae += atropa
 ae += datura
 ae += <throwing net
