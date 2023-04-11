@@ -1,4 +1,4 @@
-function dcss-trunk-update --wraps='cd /media/Games/crawl/&&git pull&&cd ./crawl-ref/source&&make TILES=y' --description 'alias dcss-trunk-update=cd /media/Games/crawl/&&git pull&&cd ./crawl-ref/source&&make TILES=y'
-  cd /media/Games/crawl/&&git pull&&cd ./crawl-ref/source&&make TILES=y $argv
+function dcss-trunk-update --wraps='~/playtrunk.sh -u' --description 'alias dcss-trunk-update=~/playtrunk.sh -u'
+  ~/playtrunk.sh -u $argv
         
 end
