@@ -44,6 +44,7 @@
 ./fish/functions/_nvm_version_deactivate.fish
 ./fish/functions/backup.fish
 ./fish/functions/gtg.fish
+./fish/functions/find.fish
 ./fish/functions/lg.fish
 ./fish/functions/yay-clean-packages.fish
 ./fish/functions/gp.fish
