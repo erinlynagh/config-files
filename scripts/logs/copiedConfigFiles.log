@@ -32,6 +32,7 @@
 ./fish/functions/dcss-trunk.fish
 ./fish/functions/edit-config.fish
 ./fish/functions/neofetch.fish
+./fish/functions/fix-touchpad.fish
 ./fish/functions/speedtest.fish
 ./fish/functions/randomize-wallpapers.fish
 ./fish/functions/_nvm_index_update.fish
