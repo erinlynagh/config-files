@@ -8,6 +8,8 @@ autofight_stop = 80
 autofight_caught = true
 explore_delay = 20
 explore_wall_bias = 0
+show_more = false
+auto_butcher = true
 
 # general settings
 trap_item_highlight = reverse
@@ -18,6 +20,8 @@ item_slot += stones:e
 item_slot += poisoned dart:f
 item_slot += boomerang:g
 show_more = false
+travel_open_doors = false
+
 
 # messages, show more, etc 
 force_more_message += floating eye
@@ -26,12 +30,14 @@ force_more_message += flesh start
 force_more_message += very hungry
 force_more_message += calcifying dust hits
 force_more_message += Space warps horribly around you
+force_more_message += your body is wracked
+force_more_message += You feel yourself slow down
 force_more_message += hits you.*distortion
 force_more_message += Space bends around you
 force_more_message += fumble
-#force_more_message += shaft
 force_more_message += wearing a (* shield|buckler)
-#force_more_message += trap
+force_more_message += A sentinel's mark forms upon you
+
 
 ood_interesting = 8
 note_hp_percent = 10
@@ -42,7 +48,7 @@ note_messages = cast .* Abyss
 note_messages = Your scales start
 note_messages = protects you from harm
 note_messages = shaft
-note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise
+note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra
 
 : if you.god() == "Jiyva" then
 ignore = Jiyva gurgles merrily
