@@ -1,5 +1,4 @@
 # https://crawl.kelbi.org/crawl/rcfiles/crawl-git/Nomi.rc
-
 # my current default settings
 name = Erin
 
