@@ -7,13 +7,16 @@ name = Erin
 autofight_stop = 80
 autofight_caught = true
 explore_delay = 20
-#explore_wall_bias = 10
+explore_wall_bias = 0
 
 # general settings
 trap_item_highlight = reverse
 autopickup_search = true 
 default_manual_training = true
 item_slot += identify:r
+item_slot += stones:e
+item_slot += poisoned dart:f
+item_slot += boomerang:g
 show_more = false
 
 # messages, show more, etc 
@@ -73,6 +76,16 @@ ae += <large rock
 ae += <stone
 ae += <javelin
 ae += <dart
+ae += <atropa
+ae += <datura
+: end
+
+: if you.god() == "Trog" then
+ae += rings of magical power
+ae += rings of intelligence
+ae += potions? of (magic|brilliance)
+ae += scrolls? of (vulnerability|amnesia)
+ae += amulets of magic regeneration
 : end
 
 # Character Stuff
