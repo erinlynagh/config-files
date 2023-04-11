@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Exec=/media/git/personal/dcss_morgue/cp_morgues_trunk.sh
+Terminal=false
+Categories=Games
+
+Name=Dungeon Crawl Stone Soup (Trunk)
+GenericName=dcss-trunk
+Comment=roguelike
+Actions=New;
+
+X-Desktop-File-Install-Version=0.26
+
+#[Desktop Action New]
+#Name=New Terminal
+#Exec=alacritty
