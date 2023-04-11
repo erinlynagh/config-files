@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/erin/dcss.sh
+Terminal=false
+Categories=Games
+
+Name=Dungeon Crawl Stone Soup
+GenericName=DCSS
+Comment=roguelike
+Actions=New;
+
+X-Desktop-File-Install-Version=0.26
+
+#[Desktop Action New]
+#Name=New Terminal
+#Exec=alacritty

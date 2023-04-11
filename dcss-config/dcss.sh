@@ -1,5 +1,9 @@
 #!/bin/bash
-#Check
+
+cp ~/.crawl/morgue/*.lst /media/git/personal/dcss_morgue/
+cp -f ~/.crawl/macro.txt /media/git/config-files/dcss-config/macro.txt
+cp -f ~/.crawl/init.txt /media/git/config-files/dcss-config/init.txt
+
 if [[ $1 == "-u"  ]]; then
     cd /media/Games/crawl/crawl-ref/source
     git pull
@@ -7,7 +11,11 @@ if [[ $1 == "-u"  ]]; then
 elif [[ $1 == "-e" ]]; then
     micro ~/.crawl/init.txt
     cp -f ~/.crawl/init.txt /media/git/config-files/dcss-config/init.txt
-else
-	cd /media/Games/crawl/
+elif [[ $1 == "-t" ]]; then
+    cd /media/Games/crawl/
     exec /media/Games/crawl/crawl-ref/source/crawl
+else
+	crawl-tiles
 fi
+
+notify-send "reminder" "backup your morgue files to git occasionally"
