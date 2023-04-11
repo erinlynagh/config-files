@@ -1,4 +1,5 @@
 adobe-source-han-sans-otc-fonts
+advancecomp
 alacritty
 alttab-git
 antimicrox-git
@@ -75,6 +76,7 @@ picom
 pipewire-alsa
 pipewire-pulse
 pkgconf
+pngcrush
 polkit-dumb-agent-git
 polybar
 pulsemixer
