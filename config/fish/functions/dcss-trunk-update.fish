@@ -1,4 +1,4 @@
-function dcss-trunk-update --wraps='~/playtrunk.sh -u' --description 'alias dcss-trunk-update=~/playtrunk.sh -u'
-  ~/playtrunk.sh -u $argv
+function dcss-trunk-update --wraps='~/dcss.sh -u' --description 'alias dcss-trunk-update=~/dcss.sh -u'
+  ~/dcss.sh -u $argv
         
 end
