@@ -1,4 +1,4 @@
-function edit-dcss --wraps='code ~/.crawl/init.txt' --wraps='micro ~/.crawl/init.txt' --description 'alias edit-dcss=micro ~/.crawl/init.txt'
-  micro ~/.crawl/init.txt $argv
+function edit-dcss --wraps='~/dcss.sh -e' --description 'alias edit-dcss=~/dcss.sh -e'
+  ~/dcss.sh -e $argv
         
 end
