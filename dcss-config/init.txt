@@ -14,13 +14,16 @@ auto_butcher = true
 trap_item_highlight = reverse
 autopickup_search = true 
 default_manual_training = true
-item_slot += identify:r
-item_slot += stones:e
-item_slot += poisoned dart:f
-item_slot += boomerang:g
 show_more = false
 travel_open_doors = false
 
+# item slots
+item_slot += identify:r
+item_slot += stones:e
+item_slot += poisoned dart:f
+item_slot += boomerang of dispersal:i
+item_slot += boomerang:g
+item_slot += javelin:h
 
 # messages, show more, etc 
 force_more_message += floating eye
