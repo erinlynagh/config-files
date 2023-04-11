@@ -231,7 +231,7 @@ bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
 bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
 
 bindsym XF86Calculator exec galculator
-bindsym XF86Launch1 exec /media/git/personal/dcss_morgue/cp_morgues_trunk.sh
+bindsym XF86Launch1 exec ~/dcss.sh -t
 
 # sudo usermod -aG video erin
 # this allows the light package to work, which controls the screen brightness
