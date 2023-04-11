@@ -5,6 +5,8 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+#test
+
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -254,6 +256,7 @@ exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 exec --no-startup-id exec ~/fixTouchpad.sh
 
 exec_always alttab
+exec_always polkit-dumb-agent
 
 exec alacritty -e yay
 # Tab by Default
