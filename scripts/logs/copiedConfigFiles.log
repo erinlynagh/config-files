@@ -29,7 +29,6 @@
 ./fish/themes
 ./fish/functions
 ./fish/functions/_nvm_version_activate.fish
-./fish/functions/dcss-trunk.fish
 ./fish/functions/edit-config.fish
 ./fish/functions/neofetch.fish
 ./fish/functions/fix-touchpad.fish
@@ -43,8 +42,6 @@
 ./fish/functions/dcss-28.fish
 ./fish/functions/_nvm_list.fish
 ./fish/functions/_nvm_version_deactivate.fish
-./fish/functions/dcss-trunk-update.fish
-./fish/functions/edit-dcss.fish
 ./fish/functions/backup.fish
 ./fish/functions/gtg.fish
 ./fish/functions/lg.fish

@@ -4,7 +4,6 @@ crawlGameDir=/media/Games/crawl/
 crawlBuildDir=/media/Games/crawl/crawl-ref/source/
 crawlMorgueDir=/media/git/personal/dcss_morgue/
 crawlSettingsDir=/media/git/config-files/dcss-config/
-crawlConsole=/media/Games/crawl/crawl-console
 
 
 # u: tiles update (for trunk)
@@ -29,7 +28,7 @@ elif [[ $1 == "-cu"  ]]; then
     mv ./crawl-tiles ./crawl
 elif [[ $1 == "-c" ]]; then
     cd $crawlGameDir
-    alacritty -e $crawlConsole
+    ./crawl-console
     notify-send "reminder" "backup your morgue files to git occasionally"
 elif [[ $1 == "-e" ]]; then
     micro ~/.crawl/init.txt
