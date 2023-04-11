@@ -28,7 +28,7 @@ changedConfigFilesPrint(){
     -path ./'Crafting Legends' -prune -o \
     -path ./dconf -prune -o \
     -path ./discord -prune -o \
-    -path ./discord-screeenaudio -prune -o \
+    -path ./discord-screenaudio -prune -o \
     -path ./fastfetch -prune -o \
     -path ./fontforge -prune -o \
     -path ./galculator -prune -o \
