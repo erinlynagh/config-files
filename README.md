@@ -47,3 +47,8 @@ TIPS:
 - make sure to install network manager, not iw it doesnt't work
 
 systemctl enable --now systemd-timesyncd.service ## sets time to sync to a network
+
+
+### dcss
+ just copy the dcss.sh to /home/erin/ and place the desktop files in /usr/share/applications
+ it backs up morgue files so make sure the backup location exists
