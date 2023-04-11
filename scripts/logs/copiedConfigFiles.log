@@ -47,7 +47,6 @@
 ./fish/functions/lg.fish
 ./fish/functions/yay-clean-packages.fish
 ./fish/functions/gp.fish
-./fish/functions/dcss.fish
 ./fish/functions/fisher.fish
 ./fish/conf.d
 ./fish/conf.d/nvm.fish
