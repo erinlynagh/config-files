@@ -253,7 +253,8 @@ exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
 
 exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 
-exec --no-startup-id exec ~/fixTouchpad.sh
+# replaced with /etc/X11/xorg.conf.d/30-touchpad.conf
+# exec_always /home/erin/fixTouchpad.sh
 
 exec_always alttab
 exec_always polkit-dumb-agent
