@@ -25,6 +25,13 @@ item_slot += boomerang of dispersal:i
 item_slot += boomerang:g
 item_slot += javelin:h
 
+: if (you.god() == "Trog") then
+item_slot += axe:a
+item_slot += mace:b
+item_slot += flail:b
+item_slot += whip:b
+: end
+
 # messages, show more, etc 
 force_more_message += floating eye
 force_more_message += Ouch! That really hurt!
@@ -80,21 +87,19 @@ ae += <boomerang
 ae += <large rock
 : end
 
-: if (you.race() == "Ogre" or you.race() == "Troll" or you.god() == "Trog") then
+: if (you.race() == "Troll" or you.god() == "Trog") then
 ae += <stone
 ae += <javelin
 ae += <dart
 ae += <atropa
 ae += <datura
-: end
-
-: if you.god() == "Trog" then
 ae += rings of magical power
 ae += rings of intelligence
 ae += potions? of (magic|brilliance)
 ae += scrolls? of (vulnerability|amnesia)
 ae += amulets of magic regeneration
 : end
+
 
 # Character Stuff
 
