@@ -30,6 +30,7 @@ item_slot += axe:a
 item_slot += mace:b
 item_slot += flail:b
 item_slot += whip:b
+item_slot += ingstar:b
 : end
 
 # messages, show more, etc 
