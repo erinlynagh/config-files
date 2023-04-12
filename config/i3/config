@@ -259,7 +259,6 @@ exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
 exec_always alttab
 exec_always polkit-dumb-agent
 
-exec alacritty -e yay
 # Tab by Default
 workspace_layout tabbed
 
@@ -268,3 +267,9 @@ workspace 1 output DP-0
 workspace 2 output HDMI-0
 workspace 3 output DP-2
 
+# Autoscreen Fixes
+exec_always /home/erin/.config/i3/i3AutoWorkspace.sh
+
+
+# DO THIS LAST
+exec alacritty -e yay

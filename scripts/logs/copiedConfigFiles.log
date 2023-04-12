@@ -69,4 +69,5 @@
 ./flameshot
 ./flameshot/flameshot.ini
 ./i3
+./i3/i3AutoWorkspace.sh
 ./i3/config
