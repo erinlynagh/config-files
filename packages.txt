@@ -23,6 +23,7 @@ crawl-ncurses
 crawl-tiles
 debtap
 debugedit
+dex
 discord-screenaudio
 dmenu
 fakeroot
@@ -65,6 +66,7 @@ make
 micro
 mullvad-vpn-bin
 nano
+network-manager-applet
 networkmanager
 nvidia-dkms
 nvidia-settings
