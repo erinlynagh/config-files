@@ -3,6 +3,7 @@ application/octet-stream=micro.desktop;
 application/x-executable=micro.desktop;
 application/x-bittorrent=brave-browser.desktop;
 application/vnd.debian.binary-package=Alacritty.desktop;
+application/x-trash=micro.desktop;
 
 [Default Applications]
 inode/directory=pcmanfm.desktop;
