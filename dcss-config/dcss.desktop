@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
-Exec=/home/erin/dcss.sh
+Exec=/home/erin/dcss.sh -t
 Terminal=false
 Categories=Games
 
-Name=Dungeon Crawl Stone Soup
+Name=Dungeon Crawl Stone Soup (Trunk)
 GenericName=DCSS
 Comment=roguelike
 Actions=New;
