@@ -51,6 +51,8 @@
 ./fish/conf.d
 ./fish/conf.d/nvm.fish
 ./fish/conf.d/omf.fish
+./kitty
+./kitty/kitty.conf
 ./copiedConfigFiles.log
 ./i3status
 ./i3status/config

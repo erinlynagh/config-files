@@ -41,7 +41,6 @@ git
 github-cli
 gnome-keyring
 gnu-free-fonts
-godot
 groff
 handlr
 heroic-games-launcher-bin
@@ -49,6 +48,7 @@ hsetroot
 i3-wm
 i3lock
 joyutils
+kitty
 lazygit
 lf
 libgnome-keyring
