@@ -1,4 +1,4 @@
-# Dungeon Crawl Stone Soup 0.30-a0-1054-g221ef3b968 macro file
+# Dungeon Crawl Stone Soup 0.30-a0-1075-gcd70e7a56d macro file
 # WARNING: This file is entirely auto-generated.
 
 # Key Mappings:
@@ -23,6 +23,9 @@ A:o
 
 M:\{-255}
 A:.
+
+M:\{13}
+A:f
 
 M:+
 A:\{9}

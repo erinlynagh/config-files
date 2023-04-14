@@ -99,6 +99,7 @@ ttf-dejavu
 ttf-hack
 ttf-ms-win11-auto
 ttf-twemoji-color-git
+upower
 visual-studio-code-bin
 vlc
 which

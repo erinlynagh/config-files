@@ -17,6 +17,11 @@ default_manual_training = true
 show_more = false
 travel_open_doors = false
 
+ood_interesting = 8
+note_hp_percent = 10
+note_skill_levels = 1
+#note_skill_levels = 1,5,10,15,27
+
 # item slots
 item_slot += identify:r
 item_slot += stones:e
@@ -50,9 +55,6 @@ force_more_message += wearing a (* shield|buckler)
 force_more_message += A sentinel's mark forms upon you
 
 
-ood_interesting = 8
-note_hp_percent = 10
-note_skill_levels = 1,5,10,15,27
 note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance
 note_messages = You pass through the gate
 note_messages = cast .* Abyss
