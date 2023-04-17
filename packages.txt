@@ -47,6 +47,7 @@ heroic-games-launcher-bin
 hsetroot
 i3-wm
 i3lock
+ifuse
 joyutils
 kitty
 lazygit
@@ -63,6 +64,7 @@ linux-zen-headers
 ly
 m4
 make
+mgba-qt
 micro
 mullvad-vpn-bin
 nano

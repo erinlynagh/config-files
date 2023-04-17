@@ -30,7 +30,7 @@ item_slot += boomerang of dispersal:i
 item_slot += boomerang:g
 item_slot += javelin:h
 
-: if (you.god() == "Trog") then
+: if (you.god() == "Trog" or you.class() == "Fighter") then
 item_slot += axe:a
 item_slot += mace:b
 item_slot += flail:b
@@ -45,8 +45,10 @@ force_more_message += Ouch! That really hurt!
 force_more_message += flesh start
 force_more_message += very hungry
 force_more_message += calcifying dust hits
+force_more_message += gazes at you.
 force_more_message += Space warps horribly around you
 force_more_message += your body is wracked
+force_more_message += phantom blinks!
 #force_more_message += You feel yourself slow down
 force_more_message += hits you.*distortion
 force_more_message += Space bends around you
@@ -61,7 +63,7 @@ note_messages = cast .* Abyss
 note_messages = Your scales start
 note_messages = protects you from harm
 note_messages = shaft
-note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra
+note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra, basilisk
 
 : if you.god() == "Jiyva" then
 ignore = Jiyva gurgles merrily
@@ -73,25 +75,16 @@ ignore = Jiyva alters your body
 
 # autopickups
 ae := autopickup_exceptions
-#ae += scrolls? of (vulnerability|amnesia|enchant|brand)
-ae += atropa
-ae += datura
+ae += scrolls? of (vulnerability|amnesia|enchant|brand)
 ae += <throwing net
 ae += <curare
-ae += <vane
-ae += <phial
-ae += <lightning rod
-ae += <box of beasts
-ae += <tin of tremor
-ae += <phantom mirror
-#ae += <immolation
 ae += <boomerang
 
-: if (you.race() == "Orge" or you.race() == "Troll") then
+: if (you.race() == "Ogre" or you.race() == "Troll") then
 ae += <large rock
 : end
 
-: if (you.race() == "Troll" or you.god() == "Trog") then
+: if (you.god() == "Trog" or you.class() == "Fighter") then
 ae += <stone
 ae += <javelin
 ae += <dart
@@ -102,6 +95,14 @@ ae += rings of intelligence
 ae += potions? of (magic|brilliance)
 ae += scrolls? of (vulnerability|amnesia)
 ae += amulets of magic regeneration
+: else
+ae += <vane
+ae += <phial
+ae += <lightning rod
+ae += <box of beasts
+ae += <tin of tremor
+ae += <phantom mirror
+#ae += <immolation
 : end
 
 

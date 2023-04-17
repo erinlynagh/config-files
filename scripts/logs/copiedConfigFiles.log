@@ -2,6 +2,11 @@
 ./starship.toml
 ./rofi
 ./rofi/config.rasi
+./mgba
+./mgba/qt.ini
+./mgba/library.sqlite3
+./mgba/config.ini
+./mgba/nointro.sqlite3
 ./picom
 ./picom/picom.conf
 ./gtk-3.0
@@ -37,6 +42,7 @@
 ./fish/functions/gs.fish
 ./fish/functions/fix-bg.fish
 ./fish/functions/nvm.fish
+./fish/functions/disable-caps.fish
 ./fish/functions/d.fish
 ./fish/functions/dcss-28.fish
 ./fish/functions/_nvm_list.fish
