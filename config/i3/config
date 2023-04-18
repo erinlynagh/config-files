@@ -255,6 +255,7 @@ exec_always /home/erin/.config/polybar/multi-monitor.sh
 # exec --no-startup-id exec bash $HOME/.fehbg
 # selects a random background
 exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
+exec_always udiskie -Ans
 
 # DO THIS LAST
 exec_always --no-startup-id picom &
