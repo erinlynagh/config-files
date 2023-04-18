@@ -101,6 +101,8 @@ ttf-dejavu
 ttf-hack
 ttf-ms-win11-auto
 ttf-twemoji-color-git
+udiskie
+udisks2
 upower
 visual-studio-code-bin
 vlc

@@ -211,65 +211,51 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #292B37
 
+
+
+
+
+
 # CUSTOM STUFF
 
-# appearance
+# keyboard shortcuts
+# xev -event keyboard
+# to get keycodes
+exec_always setxkbmap -option ctrl:nocaps
+bindsym Print exec --no-startup-id flameshot gui
+bindsym ctrl+Home exec --no-startup-id flameshot gui
+bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
+bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
+bindsym XF86Calculator exec galculator
+bindsym XF86Launch1 exec ~/dcss.sh -t
+# sudo usermod -aG video erin, to fix permissions
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 20
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 20
+# bindsym Shift+Escape exec alacritty -e btop
+
+# Appearance
 default_border pixel 2
 gaps inner 5
 gaps outer 5
 
-# keyboard shortcuts
-
-# xev -event keyboard
-# to get keycodes
-
-exec_always setxkbmap -option ctrl:nocaps
-bindsym Print exec --no-startup-id flameshot gui
-bindsym ctrl+Home exec --no-startup-id flameshot gui
-
-bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
-bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
-
-bindsym XF86Calculator exec galculator
-bindsym XF86Launch1 exec ~/dcss.sh -t
-
-# sudo usermod -aG video erin
-# this allows the light package to work, which controls the screen brightness
-
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 20
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 20
-
-bindsym Shift+Escape exec alacritty -e btop
-exec_always --no-startup-id picom &
-exec .screenlayout/default.sh
-
-# runs the last set background
-#  --bg-fill /media/Pictures/Wallpapers/picture.jpg
-# exec --no-startup-id exec bash $HOME/.fehbg
-exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
-
-# set background to solid colour
-# exec --no-startup-id hsetroot -solid "#282A36"
-
-exec --no-startup-id exec /home/erin/.config/polybar/multi-monitor.sh
-
-# replaced with /etc/X11/xorg.conf.d/30-touchpad.conf
-# exec_always /home/erin/fixTouchpad.sh
-
-exec_always alttab
-exec_always polkit-dumb-agent
-
-# Tab by Default
+# Custom Workspace
 workspace_layout tabbed
-
-# Screen Order
 workspace 1 output DP-0
 workspace 2 output HDMI-0
 workspace 3 output DP-2
-
-# Autoscreen Fixes
+# Screen Number Fix for Single Monitor
 exec_always /home/erin/.config/i3/i3AutoWorkspace.sh
 
+# Applications
+exec .screenlayout/default.sh
+exec_always alttab
+exec_always polkit-dumb-agent
+exec_always /home/erin/.config/polybar/multi-monitor.sh
+# runs the last set background
+# exec --no-startup-id exec bash $HOME/.fehbg
+# selects a random background
+exec_always feh --bg-fill --randomize /media/Pictures/Wallpapers/*
 
 # DO THIS LAST
+exec_always --no-startup-id picom &
 exec alacritty -e yay
