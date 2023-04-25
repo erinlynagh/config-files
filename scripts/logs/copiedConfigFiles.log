@@ -17,6 +17,7 @@
 ./mimeapps.list
 ./autostart
 ./autostart/discord-stable.desktop
+./autostart/steam.desktop
 ./autostart/mullvad-vpn.desktop
 ./autostart/copyq.desktop
 ./btop

@@ -24,10 +24,10 @@ note_skill_levels = 1
 
 # item slots
 item_slot += identify:r
-item_slot += stones:e
+item_slot += stones:g
 item_slot += poisoned dart:f
 item_slot += boomerang of dispersal:i
-item_slot += boomerang:g
+item_slot += boomerang:e
 item_slot += javelin:h
 
 : if (you.god() == "Trog" or you.class() == "Fighter") then
@@ -45,7 +45,7 @@ force_more_message += Ouch! That really hurt!
 force_more_message += flesh start
 force_more_message += very hungry
 force_more_message += calcifying dust hits
-force_more_message += gazes at you.
+force_more_message += You are slowing down
 force_more_message += Space warps horribly around you
 force_more_message += your body is wracked
 force_more_message += phantom blinks!
@@ -76,25 +76,23 @@ ignore = Jiyva alters your body
 # autopickups
 ae := autopickup_exceptions
 ae += scrolls? of (vulnerability|amnesia|enchant|brand)
-ae += <throwing net
-ae += <curare
-ae += <boomerang
 
 : if (you.race() == "Ogre" or you.race() == "Troll") then
 ae += <large rock
 : end
 
 : if (you.god() == "Trog" or you.class() == "Fighter") then
+ae += rings of magical power
+ae += ring of magical power
+ae += rings of intelligence
+ae += potions? of (magic|brilliance)
+ae += scrolls? of (vulnerability|amnesia)
+ae += amulets of magic regeneration
 ae += <stone
 ae += <javelin
 ae += <dart
 ae += <atropa
 ae += <datura
-ae += rings of magical power
-ae += rings of intelligence
-ae += potions? of (magic|brilliance)
-ae += scrolls? of (vulnerability|amnesia)
-ae += amulets of magic regeneration
 : else
 ae += <vane
 ae += <phial
@@ -104,6 +102,10 @@ ae += <tin of tremor
 ae += <phantom mirror
 #ae += <immolation
 : end
+
+ae += <throwing net
+ae += <curare
+ae += <boomerang
 
 
 # Character Stuff

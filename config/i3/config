@@ -219,19 +219,20 @@ client.background       #292B37
 # CUSTOM STUFF
 
 # keyboard shortcuts
-# xev -event keyboard
-# to get keycodes
 exec_always setxkbmap -option ctrl:nocaps
+exec_always xmodmap -e "keycode # = """
+# xev -event keyboard
+# sudo usermod -aG video erin, to fix permissions
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 20
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 20
 bindsym Print exec --no-startup-id flameshot gui
 bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym XF86KbdBrightnessUp exec asus-kbd-backlight up
 bindsym XF86KbdBrightnessDown exec asus-kbd-backlight down
 bindsym XF86Calculator exec galculator
 bindsym XF86Launch1 exec ~/dcss.sh -t
-# sudo usermod -aG video erin, to fix permissions
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 20
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 20
 # bindsym Shift+Escape exec alacritty -e btop
+
 
 # Appearance
 default_border pixel 2
