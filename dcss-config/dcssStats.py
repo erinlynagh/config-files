@@ -8,11 +8,6 @@ def scoreSort(e):
 def seedSort(e):
     return e['seed']
 
-def updateDictionary(dictionary, line, matchString, extractFunction, dictKey, flag=[False]):
-    if (matchString in line and not flag[0]):
-        flag[0] = True
-        dictionary.update({dictKey: extractFunction(line)})
-
 def FixBrokenGames(data):
     testedSeeds = []
     brokenSeeds = []
@@ -36,7 +31,6 @@ def PrintStats(data):
     print('Wins:')
     for x in data:
         if x['won']:
-            print(x['date'])
             print("Level " + str(x['level']) + " " +x["species"] + " " + x["background"] + " of " + x["god"] + " (" + str(x['runes']) + " runes)\n\tScored " +
                 str(x["score"]) + " in " + x["time"] + " on " + x["date"])
         
@@ -48,6 +42,11 @@ def PrintStats(data):
     print("High Score: " + str(data[0]['score']))
     print("Win Percentage: " +
         str(round(len([x for x in data if x['won']])/len(data)*100,2)) + "%")
+    
+def updateDictionary(dictionary, line, matchString, extractFunction, dictKey, flag=[False]):
+    if (matchString in line and not flag[0]):
+        flag[0] = True
+        dictionary.update({dictKey: extractFunction(line)})
 
 def main():
     morguePath = "/media/git/personal/dcss_morgue"
