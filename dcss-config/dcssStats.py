@@ -49,37 +49,37 @@ def PrintStats(data):
     print("Win Percentage: " +
         str(round(len([x for x in data if x['won']])/len(data)*100,2)) + "%")
 
-morguePath = "/media/git/personal/dcss_morgue"
-MatchStrings = ["Game seed:", "level", "The game lasted", "Began as", "Began as", "Began as", "You worshipped", "Escaped with the Orb", "}:", "XL"]
-# Basically the transform function applied to the line to get the data we want
-LambdaFunctions = [lambda x: int(x.split(":")[1].strip()), #seed
-                    lambda x: int(x.split(" ")[0]), #score
-                    lambda x: x.strip().split(" ")[3], #time
-                    lambda x: x.strip().split(" ")[3], #species
-                    lambda x: x.strip().split(" ")[4], #background
-                    lambda x: x.strip().split("on")[-1].strip()[:-1], #date
-                    lambda x: x.strip().split(" ")[2].split(".")[0], #god
-                    lambda x: True, #won
-                    lambda x: int(x.strip().split(" ")[1].split("/")[0]), #runes
-                    lambda x: int(x.strip().split(":")[4].strip().split(" ")[0]) #level
-                ]
-dictKeys = ['seed', 'score', 'time', 'species', 'background', 'date', 'god', 'won', 'runes', 'level']
-
 def main():
-    data = []
+    morguePath = "/media/git/personal/dcss_morgue"
+    matchStrings = ["Game seed:", "level", "The game lasted", "Began as", "Began as", "Began as", "You worshipped", "Escaped with the Orb", "}:", "XL"]
+    # Basically the transform function applied to the line to get the data we want
+    extractFunctions = [lambda x: int(x.split(":")[1].strip()), #seed
+                        lambda x: int(x.split(" ")[0]), #score
+                        lambda x: x.strip().split(" ")[3], #time
+                        lambda x: x.strip().split(" ")[3], #species
+                        lambda x: x.strip().split(" ")[4], #background
+                        lambda x: x.strip().split("on")[-1].strip()[:-1], #date
+                        lambda x: x.strip().split(" ")[2].split(".")[0], #god
+                        lambda x: True, #won
+                        lambda x: int(x.strip().split(" ")[1].split("/")[0]), #runes
+                        lambda x: int(x.strip().split(":")[4].strip().split(" ")[0]) #level
+                    ]
+    dictKeys = ['seed', 'score', 'time', 'species', 'background', 'date', 'god', 'won', 'runes', 'level']
+
     morgueFiles = [f for f in listdir(morguePath) if isfile(join(morguePath, f)) and f.startswith("morgue-") and f.endswith(".txt")]
     chdir(morguePath)
 
+    data = []
     for filename in morgueFiles:
         fileValues = {}
         with open(filename) as f:
             content = f.read().splitlines()
             flags = []
-            for i in range(len(MatchStrings)):
+            for i in range(len(matchStrings)):
                 flags.append([False])
             for line in content:
-                for i in range(len(MatchStrings)):
-                    updateDictionary(fileValues, line, MatchStrings[i], LambdaFunctions[i], dictKeys[i], flags[i])
+                for i in range(len(matchStrings)):
+                    updateDictionary(fileValues, line, matchStrings[i], extractFunctions[i], dictKeys[i], flags[i])
             if (dictKeys[0] not in fileValues):
                 continue
             else:
