@@ -16,3 +16,4 @@ x-scheme-handler/https=brave-browser.desktop;
 x-scheme-handler/terminal=Alacritty.desktop;
 x-scheme-handler/unknown=brave-browser.desktop;
 x-scheme-handler/discord-378483863044882443=discord-378483863044882443.desktop
+x-scheme-handler/msteams=teams.desktop

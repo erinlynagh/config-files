@@ -67,6 +67,7 @@ m4
 make
 mgba-qt
 micro
+mindustry-bin
 mullvad-vpn-bin
 nano
 network-manager-applet
@@ -93,6 +94,7 @@ speedtest++
 steam
 subversion
 sudo
+teams
 telegram-desktop
 tere
 texinfo
@@ -105,6 +107,7 @@ ttf-ms-win11-auto
 ttf-twemoji-color-git
 udiskie
 udisks2
+ufw
 upower
 visual-studio-code-bin
 vlc

@@ -1,3 +1,8 @@
 config/mgba/library.sqlite3
 config/mgba/nointro.sqlite3
 config/mgba/qt.ini
+config/Microsoft/Microsoft Teams
+config/cataclysm-dda
+config/teams
+config/autostart/steam.desktop
+dcss-config/.vscode
