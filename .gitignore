@@ -6,3 +6,9 @@ config/cataclysm-dda
 config/teams
 config/autostart/steam.desktop
 dcss-config/.vscode
+config/GIMP/2.10
+config/autostart/remmina-applet.desktop
+config/gtk-2.0
+config/remmina
+config/ulauncher
+config/xfce4/xfconf/xfce-perchannel-xml

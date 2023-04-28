@@ -87,6 +87,7 @@ picom
 pipewire-alsa
 pipewire-pulse
 pkgconf
+playerctl
 pngcrush
 polkit-dumb-agent-git
 polybar
