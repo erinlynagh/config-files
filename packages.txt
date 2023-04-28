@@ -18,7 +18,8 @@ bluez-utils
 brave-bin
 brogue-ce
 btop
-chrome-remote-desktop
+chaotic-keyring
+chaotic-mirrorlist
 copyq
 crawl-ncurses
 crawl-tiles
@@ -27,6 +28,7 @@ debugedit
 dex
 discord-screenaudio
 dmenu
+emote
 fakeroot
 fastfetch-git
 feh
@@ -38,6 +40,7 @@ fuse-common
 fuse2fs
 galculator
 gcc
+gimp
 git
 github-cli
 gnome-keyring
@@ -49,6 +52,7 @@ hsetroot
 i3-wm
 i3lock
 ifuse
+inetutils
 joyutils
 kitty
 lazygit
@@ -72,6 +76,7 @@ mullvad-vpn-bin
 nano
 network-manager-applet
 networkmanager
+noto-fonts-emoji
 nvidia-dkms
 nvidia-settings
 otf-font-awesome
@@ -113,6 +118,7 @@ visual-studio-code-bin
 vlc
 which
 wired
+x11vnc
 xclip
 xdelta3
 xf86-video-vesa

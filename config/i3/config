@@ -250,6 +250,7 @@ exec_always /home/erin/.config/i3/i3AutoWorkspace.sh
 # Applications
 exec .screenlayout/default.sh
 exec_always alttab
+exec_always emote
 exec_always polkit-dumb-agent
 exec_always /home/erin/.config/polybar/multi-monitor.sh
 # runs the last set background
