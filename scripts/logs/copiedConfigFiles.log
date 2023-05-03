@@ -1240,6 +1240,167 @@
 ./alacritty/alacritty.yml.bak
 ./alacritty/alacritty.yml.bak.2
 ./alacritty/alacritty.yml
+./GitKraken
+./GitKraken/Code Cache
+./GitKraken/Code Cache/wasm
+./GitKraken/Code Cache/wasm/index-dir
+./GitKraken/Code Cache/wasm/index-dir/the-real-index
+./GitKraken/Code Cache/wasm/index
+./GitKraken/Code Cache/js
+./GitKraken/Code Cache/js/335e69ddec2b9ac6_0
+./GitKraken/Code Cache/js/af6ae3174b7fbe0a_0
+./GitKraken/Code Cache/js/664f571e567ec640_0
+./GitKraken/Code Cache/js/12ca260c25ae5d30_0
+./GitKraken/Code Cache/js/fbd831ef7625206a_0
+./GitKraken/Code Cache/js/09b7e52aa00ac443_0
+./GitKraken/Code Cache/js/4461b181c7c655ea_0
+./GitKraken/Code Cache/js/afefafec8c97013d_0
+./GitKraken/Code Cache/js/cf4be940c937fc3c_0
+./GitKraken/Code Cache/js/144586f67a939a25_0
+./GitKraken/Code Cache/js/76e5db5dbc9df002_0
+./GitKraken/Code Cache/js/6fb225ade86cbde8_0
+./GitKraken/Code Cache/js/6d17a80a4cda9766_0
+./GitKraken/Code Cache/js/5e7cafc735b0290c_0
+./GitKraken/Code Cache/js/7f9d9cbbdd688816_0
+./GitKraken/Code Cache/js/991900b1bd89af3d_0
+./GitKraken/Code Cache/js/92475cc23186d13c_0
+./GitKraken/Code Cache/js/c6209d1ad6f06947_0
+./GitKraken/Code Cache/js/e562c99e1aee1068_0
+./GitKraken/Code Cache/js/06a29e79d01298c7_0
+./GitKraken/Code Cache/js/812862f99dabbb05_0
+./GitKraken/Code Cache/js/ff2835ddcbe89b13_0
+./GitKraken/Code Cache/js/ab562b4bdf71e066_0
+./GitKraken/Code Cache/js/f6739fad0ffdd3d9_0
+./GitKraken/Code Cache/js/18621cc4f4a4df2a_0
+./GitKraken/Code Cache/js/5d840a44a3a1bf0e_0
+./GitKraken/Code Cache/js/index-dir
+./GitKraken/Code Cache/js/index-dir/the-real-index
+./GitKraken/Code Cache/js/7bfc162dc8211342_0
+./GitKraken/Code Cache/js/315f64e01cb5da9c_0
+./GitKraken/Code Cache/js/cacf80a7fe2f8282_0
+./GitKraken/Code Cache/js/8c710159b24d791e_0
+./GitKraken/Code Cache/js/b7dfc931171fb592_0
+./GitKraken/Code Cache/js/f21817a2f4d42b59_0
+./GitKraken/Code Cache/js/index
+./GitKraken/Code Cache/js/dbf87e488561007a_0
+./GitKraken/Code Cache/js/982d3910ce0f1a29_0
+./GitKraken/Code Cache/js/944e457f3b290bf6_0
+./GitKraken/Code Cache/js/87528877c0bb7d1e_0
+./GitKraken/Code Cache/js/314ce53d00d711af_0
+./GitKraken/Code Cache/js/887ca98d26bc44e7_0
+./GitKraken/Code Cache/js/4a4b4b1dd65902e6_0
+./GitKraken/Code Cache/js/79f3be2e5fc76fb7_0
+./GitKraken/Code Cache/js/e0444585e9adbaed_0
+./GitKraken/Code Cache/js/0a57b1d70f9a4280_0
+./GitKraken/Code Cache/js/8618058004282888_0
+./GitKraken/Code Cache/js/99fcf25db9c1ecc3_0
+./GitKraken/Code Cache/js/91fbe5949ddafabf_0
+./GitKraken/Code Cache/js/3ba83cbb8647024b_0
+./GitKraken/Code Cache/js/10545b3863445c6d_0
+./GitKraken/Code Cache/js/9f5879d348815041_0
+./GitKraken/Code Cache/js/8aa05b2bea09f81e_0
+./GitKraken/Code Cache/js/ee4a7c77419483b5_0
+./GitKraken/Code Cache/js/20ae84c8af1ebf1c_0
+./GitKraken/Code Cache/js/72f54a8e0605b663_0
+./GitKraken/Code Cache/js/7d6fe3dbf25f189b_0
+./GitKraken/Code Cache/js/0c3ef0980f2d15c8_0
+./GitKraken/Code Cache/js/63b7cb55e37841b8_0
+./GitKraken/Code Cache/js/8a60219e36ce7df2_0
+./GitKraken/Code Cache/js/eed52684d17efb4a_0
+./GitKraken/Code Cache/js/68ce4283cb8ea1cc_0
+./GitKraken/Code Cache/js/b74af7e199ccbfa7_0
+./GitKraken/Code Cache/js/7553f77e21aae54f_0
+./GitKraken/Code Cache/js/3c01bd19009a4941_0
+./GitKraken/Code Cache/js/e0740bf5f0c1bcca_0
+./GitKraken/Code Cache/js/01a7abf1fe1996fe_0
+./GitKraken/Code Cache/js/6e03f60e846bc003_0
+./GitKraken/TransportSecurity
+./GitKraken/Session Storage
+./GitKraken/Session Storage/CURRENT
+./GitKraken/Session Storage/LOG.old
+./GitKraken/Session Storage/MANIFEST-000001
+./GitKraken/Session Storage/LOG
+./GitKraken/Session Storage/LOCK
+./GitKraken/Session Storage/000003.log
+./GitKraken/Service Worker
+./GitKraken/Service Worker/CacheStorage
+./GitKraken/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88
+./GitKraken/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/index.txt
+./GitKraken/Cookies-journal
+./GitKraken/Cookies
+./GitKraken/Cache
+./GitKraken/Cache/Cache_Data
+./GitKraken/blob_storage
+./GitKraken/blob_storage/ac7398ce-6541-4e50-bf08-ada100b76b91
+./GitKraken/IndexedDB
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/CURRENT
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000013.ldb
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000014.log
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000005.ldb
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOG
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOCK
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000016.ldb
+./GitKraken/Storage
+./GitKraken/Storage/ext
+./GitKraken/Storage/ext/fake-host
+./GitKraken/Storage/ext/fake-host/def
+./GitKraken/Storage/ext/fake-host/def/DawnCache
+./GitKraken/Storage/ext/fake-host/def/DawnCache/data_2
+./GitKraken/Storage/ext/fake-host/def/DawnCache/data_1
+./GitKraken/Storage/ext/fake-host/def/DawnCache/data_0
+./GitKraken/Storage/ext/fake-host/def/DawnCache/index
+./GitKraken/Storage/ext/fake-host/def/DawnCache/data_3
+./GitKraken/Storage/ext/fake-host/def/GPUCache
+./GitKraken/Storage/ext/fake-host/def/GPUCache/data_2
+./GitKraken/Storage/ext/fake-host/def/GPUCache/data_1
+./GitKraken/Storage/ext/fake-host/def/GPUCache/data_0
+./GitKraken/Storage/ext/fake-host/def/GPUCache/index
+./GitKraken/Storage/ext/fake-host/def/GPUCache/data_3
+./GitKraken/Network Persistent State
+./GitKraken/CrashReports
+./GitKraken/CrashReports/completed
+./GitKraken/CrashReports/attachments
+./GitKraken/CrashReports/settings.dat
+./GitKraken/CrashReports/new
+./GitKraken/CrashReports/client_id
+./GitKraken/CrashReports/pending
+./GitKraken/databases
+./GitKraken/databases/Databases.db
+./GitKraken/databases/Databases.db-journal
+./GitKraken/9.3.0-instance-lock
+./GitKraken/Local Storage
+./GitKraken/Local Storage/leveldb
+./GitKraken/Local Storage/leveldb/CURRENT
+./GitKraken/Local Storage/leveldb/LOG.old
+./GitKraken/Local Storage/leveldb/MANIFEST-000001
+./GitKraken/Local Storage/leveldb/LOG
+./GitKraken/Local Storage/leveldb/LOCK
+./GitKraken/Local Storage/leveldb/000003.log
+./GitKraken/WebStorage
+./GitKraken/WebStorage/QuotaManager
+./GitKraken/WebStorage/QuotaManager-journal
+./GitKraken/DawnCache
+./GitKraken/DawnCache/data_2
+./GitKraken/DawnCache/data_1
+./GitKraken/DawnCache/data_0
+./GitKraken/DawnCache/index
+./GitKraken/DawnCache/data_3
+./GitKraken/GPUCache
+./GitKraken/GPUCache/data_2
+./GitKraken/GPUCache/data_1
+./GitKraken/GPUCache/data_0
+./GitKraken/GPUCache/index
+./GitKraken/GPUCache/data_3
+./GitKraken/sentry
+./GitKraken/sentry/session.json
+./GitKraken/sentry/queue
+./GitKraken/sentry/queue/queue.json
+./GitKraken/sentry/scope_v2.json
+./GitKraken/Dictionaries
+./GitKraken/Dictionaries/en-US-10-1.bdic
+./GitKraken/Preferences
 ./reflector-simple-free-params.txt
 ./antimicrox
 ./antimicrox/antimicrox_settings.ini

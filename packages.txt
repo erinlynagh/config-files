@@ -21,7 +21,6 @@ btop
 catfish
 chaotic-keyring
 chaotic-mirrorlist
-chromium
 copyq
 crawl-ncurses
 crawl-tiles
@@ -44,6 +43,7 @@ gcc
 gimp
 git
 github-cli
+gitkraken
 gnome-keyring
 gnu-free-fonts
 go
