@@ -12,3 +12,7 @@ config/gtk-2.0
 config/remmina
 config/ulauncher
 config/xfce4/xfconf/xfce-perchannel-xml
+config/chromium
+config/google-chrome
+config/mgba
+config/reflector-simple-free-params.txt

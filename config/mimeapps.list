@@ -1,9 +1,10 @@
 [Added Associations]
 application/octet-stream=micro.desktop;
-application/x-executable=micro.desktop;
+application/x-executable=code.desktop;micro.desktop;
 application/x-bittorrent=brave-browser.desktop;
 application/vnd.debian.binary-package=Alacritty.desktop;
 application/x-trash=micro.desktop;
+x-scheme-handler/tg=userapp-Kotatogram Desktop-864Y31.desktop;
 
 [Default Applications]
 inode/directory=pcmanfm.desktop;
@@ -17,3 +18,4 @@ x-scheme-handler/terminal=Alacritty.desktop;
 x-scheme-handler/unknown=brave-browser.desktop;
 x-scheme-handler/discord-378483863044882443=discord-378483863044882443.desktop
 x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/tg=userapp-Kotatogram Desktop-864Y31.desktop
