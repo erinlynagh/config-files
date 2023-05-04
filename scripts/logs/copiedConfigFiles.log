@@ -1369,7 +1369,6 @@
 ./GitKraken/databases
 ./GitKraken/databases/Databases.db
 ./GitKraken/databases/Databases.db-journal
-./GitKraken/9.3.0-instance-lock
 ./GitKraken/Local Storage
 ./GitKraken/Local Storage/leveldb
 ./GitKraken/Local Storage/leveldb/CURRENT
@@ -1394,7 +1393,6 @@
 ./GitKraken/GPUCache/index
 ./GitKraken/GPUCache/data_3
 ./GitKraken/sentry
-./GitKraken/sentry/session.json
 ./GitKraken/sentry/queue
 ./GitKraken/sentry/queue/queue.json
 ./GitKraken/sentry/scope_v2.json
