@@ -6,6 +6,7 @@ angband
 antimicrox-git
 arandr
 asus-kbd-backlight
+audacity
 autoconf
 automake
 awesome-terminal-fonts
@@ -24,6 +25,8 @@ chaotic-mirrorlist
 copyq
 crawl-ncurses
 crawl-tiles
+cups
+cups-pdf
 debtap
 debugedit
 dex
@@ -103,6 +106,7 @@ speedtest++
 steam
 subversion
 sudo
+system-config-printer
 telegram-desktop
 tere
 texinfo

@@ -4,6 +4,10 @@
 ./gtk-2.0/gtkfilechooser.ini
 ./rofi
 ./rofi/config.rasi
+./nextjs-nodejs
+./nextjs-nodejs/config.json
+./create-next-app-nodejs
+./create-next-app-nodejs/config.json
 ./GIMP
 ./GIMP/2.10
 ./GIMP/2.10/icons
@@ -1179,7 +1183,6 @@
 ./xfce4/xfconf/xfce-perchannel-xml/catfish.xml
 ./autostart
 ./autostart/discord-stable.desktop
-./autostart/steam.desktop
 ./autostart/mullvad-vpn.desktop
 ./autostart/copyq.desktop
 ./autostart/remmina-applet.desktop
@@ -1233,9 +1236,15 @@
 ./scripts/lock
 ./kitty
 ./kitty/kitty.conf
+./audacity
+./audacity/audacity.cfg
+./audacity/pluginsettings.cfg
+./audacity/pluginregistry.cfg
 ./copiedConfigFiles.log
 ./i3status
 ./i3status/config
+./guvcview2
+./guvcview2/video0
 ./alacritty
 ./alacritty/alacritty.yml.bak
 ./alacritty/alacritty.yml.bak.2
@@ -1251,6 +1260,7 @@
 ./GitKraken/Code Cache/js/af6ae3174b7fbe0a_0
 ./GitKraken/Code Cache/js/664f571e567ec640_0
 ./GitKraken/Code Cache/js/12ca260c25ae5d30_0
+./GitKraken/Code Cache/js/dc7e870d1e92fc7f_0
 ./GitKraken/Code Cache/js/fbd831ef7625206a_0
 ./GitKraken/Code Cache/js/09b7e52aa00ac443_0
 ./GitKraken/Code Cache/js/4461b181c7c655ea_0
@@ -1258,6 +1268,7 @@
 ./GitKraken/Code Cache/js/cf4be940c937fc3c_0
 ./GitKraken/Code Cache/js/144586f67a939a25_0
 ./GitKraken/Code Cache/js/76e5db5dbc9df002_0
+./GitKraken/Code Cache/js/11fadba4783a69de_0
 ./GitKraken/Code Cache/js/6fb225ade86cbde8_0
 ./GitKraken/Code Cache/js/6d17a80a4cda9766_0
 ./GitKraken/Code Cache/js/5e7cafc735b0290c_0
@@ -1270,9 +1281,12 @@
 ./GitKraken/Code Cache/js/812862f99dabbb05_0
 ./GitKraken/Code Cache/js/ff2835ddcbe89b13_0
 ./GitKraken/Code Cache/js/ab562b4bdf71e066_0
+./GitKraken/Code Cache/js/896c0eea07823953_0
 ./GitKraken/Code Cache/js/f6739fad0ffdd3d9_0
+./GitKraken/Code Cache/js/2d89002d83ca313f_0
 ./GitKraken/Code Cache/js/18621cc4f4a4df2a_0
 ./GitKraken/Code Cache/js/5d840a44a3a1bf0e_0
+./GitKraken/Code Cache/js/adf4b0e1f4f131ba_0
 ./GitKraken/Code Cache/js/index-dir
 ./GitKraken/Code Cache/js/index-dir/the-real-index
 ./GitKraken/Code Cache/js/7bfc162dc8211342_0
@@ -1281,13 +1295,16 @@
 ./GitKraken/Code Cache/js/8c710159b24d791e_0
 ./GitKraken/Code Cache/js/b7dfc931171fb592_0
 ./GitKraken/Code Cache/js/f21817a2f4d42b59_0
+./GitKraken/Code Cache/js/b13284f513f8a3d1_0
 ./GitKraken/Code Cache/js/index
 ./GitKraken/Code Cache/js/dbf87e488561007a_0
 ./GitKraken/Code Cache/js/982d3910ce0f1a29_0
 ./GitKraken/Code Cache/js/944e457f3b290bf6_0
 ./GitKraken/Code Cache/js/87528877c0bb7d1e_0
 ./GitKraken/Code Cache/js/314ce53d00d711af_0
+./GitKraken/Code Cache/js/547aff3b4c2bca36_0
 ./GitKraken/Code Cache/js/887ca98d26bc44e7_0
+./GitKraken/Code Cache/js/19172efab1ea32d9_0
 ./GitKraken/Code Cache/js/4a4b4b1dd65902e6_0
 ./GitKraken/Code Cache/js/79f3be2e5fc76fb7_0
 ./GitKraken/Code Cache/js/e0444585e9adbaed_0
@@ -1304,6 +1321,7 @@
 ./GitKraken/Code Cache/js/72f54a8e0605b663_0
 ./GitKraken/Code Cache/js/7d6fe3dbf25f189b_0
 ./GitKraken/Code Cache/js/0c3ef0980f2d15c8_0
+./GitKraken/Code Cache/js/3b89f7d964c71c11_0
 ./GitKraken/Code Cache/js/63b7cb55e37841b8_0
 ./GitKraken/Code Cache/js/8a60219e36ce7df2_0
 ./GitKraken/Code Cache/js/eed52684d17efb4a_0
@@ -1311,9 +1329,12 @@
 ./GitKraken/Code Cache/js/b74af7e199ccbfa7_0
 ./GitKraken/Code Cache/js/7553f77e21aae54f_0
 ./GitKraken/Code Cache/js/3c01bd19009a4941_0
+./GitKraken/Code Cache/js/fe309bda83fbe884_0
 ./GitKraken/Code Cache/js/e0740bf5f0c1bcca_0
 ./GitKraken/Code Cache/js/01a7abf1fe1996fe_0
+./GitKraken/Code Cache/js/5d5b15348177f29b_0
 ./GitKraken/Code Cache/js/6e03f60e846bc003_0
+./GitKraken/Code Cache/js/3b74256ff1f08387_0
 ./GitKraken/TransportSecurity
 ./GitKraken/Session Storage
 ./GitKraken/Session Storage/CURRENT
@@ -1331,17 +1352,17 @@
 ./GitKraken/Cache
 ./GitKraken/Cache/Cache_Data
 ./GitKraken/blob_storage
-./GitKraken/blob_storage/ac7398ce-6541-4e50-bf08-ada100b76b91
+./GitKraken/blob_storage/35a7019d-7fb8-43be-be8e-775e428c863e
 ./GitKraken/IndexedDB
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/CURRENT
-./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000013.ldb
-./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000014.log
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOG.old
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000005.ldb
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000026.ldb
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOG
+./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000024.log
 ./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOCK
-./GitKraken/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000016.ldb
 ./GitKraken/Storage
 ./GitKraken/Storage/ext
 ./GitKraken/Storage/ext/fake-host

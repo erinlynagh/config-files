@@ -5,6 +5,8 @@ application/x-bittorrent=brave-browser.desktop;
 application/vnd.debian.binary-package=Alacritty.desktop;
 application/x-trash=micro.desktop;
 x-scheme-handler/tg=userapp-Kotatogram Desktop-864Y31.desktop;
+text/x-python=code.desktop;
+text/markdown=code.desktop;
 
 [Default Applications]
 inode/directory=pcmanfm.desktop;
@@ -20,3 +22,5 @@ x-scheme-handler/discord-378483863044882443=discord-378483863044882443.desktop
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/tg=userapp-Kotatogram Desktop-864Y31.desktop
 x-scheme-handler/gitkraken=GitKraken.desktop
+text/x-python=code.desktop
+text/markdown=code.desktop
