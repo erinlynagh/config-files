@@ -48,8 +48,10 @@ if [[ $1 == "-u"  ]]; then
     elif [[ $1 == "-s" ]]; then
     cp -f ~/.crawl/morgue/*.txt $crawlMorgueDir
     cp -f ~/.crawl/morgue/*.lst $crawlMorgueDir
+    cp -f ~/.crawl/saves/scores $crawlMorgueDir
     cp -f /media/Games/crawl/morgue/*.txt $crawlMorgueDir
     cp -f /media/Games/crawl/morgue/*.lst $crawlMorgueDir
+    cp -f /media/Games/crawl/saves/scores $crawlMorgueDir
     python /media/git/config-files/dcss-config/dcssStats.py
 else
     crawl-tiles &

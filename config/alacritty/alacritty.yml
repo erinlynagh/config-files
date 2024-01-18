@@ -62,8 +62,7 @@ colors:
 
 font:
   normal:
-    family: Hack
-
+    family: Hack Nerd Font
 
 window:
   opacity: 1

@@ -49,7 +49,7 @@ def updateDictionary(dictionary, line, matchString, extractFunction, dictKey, fl
         dictionary.update({dictKey: extractFunction(line)})
 
 def main():
-    morguePath = "/media/git/personal/dcss_morgue"
+    morguePath = "/run/media/erin/media/git/personal/dcss_morgue"
     matchStrings = ["Game seed:", "level", "The game lasted", "Began as", "Began as", "Began as", "You worshipped", "Escaped with the Orb", "}:", "XL"]
     # Basically the transform function applied to the line to get the data we want
     extractFunctions = [lambda x: int(x.split(":")[1].strip()), #seed
