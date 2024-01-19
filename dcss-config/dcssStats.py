@@ -111,6 +111,7 @@ def main():
     data.sort(key=scoreSort, reverse=True)
     FixBrokenGames(data)
     PrintStats(data)
+    input()
 
 
 if __name__ == "__main__":
