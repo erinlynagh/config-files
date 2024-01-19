@@ -1,4 +1,4 @@
-function d --wraps='cd /run/media/erin/media/' --description 'alias d=cd /run/media/erin/media/'
-  cd /run/media/erin/media/ $argv
+function d --wraps='cd /mnt/media' --description 'alias d=cd /mnt/media'
+  cd /mnt/media $argv
         
 end
