@@ -55,6 +55,7 @@ force_more_message += Space bends around you
 force_more_message += fumble
 force_more_message += wearing a (* shield|buckler)
 force_more_message += A sentinel's mark forms upon you
+force_more_message += Training target
 
 
 note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance
@@ -263,4 +264,3 @@ ae += <boomerang
     was_berserk_last_turn = you_are_berserk
 end
 >
-
