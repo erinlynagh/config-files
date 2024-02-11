@@ -1,0 +1,17 @@
+modmap:
+  - name: Global
+    remap:
+      KP1: KEY_1
+      KP2: KEY_2
+      KP3: KEY_3
+      KP4: KEY_4
+      KP5: KEY_5
+      KP6: KEY_6
+      KP7: KEY_7
+      KP8: KEY_8
+      KP9: KEY_9
+      KP0: KEY_0
+      KPMINUS: PAGEUP
+      KPPLUS: PAGEDOWN
+      KPASTERISK: RIGHTBRACE
+      KPSLASH: LEFTBRACE

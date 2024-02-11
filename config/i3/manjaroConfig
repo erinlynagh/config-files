@@ -37,7 +37,7 @@ floating_modifier $mod
 
 # start a terminal
 
-bindsym $mod+Return exec alacritty -e fish
+# bindsym $mod+Return exec terminal -e fish
 
 # kill focused window
 
@@ -75,7 +75,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 
-bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
+bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
 
 # bindsym $mod+F2 exec palemoon
 
@@ -84,7 +84,7 @@ bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec alacritty -e 'mocp'
+bindsym $mod+F5 exec kitty -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -528,14 +528,22 @@ bindsym 0 gaps outer current set 0
 
 # Custom
 
+bindsym $mod+Return exec kitty -e fish
 bindsym Print exec --no-startup-id flameshot gui
 bindsym ctrl+Home exec --no-startup-id flameshot gui
-bindsym ctrl+Shift+Escape exec alacritty -e bashtop
+bindsym ctrl+Shift+Escape exec kitty -e sudo btop
+
+# activates the numpad "layer"
+exec_always --no-startup-id numlockx off
+bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
 
 workspace_layout tabbed
 workspace 1 output HDMI-0
-workspace 2 output DP-2
+workspace 2 output DP-0
+workspace 3 output DP-2
 
 exec .screenlayout/main.sh
-exec /home/erin/disable-caps.sh
+# exec .screenlayout/main1080.sh
+# exec .screenlayout/main3.sh
 
+exec /home/erin/disable-caps.sh
