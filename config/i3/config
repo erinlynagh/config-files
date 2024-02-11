@@ -548,6 +548,7 @@ exec .screenlayout/main.sh
 # exec .screenlayout/main3.sh
 
 exec /home/erin/disable-caps.sh
+exec blueman-applet
 
 ## Set Wallpapers
 # exec_always feh --recursive --bg-fill --randomize /mnt/media/Library/Pictures/Wallpapers/*
