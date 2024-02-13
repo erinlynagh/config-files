@@ -8,3 +8,4 @@ sinks=($(pactl list short sinks | awk '{print $1}'))
 unset sinks[$defualt_sink]
 # set the default sink to the first sink in the list (the other sink)
 pactl set-default-sink ${sinks[@]}
+echo Now using: $(pacmd info | grep -e "Default sink name" | awk '{print $4}')
