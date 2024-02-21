@@ -118,6 +118,7 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 polkit-gnome
+polybar
 poppler-data
 powertop
 qt5ct

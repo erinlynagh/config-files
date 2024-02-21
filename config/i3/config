@@ -12,7 +12,6 @@ set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 
-default_border pixel 1
 default_floating_border normal
 
 # Hide borders
@@ -29,7 +28,7 @@ bindsym $mod+n border normal
 
 # is used in the bar {} block below.
 
-font xft:URWGothic-Book 11
+font pango:Hack Nerd Font 8
 
 # Use Mouse+$mod to drag floating windows
 
@@ -124,7 +123,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
 # numpad change focus
 
 bindsym $mod+KP_Down focus down
@@ -406,45 +404,45 @@ set_from_resource $term_color13 color13
 set_from_resource $term_color14 color14
 set_from_resource $term_color15 color15
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-
-bar {
-i3bar_command i3bar
-status_command i3status-rs ~/.config/i3/config.toml
-position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-
-# tray_output primary
-
-# tray_output eDP1
-
-    bindsym button4 nop
-    bindsym button5 nop
-
-# font xft:URWGothic-Book 11
-
-    strip_workspace_numbers yes
-
-    colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
-
-# border backgr. text
-
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-
-}
-
-# hide/unhide i3status bar
-
-bindsym $mod+m bar mode toggle
+## Start i3bar to display a workspace bar (plus the system information i3status if available)
+#
+#bar {
+#i3bar_command i3bar
+#status_command i3status-rs ~/.config/i3/config.toml
+#position bottom
+#
+### please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+#
+## tray_output primary
+#
+## tray_output eDP1
+#
+#    bindsym button4 nop
+#    bindsym button5 nop
+#
+## font xft:URWGothic-Book 10
+#
+#    strip_workspace_numbers yes
+#
+#    colors {
+#        background #222D31
+#        statusline #F9FAF9
+#        separator  #454947
+#
+## border backgr. text
+#
+#        focused_workspace  #F9FAF9 #16a085 #292F34
+#        active_workspace   #595B5B #353836 #FDF6E3
+#        inactive_workspace #595B5B #222D31 #EEE8D5
+#        binding_mode       #16a085 #2C2C2C #F9FAF9
+#        urgent_workspace   #16a085 #FDF6E3 #E5201D
+#    }
+#
+#}
+#
+## hide/unhide i3status bar
+#
+#bindsym $mod+m bar mode toggle
 
 # Theme colors
 
@@ -535,6 +533,7 @@ bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
+
 ## activates the numpad "layer"
 # exec_always --no-startup-id numlockx off
 # bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
@@ -549,6 +548,7 @@ exec .screenlayout/main.sh
 # exec .screenlayout/main3.sh
 
 exec /home/erin/disable-caps.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 ## Set Wallpapers
 # exec_always feh --recursive --bg-fill --randomize /mnt/media/Library/Pictures/Wallpapers/*
