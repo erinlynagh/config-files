@@ -68,6 +68,7 @@ intel-ucode
 inxi
 jfsutils
 kitty
+lazygit
 lib32-pipewire
 libdvdcss
 libgpod
@@ -136,6 +137,7 @@ syslog-ng
 telegram-desktop
 termdown
 terminus-font
+touchpad_config
 tree
 ttf-dejavu
 ttf-droid
