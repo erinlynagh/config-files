@@ -14,13 +14,12 @@ echo "Running other scripts"
 ./activateServices.sh
 ./installTerminalSettings.sh
 
-echo "Restoring files and folders"
-echo "Note that /boot is not restored autopmatically"
+echo "Note that /boot folder is not restored automatically"
 
 input=$backupDirectory/scripts/backupSettings/folders.txt
 while IFS= read -r line; do
     # skip some lines
-    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]]; then
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]] || [[ $line == "end" ]]; then
         continue
     fi
 
@@ -36,7 +35,7 @@ done <"$input"
 input=$backupDirectory/scripts/backupSettings/files.txt
 while IFS= read -r line; do
     # skip some lines
-    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]]; then
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]] || [[ $line == "end" ]]; then
         continue
     fi
 
