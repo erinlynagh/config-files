@@ -7,9 +7,9 @@ backupDirectory=$mountPoint/git/config-files
 ./installYay.sh
 ./installChaoticAur.sh
 ./installPackages.sh
-./installTerminalSettings.sh
 ./installEmoji.sh
 ../dcss-config/addDcssToCommandLine.sh
+./installTerminalSettings.sh
 
 
 input=$backupDirectory/scripts/backupSettings/folders.txt

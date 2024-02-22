@@ -7,10 +7,8 @@ else
     yay -S fish
 fi
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-fish -c "omf install bang-bang"
 
 curl -sS https://starship.rs/install.sh | sh
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 
-cp -f ../config/starship.toml ~/.config/starship.toml
-
+echo "PLEASE RUN omf install bang-bang"
