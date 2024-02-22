@@ -1,0 +1,10 @@
+/from /to
+/home/erin/.config/i3 /config/i3
+/home/erin/.config/polybar /config/polybar
+/home/erin/.config/rofi /config/rofi
+/home/erin/.config/clipit /config/clipit
+/home/erin/.config/fish /config/fish
+/home/erin/.config/rbw /config/rbw
+/home/erin/.config/xremap /config/xremap
+/home/erin/.screenlayout /screenlayout
+end
