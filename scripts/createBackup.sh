@@ -17,8 +17,7 @@ yay -Qqe >$backupDirectory/packages.txt
 
 input=$backupDirectory/scripts/backupSettings/folders.txt
 while IFS= read -r line; do
-    # skip first iteration
-    if [ "$line" == "/from /to" ]; then
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == "end" ]]; then
         continue
     fi
 
@@ -32,8 +31,7 @@ done <"$input"
 
 input=$backupDirectory/scripts/backupSettings/files.txt
 while IFS= read -r line; do
-    # skip first iteration
-    if [ "$line" == "/from /to" ]; then
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == "end" ]]; then
         continue
     fi
 
