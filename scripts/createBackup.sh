@@ -40,6 +40,9 @@ do
     IFS=' ' read -ra ADDR <<< "$line"
     sourceFile=${ADDR[0]}
     addressFile=$backupDirectory${ADDR[-1]}
+    if [ ${ADDR[-1]} == "/root" ]; then
+        addressFile=$backupDirectory
+    fi
     cp -f $sourceFile $addressFile
 done < "$input"
 
