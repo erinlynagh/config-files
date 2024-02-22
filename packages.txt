@@ -91,6 +91,7 @@ modemmanager
 mousepad
 mupdf
 ncdu
+nemo-fileroller
 netctl
 network-manager-applet
 networkmanager
@@ -154,7 +155,6 @@ volumeicon
 wget
 wireless-regdb
 wireless_tools
-xarchiver
 xautolock
 xclip
 xcursor-breeze
