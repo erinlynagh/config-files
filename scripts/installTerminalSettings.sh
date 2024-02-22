@@ -12,5 +12,5 @@ fish -c "omf install bang-bang"
 curl -sS https://starship.rs/install.sh | sh
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 
-cp -f ../config/starship.toml ~/.config/starship.toml4
+cp -f ../config/starship.toml ~/.config/starship.toml
 
