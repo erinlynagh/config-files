@@ -5,6 +5,7 @@ backupDirectory=$mountPoint/git/config-files
 cd $backupDirectory/scripts
 
 # restore packages
+echo "Running other scripts"
 ./installYay.sh
 ./installChaoticAur.sh
 ./installPackages.sh
@@ -13,34 +14,34 @@ cd $backupDirectory/scripts
 ./activateServices.sh
 ./installTerminalSettings.sh
 
+echo "Restoring files and folders"
+echo "Note that /boot is not restored autopmatically"
 
 input=$backupDirectory/scripts/backupSettings/folders.txt
-while IFS= read -r line
-do
-    # skip first iteration
-    if [ "$line" == "/from /to" ]; then
+while IFS= read -r line; do
+    # skip some lines
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]]; then
         continue
     fi
 
     # split line into varaibles
-    IFS=' ' read -ra ADDR <<< "$line"
+    IFS=' ' read -ra ADDR <<<"$line"
     sourceFolder=$backupDirectory${ADDR[-1]}
     destFolder=${ADDR[0]}
     # echo "copying from $sourceFolder to $destFolder"
     sudo mkdir -p $destFolder
     sudo cp -Rfp $sourceFolder/* $destFolder/
-done < "$input"
+done <"$input"
 
 input=$backupDirectory/scripts/backupSettings/files.txt
-while IFS= read -r line
-do
-# skip first iteration
-if [ "$line" == "/from /to" ]; then
-    continue
-fi
+while IFS= read -r line; do
+    # skip some lines
+    if [ "$line" == "/from /to" ] || [ -z "$line" ] || [[ $line == *"boot"* ]]; then
+        continue
+    fi
 
-# split line into varaibles
-    IFS=' ' read -ra ADDR <<< "$line"
+    # split line into varaibles
+    IFS=' ' read -ra ADDR <<<"$line"
     destFilepath=${ADDR[0]}
     sourceFilename=${destFilepath##*/}
     destPath=${destFilepath%/*}
@@ -51,4 +52,4 @@ fi
     fi
     # echo copying $sourceDir/$sourceFilename to $destPath
     sudo cp -fp $sourceDir/$sourceFilename $destPath
-done < "$input"
+done <"$input"

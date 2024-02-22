@@ -2,6 +2,8 @@
 
 ## Restoring the Backup
 
+run /scripts/RestoreBackup.sh, should handle mostly everything
+
 ### packages
 
 #### install yay

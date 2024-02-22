@@ -10,4 +10,5 @@
 /home/erin/.screenlayout /screenlayout
 /etc/ly /etc/ly
 /etc/X11 /etc/X11
+/boot/loader/entries /boot/entries
 end

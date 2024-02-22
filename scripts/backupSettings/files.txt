@@ -5,4 +5,5 @@
 /etc/pacman.conf /etc
 /home/erin/.local/share/applications/micro.desktop /local/share/applications/
 /home/erin/.crawl/*.txt /dcss-config
+/boot/loader/loader.conf /boot
 end
