@@ -23,6 +23,7 @@ cod
 cpupower
 crawl-tiles
 cronie
+dex
 dfc
 dhclient
 dhcpcd
@@ -36,6 +37,7 @@ ecryptfs-utils
 efibootmgr
 exfatprogs
 f2fs-tools
+fastfetch
 feh
 ffmpeg
 ffmpegthumbnailer

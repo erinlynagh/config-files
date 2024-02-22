@@ -7,6 +7,7 @@ x-scheme-handler/unknown=brave-browser.desktop
 text/plain=micro.desktop
 inode/directory=pcmanfm.desktop
 application/x-shellscript=micro.desktop
+x-scheme-handler/mailto=brave-browser.desktop
 
 [Added Associations]
 text/plain=micro.desktop;kitty.desktop;

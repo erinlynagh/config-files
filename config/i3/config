@@ -269,7 +269,9 @@ exec .screenlayout/main.sh
 # exec .screenlayout/main1080.sh
 # exec .screenlayout/main3.sh
 
-exec /home/erin/disable-caps.sh
+# runs anything in the autostart folder
+exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
+exec_always --no-startup-id /home/erin/disable-caps.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 ## Set Wallpapers
