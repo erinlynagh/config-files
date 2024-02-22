@@ -6,3 +6,4 @@ systemctl --user enable --now pipewire-pulse.service
 sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now ly.service
 sudo systemctl enable --now thermald.service
+sudo systemctl enable --now systemd-timesyncd.service
