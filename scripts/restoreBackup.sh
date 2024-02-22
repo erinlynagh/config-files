@@ -3,6 +3,15 @@
 mountPoint=/mnt/media
 backupDirectory=$mountPoint/git/config-files
 
+# restore packages
+./installYay.sh
+./installChaoticAur.sh
+./installPackages.sh
+./installTerminalSettings.sh
+./installEmoji.sh
+../dcss-config/addDcssToCommandLine.sh
+
+
 input=$backupDirectory/scripts/backupSettings/folders.txt
 while IFS= read -r line
 do
@@ -41,5 +50,10 @@ do
     # echo copying $sourceDir/$sourceFilename to $destPath
     cp -f $sourceDir/$sourceFilename $destPath
 done < "$input"
+
+cp -f $backupDirectory/dcss-config/*.txt ~/.crawl/
+
+cp -f $backupDirectory/local/share/applications/*.desktop ~/.local/share/applications/
+sudo cp -Rf $backupDirectory/etc/* /etc/
 
 echo done
