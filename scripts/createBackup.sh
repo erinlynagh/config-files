@@ -1,13 +1,14 @@
 #!/bin/bash
-# variables
+# variables 
 mountPoint=/mnt/media
 backupDirectory=$mountPoint/git/config-files
+cd $backupDirectory/scripts
 
 # remove old backup directories
-mkdir -p $backupDirectory/config
-mkdir -p $backupDirectory/screenlayout
-rm -rf $backupDirectory/config/*
-rm -rf $backupDirectory/screenlayout/*
+sudo mkdir -p $backupDirectory/config
+sudo mkdir -p $backupDirectory/screenlayout
+sudo rm -rf $backupDirectory/config/*
+sudo rm -rf $backupDirectory/screenlayout/*
 
 # backup packages
 yay -Qqe > $backupDirectory/packages.txt
@@ -24,8 +25,8 @@ do
     IFS=' ' read -ra ADDR <<< "$line"
     sourceFolder=${ADDR[0]}
     addressFolder=$backupDirectory${ADDR[-1]}
-    mkdir -p $addressFolder
-    cp -Rf $sourceFolder/* $addressFolder/
+    sudo mkdir -p $addressFolder
+    sudo cp -Rfp $sourceFolder/* $addressFolder/
 done < "$input"
 
 input=$backupDirectory/scripts/backupSettings/files.txt
@@ -43,9 +44,7 @@ do
     if [ ${ADDR[-1]} == "/root" ]; then
         addressFile=$backupDirectory
     fi
-    cp -f $sourceFile $addressFile
+    sudo cp -fp $sourceFile $addressFile
 done < "$input"
-
-echo done
 
 

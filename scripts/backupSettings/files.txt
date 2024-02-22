@@ -2,4 +2,7 @@
 /home/erin/*.sh /root
 /home/erin/.config/starship.toml /config
 /home/erin/.config/mimeapps.list /config
+/etc/pacman.conf /etc
+/home/erin/.local/share/applications/micro.desktop /local/share/applications/
+/home/erin/.crawl/*.txt /dcss-config
 end

@@ -2,6 +2,7 @@
 # variables
 mountPoint=/mnt/media
 backupDirectory=$mountPoint/git/config-files
+cd $backupDirectory/scripts
 
 # restore packages
 ./installYay.sh
@@ -9,8 +10,8 @@ backupDirectory=$mountPoint/git/config-files
 ./installPackages.sh
 ./installEmoji.sh
 ../dcss-config/addDcssToCommandLine.sh
-./installTerminalSettings.sh
 ./activateServices.sh
+./installTerminalSettings.sh
 
 
 input=$backupDirectory/scripts/backupSettings/folders.txt
@@ -26,19 +27,19 @@ do
     sourceFolder=$backupDirectory${ADDR[-1]}
     destFolder=${ADDR[0]}
     # echo "copying from $sourceFolder to $destFolder"
-    mkdir -p $destFolder
-    cp -Rf $sourceFolder/* $destFolder/
+    sudo mkdir -p $destFolder
+    sudo cp -Rfp $sourceFolder/* $destFolder/
 done < "$input"
 
 input=$backupDirectory/scripts/backupSettings/files.txt
 while IFS= read -r line
 do
-    # skip first iteration
-    if [ "$line" == "/from /to" ]; then
-        continue
-    fi
+# skip first iteration
+if [ "$line" == "/from /to" ]; then
+    continue
+fi
 
-    # split line into varaibles
+# split line into varaibles
     IFS=' ' read -ra ADDR <<< "$line"
     destFilepath=${ADDR[0]}
     sourceFilename=${destFilepath##*/}
@@ -49,12 +50,5 @@ do
         sourceDir=$backupDirectory
     fi
     # echo copying $sourceDir/$sourceFilename to $destPath
-    cp -f $sourceDir/$sourceFilename $destPath
+    sudo cp -fp $sourceDir/$sourceFilename $destPath
 done < "$input"
-
-cp -f $backupDirectory/dcss-config/*.txt ~/.crawl/
-
-cp -f $backupDirectory/local/share/applications/*.desktop ~/.local/share/applications/
-sudo cp -Rf $backupDirectory/etc/* /etc/
-
-echo done

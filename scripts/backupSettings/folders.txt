@@ -4,7 +4,10 @@
 /home/erin/.config/rofi /config/rofi
 /home/erin/.config/clipit /config/clipit
 /home/erin/.config/fish /config/fish
-/home/erin/.config/rbw /config/rbw
+/home/erin/.config/rbw /config/rbw 
+/home/erin/.config/micro /config/micro
 /home/erin/.config/xremap /config/xremap
 /home/erin/.screenlayout /screenlayout
+/etc/ly /etc/ly
+/etc/X11 /etc/X11
 end
