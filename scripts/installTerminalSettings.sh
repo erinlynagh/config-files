@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "configuring terminal..."
 isFishInstalled=$(pacman -Q --info fish | grep -e "error")
 if [ -z "$isFishInstalled" ]; then
     echo "Fish is already installed"

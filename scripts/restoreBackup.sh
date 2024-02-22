@@ -10,6 +10,7 @@ backupDirectory=$mountPoint/git/config-files
 ./installEmoji.sh
 ../dcss-config/addDcssToCommandLine.sh
 ./installTerminalSettings.sh
+./activateServices.sh
 
 
 input=$backupDirectory/scripts/backupSettings/folders.txt

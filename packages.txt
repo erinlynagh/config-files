@@ -91,6 +91,7 @@ modemmanager
 mupdf
 ncdu
 nemo-fileroller
+neo-matrix-git
 netctl
 network-manager-applet
 networkmanager
