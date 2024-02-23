@@ -61,11 +61,8 @@ gvfs-smb
 haveged
 hexchat
 i3-wm
-i3blocks
 i3exit
 i3lock
-i3status
-i3status-rust
 inetutils
 intel-ucode
 inxi
@@ -79,6 +76,9 @@ libva-utils
 libxnvctrl
 linux
 linux-firmware
+linux-headers
+linux-zen
+linux-zen-headers
 logrotate
 lsd
 lvm2
@@ -109,7 +109,7 @@ nfs-utils
 nss-mdns
 ntfs-3g
 ntp
-nvidia
+nvidia-dkms
 nvidia-settings
 openresolv
 os-prober
@@ -128,7 +128,6 @@ pipewire-pulse
 polkit-gnome
 polybar
 poppler-data
-powershell
 powertop
 progress
 qt5ct

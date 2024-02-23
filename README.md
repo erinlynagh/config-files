@@ -14,6 +14,8 @@ the backup can be configured with the two files in /scripts/backupSettings/; the
 - use systemd-boot
 - install nvidia-dkms and linux-headers when using custom kernels
   - it only worked by uninstalling and reinstalling linux, after installing dkms
+  - also requires the changing of /etc/mkinitcpio.conf
+  	- add btrfs to hooks in the list of hooks
 - try to keep the backup up to date for easy installing later
 - pacui has a nice mirrorlist built into it
 
