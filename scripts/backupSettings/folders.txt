@@ -4,6 +4,7 @@
 /home/erin/.config/rofi /config/rofi
 /home/erin/.config/clipit /config/clipit
 /home/erin/.config/fish /config/fish
+/home/erin/.config/kitty /config/kitty
 /home/erin/.config/rbw /config/rbw 
 /home/erin/.config/micro /config/micro
 /home/erin/.config/xremap /config/xremap
