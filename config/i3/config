@@ -289,9 +289,10 @@ exec .screenlayout/main.sh
 # exec .screenlayout/main3.sh
 
 # runs anything in the autostart folder
-# exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
+exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
 exec_always --no-startup-id /home/erin/disable-caps.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id /home/erin/removeIntegratedWebcam.sh
 
 ## Set Wallpapers
 # exec_always feh --recursive --bg-fill --randomize /mnt/media/Library/Pictures/Wallpapers/*

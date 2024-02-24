@@ -95,6 +95,7 @@ mkinitcpio-openswap
 mlocate
 modemmanager
 mupdf
+natural-scrolling-forever
 ncdu
 nemo-fileroller
 neo-matrix-git
@@ -117,7 +118,7 @@ pa-applet-git
 pacui
 patchutils
 pavucontrol
-pcmanfm
+pcmanfm-gtk3
 perl-file-mimeinfo
 phoronix-test-suite
 picom
