@@ -44,3 +44,5 @@ while IFS= read -r line; do
     fi
     sudo cp -fp $sourceFile $addressFile
 done <"$input"
+
+./excludeFiles.sh
