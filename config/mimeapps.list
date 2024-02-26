@@ -8,8 +8,17 @@ text/plain=micro.desktop
 inode/directory=pcmanfm.desktop
 application/x-shellscript=micro.desktop
 x-scheme-handler/mailto=brave-browser.desktop
+application/x-gamecube-rom=dolphin-emu.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+application/x-n64-rom=simple64.desktop
+application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop
 
 [Added Associations]
 text/plain=micro.desktop;kitty.desktop;
 inode/directory=pcmanfm.desktop;
 application/x-shellscript=micro.desktop;
+application/x-gamecube-rom=dolphin-emu.desktop;
+application/x-n64-rom=simple64.desktop;
+application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop;
+
+[Removed Associations]

@@ -23,6 +23,7 @@ cod
 cpupower
 crawl-tiles
 cronie
+desmume
 dex
 dfc
 dhclient
@@ -30,6 +31,7 @@ dhcpcd
 dmidecode
 dmraid
 dnsmasq
+dolphin-emu
 dosfstools
 downgrade
 dunst
@@ -90,10 +92,12 @@ mcfly
 mdadm
 memtest86+
 memtest86+-efi
+mgba-qt
 micro-git
 mkinitcpio-openswap
 mlocate
 modemmanager
+mullvad-vpn-beta
 mupdf
 natural-scrolling-forever
 ncdu
@@ -142,6 +146,8 @@ rust
 s-nail
 sbxkb
 screenfetch
+simple64
+snes9x
 sof-firmware
 steam
 subversion
@@ -150,6 +156,7 @@ syslog-ng
 telegram-desktop
 terminus-font
 thermald
+transmission-gtk
 tree
 ttf-dejavu
 ttf-droid

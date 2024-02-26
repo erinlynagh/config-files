@@ -4,11 +4,15 @@ if [ ! -e /dev/video1 ]; then
     notify-send "Only one webcam is connected. Exiting..."
 # if the integrated webcam is connected, remove it
 else
-    pkexec rm -f /dev/video0
+    # if the integrated webcam is connected, remove it
     if [ -e /dev/video0 ]; then
-        notify-send "Failed to remove integrated webcam."
-    else
-        notify-send "Integrated webcam removed."
+        pkexec rm -f /dev/video0
+        if [ $? -eq 0 ]; then
+            notify-send "Integrated webcam removed."
+        else
+            notify-send "Failed to remove integrated webcam."
+        fi
     fi
+
 fi
 exit 0
