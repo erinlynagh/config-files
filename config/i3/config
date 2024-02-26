@@ -270,7 +270,6 @@ bindsym $mod+Ctrl+b exec blueman-manager
 
 bindsym $mod+Return exec i3-sensible-terminal -e fish
 bindsym Print exec --no-startup-id flameshot gui
-bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
@@ -284,18 +283,14 @@ workspace 1 output HDMI-0
 workspace 2 output DP-0
 # workspace 2 output DP-2
 
+## autostart programs:
 exec .screenlayout/main.sh
-# exec .screenlayout/main1080.sh
-# exec .screenlayout/main3.sh
-
-# runs anything in the autostart folder
 exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
+exec_always /home/erin/removeIntegratedWebcam.sh
 exec_always --no-startup-id /home/erin/disable-caps.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-# exec_always --no-startup-id /home/erin/removeIntegratedWebcam.sh
 
 ## Set Wallpapers
-# exec_always feh --recursive --bg-fill --randomize /mnt/media/Library/Pictures/Wallpapers/*
 exec ~/wallpaperTimer.sh 7m
 
 # from dracula

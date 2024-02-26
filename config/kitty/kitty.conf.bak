@@ -3,3 +3,9 @@ font_family		hack
 #font_family		fontawesome
 
 font_size 12.0
+
+
+# BEGIN_KITTY_THEME
+# Dracula
+include current-theme.conf
+# END_KITTY_THEME

@@ -120,7 +120,6 @@ patchutils
 pavucontrol
 pcmanfm-gtk3
 perl-file-mimeinfo
-phoronix-test-suite
 picom
 pigz
 pipewire
