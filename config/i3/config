@@ -199,7 +199,7 @@ bindsym $mod+n border normal
 
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
-  bindsym l exec i3exit logout
+  bindsym l exec kill -9 -1
 
   bindsym r exec systemctl reboot
 
@@ -248,7 +248,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+0 mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+9 mode "[l]ock, [suspend], [h]ibernate"
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3exit logout'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout?' -b 'Yes' 'kill -9 -1'"
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
@@ -259,9 +259,8 @@ bindsym $mod+Shift+minus move scratchpad
 
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl`+t exec --no-startup-id picom -b
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
@@ -286,7 +285,7 @@ workspace 2 output DP-0
 ## autostart programs:
 exec .screenlayout/main.sh
 exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
-exec_always /home/erin/removeIntegratedWebcam.sh
+exec_always pkexec /home/erin/removeIntegratedWebcam.sh
 exec_always --no-startup-id /home/erin/disable-caps.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
