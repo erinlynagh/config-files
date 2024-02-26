@@ -1,6 +1,5 @@
 #!/bin/bash
 # if there is only one webcam connected, exit
-touch /home/erin/test.txt
 if [ ! -e /dev/video1 ]; then
     notify-send "Only one webcam is connected. Exiting..."
 # if the integrated webcam is connected, remove it
