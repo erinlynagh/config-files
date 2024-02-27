@@ -76,9 +76,7 @@ libdvdcss
 libgpod
 libva-utils
 libxnvctrl
-linux
 linux-firmware
-linux-headers
 linux-zen
 linux-zen-headers
 logrotate
