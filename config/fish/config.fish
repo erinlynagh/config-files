@@ -3,4 +3,5 @@ if status is-interactive
 end
 
 starship init fish | source
+zoxide init fish | source
 cod init $fish_pid fish | source

@@ -130,6 +130,7 @@ pigz
 pipewire
 pipewire-alsa
 pipewire-pulse
+pokete-git
 polkit-gnome
 polybar
 poppler-data
@@ -228,3 +229,4 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 yay
+zoxide
