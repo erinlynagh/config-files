@@ -14,6 +14,7 @@ base
 base-devel
 bat
 bibata-cursor-theme
+bing-wallpaper-download
 blueman
 bluez-utils
 brave-bin
@@ -105,7 +106,6 @@ mullvad-vpn-beta
 mupdf
 natural-scrolling-forever
 ncdu
-nemo-fileroller
 neo-matrix-git
 netctl
 network-manager-applet
@@ -177,6 +177,7 @@ wget
 wireless-regdb
 wireless_tools
 woof
+xarchiver-gtk2
 xautolock
 xclip
 xdg-utils

@@ -1,5 +1,6 @@
 /from /to
 /home/erin/.config/i3 /config/i3
+/home/erin/.config/systemd /config/systemd
 /home/erin/.config/polybar /config/polybar
 /home/erin/.config/flameshot /config/flameshot
 /home/erin/.config/rofi /config/rofi

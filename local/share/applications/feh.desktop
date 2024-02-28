@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=feh
-Exec=/usr/bin/feh %f
+Exec=feh --start-at %u
 MimeType=image/webp
 Terminal=false
 Type=Application
