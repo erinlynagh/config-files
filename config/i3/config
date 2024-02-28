@@ -292,7 +292,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 ## Execute
 exec .screenlayout/main.sh
 exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
-exec kitty -e yay
+exec i3-sensible-terminal -e yay
 exec ~/wallpaperTimer.sh 7m
 exec_always /home/erin/removeIntegratedWebcam.sh
 exec_always --no-startup-id /home/erin/disable-caps.sh

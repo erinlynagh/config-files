@@ -24,7 +24,7 @@ if [[ $1 == "-e" ]]; then
     cp -f ~/.crawl/morgue/*.txt $crawlMorgueDir
     cp -f ~/.crawl/morgue/*.lst $crawlMorgueDir
     cp -f ~/.crawl/saves/scores $crawlMorgueDir
-    kitty -e python /mnt/media/git/config-files/dcss-config/dcssStats.py
+    alacritty -e python /mnt/media/git/config-files/dcss-config/dcssStats.py
 else
     crawl-tiles
 fi

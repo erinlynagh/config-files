@@ -3,6 +3,7 @@ acpi
 acpid
 adw-gtk3
 adwsteamgtk
+alacritty
 alsa-firmware
 alsa-utils
 apparmor
@@ -72,7 +73,6 @@ inetutils
 intel-ucode
 inxi
 jfsutils
-kitty
 lazygit
 lib32-pipewire
 libdvdcss
@@ -148,7 +148,6 @@ screenfetch
 simple64
 snes9x-gtk
 sof-firmware
-speedtest++
 steam
 subversion
 sysfsutils

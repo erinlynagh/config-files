@@ -46,3 +46,4 @@ while IFS= read -r line; do
 done <"$input"
 
 ./excludeFiles.sh
+sudo chown -R erin $backupDirectory/*
