@@ -13,12 +13,12 @@ b43-fwcutter
 base
 base-devel
 bat
+bibata-cursor-theme
 blueman
 bluez-utils
 brave-bin
 btop-git
 btrfs-progs
-capitaine-cursors
 chaotic-keyring
 chaotic-mirrorlist
 clipit

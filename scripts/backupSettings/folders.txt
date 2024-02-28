@@ -4,6 +4,8 @@
 /home/erin/.config/rofi /config/rofi
 /home/erin/.config/clipit /config/clipit
 /home/erin/.config/fish /config/fish
+/home/erin/.config/gtk-3.0 /config/gtk-3.0
+/home/erin/.config/gtk-4.0 /config/gtk-4.0
 /home/erin/.config/alacritty /config/alacritty
 /home/erin/.config/rbw /config/rbw 
 /home/erin/.config/micro /config/micro
