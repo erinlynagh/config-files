@@ -9,6 +9,7 @@ else
 fi
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
-curl -sS https://starship.rs/install.sh | sh
+## install starship 
+#curl -sS https://starship.rs/install.sh | sh
 
 echo "PLEASE RUN omf install bang-bang"

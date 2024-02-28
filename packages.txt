@@ -120,6 +120,7 @@ ntfs-3g
 ntp
 nvidia-dkms
 nvidia-settings
+oh-my-posh-bin
 openresolv
 os-prober
 pa-applet-git
