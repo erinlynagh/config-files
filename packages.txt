@@ -37,6 +37,8 @@ dolphin-emu
 dosfstools
 downgrade
 dracula-gtk-theme-git
+dracula-icons-git
+dracula-xresources-git
 dunst
 ecryptfs-utils
 efibootmgr
