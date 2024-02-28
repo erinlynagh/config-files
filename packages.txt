@@ -130,7 +130,6 @@ pipewire-pulse
 polkit-gnome
 polybar
 poppler-data
-powertop
 progress
 qt5ct
 rbw
@@ -142,11 +141,11 @@ rofi
 rsync
 rust
 s-nail
-sbxkb
 screenfetch
 simple64
-snes9x
+snes9x-gtk
 sof-firmware
+speedtest++
 steam
 subversion
 sysfsutils
@@ -181,7 +180,6 @@ xf86-input-elographics
 xf86-input-evdev
 xf86-input-void
 xf86-video-vesa
-xfburn
 xfce4-power-manager
 xfsprogs
 xorg-bdftopcf
@@ -227,5 +225,4 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xplr
 yay

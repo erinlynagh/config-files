@@ -1,4 +1,11 @@
 {
+    "colorscheme": "dracula-tc",
     "eofnewline": false,
-    "wordwrap": true
+    "hlsearch": true,
+    "savecursor": true,
+    "saveundo": true,
+    "scrollbar": true,
+    "softwrap": true,
+    "wordwrap": true,
+    "xterm": true
 }

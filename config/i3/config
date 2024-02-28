@@ -203,7 +203,7 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl shutdown
+  bindsym s exec systemctl poweroff --now
 
   bindsym Escape mode "default"
 
@@ -265,34 +265,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
-## Custom
-
-bindsym $mod+Return exec i3-sensible-terminal -e fish
-bindsym Print exec --no-startup-id flameshot gui
-bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
-bindsym $mod+d exec --no-startup-id rofi -show drun
-
-
-## activates the numpad "layer"
-# exec_always --no-startup-id numlockx off
-# bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
-
-workspace_layout tabbed
-workspace 1 output HDMI-0
-workspace 2 output DP-0
-# workspace 2 output DP-2
-
-## autostart programs:
-exec .screenlayout/main.sh
-exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
-exec_always /home/erin/removeIntegratedWebcam.sh
-exec_always --no-startup-id /home/erin/disable-caps.sh
-exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-## Set Wallpapers
-exec ~/wallpaperTimer.sh 7m
-
-# from dracula
+## Dracula Theme
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
@@ -301,3 +274,31 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
+
+#### Custom
+
+workspace_layout tabbed
+workspace 1 output HDMI-0
+workspace 2 output DP-0
+# workspace 2 output DP-2
+
+## Bindings
+bindsym $mod+Return exec i3-sensible-terminal -e fish
+bindsym Print exec --no-startup-id flameshot gui
+bindsym ctrl+Home exec --no-startup-id flameshot gui
+bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
+## Execute
+exec .screenlayout/main.sh
+exec --no-startup-id dex /home/erin/.config/autostart/*.desktop
+exec kitty -e yay
+exec ~/wallpaperTimer.sh 7m
+exec_always /home/erin/removeIntegratedWebcam.sh
+exec_always --no-startup-id /home/erin/disable-caps.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+#### old
+## activates the numpad "layer"
+# exec_always --no-startup-id numlockx off
+# bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
