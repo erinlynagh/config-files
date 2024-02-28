@@ -18,6 +18,7 @@ bluez-utils
 brave-bin
 btop-git
 btrfs-progs
+capitaine-cursors
 chaotic-keyring
 chaotic-mirrorlist
 clipit
@@ -177,8 +178,6 @@ wireless_tools
 woof
 xautolock
 xclip
-xcursor-breeze
-xcursor-maia-git
 xdg-utils
 xdotool
 xf86-input-elographics
