@@ -11,7 +11,6 @@ echo "Running other scripts"
 ./installPackages.sh
 ./installEmoji.sh
 ../dcss-config/addDcssToCommandLine.sh
-./activateServices.sh
 ./installTerminalSettings.sh
 
 echo "Note that /boot folder is not restored automatically"
@@ -52,3 +51,5 @@ while IFS= read -r line; do
     # echo copying $sourceDir/$sourceFilename to $destPath
     sudo cp -fp $sourceDir/$sourceFilename $destPath
 done <"$input"
+
+./activateServices.sh
