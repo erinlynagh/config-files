@@ -13,6 +13,9 @@ application/x-n64-rom=simple64.desktop
 application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop
 text/plain=micro-alacritty.desktop
 application/x-desktop=micro-alacritty.desktop
+image/jpeg=feh.desktop
+image/png=feh.desktop
+image/webp=feh.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -22,3 +25,7 @@ application/x-n64-rom=simple64.desktop;
 application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop;
 text/plain=micro-alacritty.desktop;
 application/x-desktop=micro-alacritty.desktop;
+image/jpeg=feh.desktop
+image/webp=feh.desktop
+
+[Removed Associations]
