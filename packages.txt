@@ -2,6 +2,7 @@ accountsservice
 acpi
 acpid
 adw-gtk3
+adwsteamgtk
 alsa-firmware
 alsa-utils
 apparmor
@@ -62,6 +63,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 haveged
+heroic-games-launcher-git
 hexchat
 i3-wm
 i3exit
