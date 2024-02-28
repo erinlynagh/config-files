@@ -1,5 +1,6 @@
 /from /to
 /home/erin/*.sh /root
+/home/erin/.gitconfig /root
 /home/erin/.config/starship.toml /config
 /home/erin/.config/mimeapps.list /config
 /etc/pacman.conf /etc
