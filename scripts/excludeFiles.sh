@@ -10,5 +10,6 @@ while IFS= read -r line; do
         continue
     fi
 
-    sudo rm -rfv $backupDirectory${line}
+    # sudo rm -rfv $backupDirectory${line}
+    sudo rm -rf $backupDirectory${line}
 done <"$input"
