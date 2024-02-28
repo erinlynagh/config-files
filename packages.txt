@@ -34,6 +34,7 @@ dnsmasq
 dolphin-emu
 dosfstools
 downgrade
+dracula-gtk-theme-git
 dunst
 ecryptfs-utils
 efibootmgr

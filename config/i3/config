@@ -211,13 +211,13 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
 }
 
-mode "[l]ock, [suspend], [h]ibernate" {
+mode "[l]ock, [s]uspend, [h]ibernate" {
 
   bindsym l exec i3exit lock
 
-  bindsym r exec i3exit suspend
+  bindsym s exec i3exit lock && i3exit suspend
 
-  bindsym s exec i3exit hibernate
+  bindsym h exec i3exit lock && i3exit hibernate
 
   bindsym Escape mode "default"
 
@@ -247,7 +247,7 @@ bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+0 mode "exit: [l]ogout, [r]eboot, [s]hutdown"
-bindsym $mod+9 mode "[l]ock, [suspend], [h]ibernate"
+bindsym $mod+9 mode "[l]ock, [s]uspend, [h]ibernate"
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout?' -b 'Yes' 'kill -9 -1'"
 
 # Screen brightness controls
