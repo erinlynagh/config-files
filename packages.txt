@@ -53,6 +53,7 @@ ffmpegthumbnailer
 fish
 flameshot
 gcolor3
+gdu
 git
 gnome-keyring
 go
@@ -104,7 +105,6 @@ modemmanager
 mullvad-vpn-beta
 mupdf
 natural-scrolling-forever
-ncdu
 neo-matrix-git
 netctl
 network-manager-applet
