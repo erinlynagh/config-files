@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/linux-bing-wallpaper -o /mnt/media/Library/Pictures/Wallpapers/Bing
+ExecStart=/usr/local/bin/bing-wallpaper -o /mnt/media/Library/Pictures/Wallpapers/Bing/
 Restart=on-failure
 
 [Install]

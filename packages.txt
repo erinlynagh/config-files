@@ -152,6 +152,7 @@ screenfetch
 simple64
 snes9x-gtk
 sof-firmware
+speedtest++
 steam
 subversion
 sysfsutils
