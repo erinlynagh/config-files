@@ -1,4 +1,4 @@
-function ls --wraps='lsd --extensionsort --almost-all' --description 'alias ls=lsd --extensionsort --almost-all'
-  lsd --extensionsort --almost-all $argv
+function ls --wraps='lsd --extensionsort --almost-all' --wraps='lsd --extensionsort' --description 'alias ls=lsd --extensionsort'
+  lsd --extensionsort $argv
         
 end
