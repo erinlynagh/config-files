@@ -68,7 +68,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 haveged
-heroic-games-launcher-git
 hexchat
 i3-wm
 i3exit
