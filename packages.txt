@@ -20,6 +20,7 @@ bluez-utils
 brave-bin
 btop-git
 btrfs-progs
+caffeine-ng
 chaotic-keyring
 chaotic-mirrorlist
 clipit
