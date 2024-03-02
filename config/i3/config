@@ -9,14 +9,17 @@ floating_modifier $mod
 # is used in the bar {} block below.
 font pango:Hack Nerd Font 8
 
-# split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
-bindsym $mod+q split toggle
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# #split orientation
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
+
+## disabled
+# bindsym $mod+h split h;exec notify-send 'tile horizontally'
+# bindsym $mod+v split v;exec notify-send 'tile vertically'
+# bindsym $mod+q split toggle
+# # change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
