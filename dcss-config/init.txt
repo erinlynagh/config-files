@@ -17,6 +17,12 @@ default_manual_training = true
 show_more = false
 travel_open_doors = false
 
+tile_font_msg_size = 20
+tile_font_crt_size = 20
+tile_font_stat_size = 20 
+tile_font_tip_size = 20
+tile_font_lbl_size = 20
+
 ood_interesting = 8
 note_hp_percent = 10
 note_skill_levels = 1
