@@ -123,6 +123,7 @@ nvidia-settings
 oh-my-posh-bin
 openresolv
 os-prober
+p7zip
 pa-applet-git
 pacui
 patchutils
@@ -181,6 +182,7 @@ woof
 xarchiver-gtk2
 xautolock
 xclip
+xdg-desktop-portal-gtk
 xdg-utils
 xdotool
 xf86-input-elographics

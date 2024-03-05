@@ -300,8 +300,9 @@ exec ~/wallpaperTimer.sh 7m
 exec_always /home/erin/removeIntegratedWebcam.sh
 exec_always --no-startup-id /home/erin/disable-caps.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id caffeine
 
-#### old
+#### unused 
 ## activates the numpad "layer"
 # exec_always --no-startup-id numlockx off
 # bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
