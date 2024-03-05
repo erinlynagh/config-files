@@ -200,27 +200,16 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
-mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+# bindsym h mode "default";exec xscreensaver-command --lock && systemctl hibernate
+mode "exit: [l]ock, [s]uspend, [r]eboot, [p]oweroff" {
 
-  bindsym l exec kill -9 -1
+  bindsym l mode "default";exec xscreensaver-command --lock
+
+  bindsym s mode "default";exec xscreensaver-command --lock && systemctl suspend
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl poweroff --now
-
-  bindsym Escape mode "default"
-
-  bindsym Return mode "default"
-
-}
-
-mode "[l]ock, [s]uspend, [h]ibernate" {
-
-  bindsym l exec i3exit lock
-
-  bindsym s exec i3exit lock && i3exit suspend
-
-  bindsym h exec i3exit lock && i3exit hibernate
+  bindsym p exec systemctl poweroff --now
 
   bindsym Escape mode "default"
 
@@ -234,8 +223,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id blueman-applet
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec_always --no-startup-id xautolock -time 10 -locker "xscreensaver-command --lock"
 exec --no-startup-id pa-applet
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
@@ -249,9 +239,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+0 mode "exit: [l]ogout, [r]eboot, [s]hutdown"
-bindsym $mod+9 mode "[l]ock, [s]uspend, [h]ibernate"
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout?' -b 'Yes' 'kill -9 -1'"
+bindsym $mod+0 mode "exit: [l]ock, [s]uspend, [r]eboot, [p]oweroff"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Logout?' -b 'Yes' 'loginctl kill-session 1'"
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"

@@ -72,8 +72,6 @@ gvfs-smb
 haveged
 hexchat
 i3-wm
-i3exit
-i3lock
 inetutils
 intel-ucode
 inxi
@@ -132,6 +130,7 @@ pcmanfm-gtk3
 perl-file-mimeinfo
 picom
 pigz
+pipes-rs
 pipewire
 pipewire-alsa
 pipewire-pulse
@@ -234,5 +233,6 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xscreensaver
 yay
 zoxide
