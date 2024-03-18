@@ -85,6 +85,7 @@ libxnvctrl
 linux-firmware
 linux-zen
 linux-zen-headers
+localsend
 logrotate
 lsd
 lvm2
@@ -177,7 +178,6 @@ volumeicon
 wget
 wireless-regdb
 wireless_tools
-woof
 xarchiver-gtk2
 xautolock
 xclip
