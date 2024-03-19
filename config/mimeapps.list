@@ -27,5 +27,6 @@ text/plain=micro-alacritty.desktop;
 application/x-desktop=micro-alacritty.desktop;
 image/jpeg=feh.desktop
 image/webp=feh.desktop
+application/x-executable=micro-alacritty.desktop;
 
 [Removed Associations]
