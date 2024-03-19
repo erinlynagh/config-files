@@ -53,6 +53,7 @@ ffmpeg
 ffmpegthumbnailer
 fish
 flameshot
+gamemode
 gcolor3
 gdu
 git
@@ -172,6 +173,7 @@ ttf-indic-otf
 ttf-liberation
 ttf-twemoji
 upower
+vdhcoapp
 visual-studio-code-bin
 vlc
 volumeicon

@@ -1,0 +1,45 @@
+.options-page body {
+    background-color: white;
+}
+
+.options-page button,
+.options-page select {
+    --background-normal: #2b2a33;
+    --background-hover: #52525e;
+    --background-active: #5a5a65;
+}
+
+@media (prefers-color-scheme: dark) {
+    .options-page body {
+        background-color: #23222b;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .options-page :root {
+        --border-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .options-page body {
+        color: black;
+    }
+
+    .options-page input[type="text"],
+    .options-page input[type="checkbox"] {
+        background-color: rgba(0, 0, 0, 0.15);
+        color: black;
+    }
+
+    .options-page input[type="checkbox"]:checked::before {
+        filter: invert(1);
+    }
+
+    .options-page button,
+    .options-page select {
+        --background-active: rgba(0, 0, 0, 0.35);
+        --background-hover: rgba(0, 0, 0, 0.25);
+        --background-normal: rgba(0, 0, 0, 0.15);
+
+        color: black;
+    }
+}

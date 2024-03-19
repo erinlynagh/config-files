@@ -1,0 +1,10 @@
+button,
+select {
+    font: menu;
+    height: 26px;
+}
+
+.selection__country,
+.selection__server {
+    margin-bottom: 6px;
+}
