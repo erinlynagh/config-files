@@ -42,6 +42,7 @@ downgrade
 dracula-gtk-theme-git
 dracula-icons-git
 dracula-xresources-git
+duckstation-git
 dunst
 ecryptfs-utils
 efibootmgr
@@ -53,12 +54,12 @@ ffmpeg
 ffmpegthumbnailer
 fish
 flameshot
-gamemode
 gcolor3
 gdu
 git
 gnome-keyring
 go
+godot
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -78,6 +79,7 @@ inetutils
 intel-ucode
 inxi
 jfsutils
+krita
 lazygit
 lib32-pipewire
 libdvdcss
@@ -95,6 +97,7 @@ lxappearance-gtk3
 lxinput
 ly
 man-pages
+mangohud
 mcfly
 mdadm
 memtest86+
@@ -153,6 +156,7 @@ rsync
 rust
 s-nail
 screenfetch
+sdl2_mixer
 simple64
 snes9x-gtk
 sof-firmware

@@ -6,7 +6,7 @@ name = Erin
 autofight_stop = 80
 autofight_caught = true
 explore_delay = 20
-explore_wall_bias = 0
+explore_wall_bias = 3
 show_more = false
 auto_butcher = true
 
