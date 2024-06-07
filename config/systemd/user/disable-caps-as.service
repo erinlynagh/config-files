@@ -1,0 +1,5 @@
+[Unit]
+Description=disables the caps key on start
+
+[Service]
+ExecStart=~/disable-caps.sh

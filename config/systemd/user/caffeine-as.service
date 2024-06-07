@@ -1,0 +1,4 @@
+[Unit]
+Description=Starts the caffeine applet
+[Service]
+ExecStart=/usr/bin/caffeine

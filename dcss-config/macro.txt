@@ -36,6 +36,15 @@ A:Q
 M:0
 A:0
 
+M:S
+A:M
+
+M:W
+A:e
+
+M:s
+A:I
+
 M:w
 A:e
 

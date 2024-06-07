@@ -1,14 +1,12 @@
 #!/bin/bash
 
-crawlGameDir=/mnt/media/Games/crawl/
-crawlBuildDir=/mnt/media/Games/crawl/crawl-ref/source/
+crawlTrunkDir=/mnt/media/Games/crawl-trunk/
+crawlBuildDir=/mnt/media/git/crawl/crawl-ref/source/
 crawlMorgueDir=/mnt/media/git/personal/dcss_morgue/
 crawlSettingsDir=/mnt/media/git/config-files/dcss-config/
 
 
 # u: tiles update (for trunk)
-# cu: console update (for trunk)
-# c: run game in console
 # e: edit the init file and save
 # t: play trunk
 # other: play main branch
@@ -25,6 +23,13 @@ if [[ $1 == "-e" ]]; then
     cp -f ~/.crawl/morgue/*.lst $crawlMorgueDir
     cp -f ~/.crawl/saves/scores $crawlMorgueDir
     alacritty -e python /mnt/media/git/config-files/dcss-config/dcssStats.py
+    elif [[ $1 == "-u" ]]; then
+    cd $crawlBuildDir
+    git pull
+    make -j4 TILES=y
+    ln -sf /mnt/media/git/crawl/crawl-ref/source/crawl /mnt/media/Games/crawl-trunk/crawl
+    elif [[ $1 == "-t" ]]; then
+    $crawlTrunkDir/crawl
 else
     crawl-tiles
 fi

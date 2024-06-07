@@ -9,17 +9,18 @@ explore_delay = 20
 explore_wall_bias = 3
 show_more = false
 auto_butcher = true
+equip_unequip=1
 
 # general settings
 trap_item_highlight = reverse
-autopickup_search = true 
+autopickup_search = true
 default_manual_training = true
 show_more = false
-travel_open_doors = false
+travel_open_doors = approach
 
 tile_font_msg_size = 20
 tile_font_crt_size = 20
-tile_font_stat_size = 20 
+tile_font_stat_size = 20
 tile_font_tip_size = 20
 tile_font_lbl_size = 20
 
@@ -45,7 +46,7 @@ item_slot += whip:b
 item_slot += ingstar:b
 : end
 
-# messages, show more, etc 
+# messages, show more, etc
 force_more_message += floating eye
 force_more_message += Ouch! That really hurt!
 force_more_message += flesh start
@@ -148,7 +149,7 @@ ae += <boomerang
   local previous_mp = 0
   local previous_form = ""
   local was_berserk_last_turn = false
- 
+
   function AnnounceDamage()
     local current_hp, max_hp = you.hp()
     local current_mp, max_mp = you.mp()
@@ -159,12 +160,12 @@ ae += <boomerang
     local max_hp_decreased = false
 
     if (current_form ~= previous_form) then
-      if (previous_form:find("dragon") or 
+      if (previous_form:find("dragon") or
           previous_form:find("statue") or
           previous_form:find("tree") or
           previous_form:find("ice")) then
         max_hp_decreased = true
-      elseif (current_form:find("dragon") or 
+      elseif (current_form:find("dragon") or
           current_form:find("statue") or
           current_form:find("tree") or
           current_form:find("ice")) then
@@ -176,23 +177,23 @@ ae += <boomerang
     elseif (you_are_berserk and not was_berserk_last_turn) then
       max_hp_increased = true
     end
-    
+
     --crawl.mpr(string.format("previous_form is: %s", previous_form))
     --crawl.mpr(string.format("current_form is: %s", current_form))
     --crawl.mpr(string.format("max_hp_increased is: %s", max_hp_increased and "True" or "False"))
     --crawl.mpr(string.format("max_hp_decreased is: %s", max_hp_decreased and "True" or "False"))
-    
+
     --crawl.mpr(string:format("you_are_berserk is: %s", you_are_berserk and "True" or "False"))
     --crawl.mpr(string:format("was_berserk_last_turn is: %s", was_berserk_last_turn and "True" or "False"))
-    
-    
+
+
     --Skips message on initializing game
     if previous_hp > 0 then
       local hp_difference = previous_hp - current_hp
       local mp_difference = previous_mp - current_mp
-      
+
       if max_hp_increased or max_hp_decreased then
-        if max_hp_increased then 
+        if max_hp_increased then
           crawl.mpr("<green>(" .. current_hp .. "/" .. max_hp .. ")</green>")
         else
           crawl.mpr("<yellow>(" .. current_hp .. "/" .. max_hp .. " )</yellow>")
@@ -215,7 +216,7 @@ ae += <boomerang
             crawl.mpr("<lightred>Ouch! That really hurt!</lightred>")
           end
         end
-  
+
         --On gaining more than 1 health
         if (current_hp > previous_hp) then
           --Removes the negative sign
@@ -234,26 +235,26 @@ ae += <boomerang
             end
           end
         end
- 
+
         --On gaining more than 1 magic
         if (current_mp > previous_mp) then
           --Removes the negative sign
           local mp_inturn = (0 - mp_difference)
           if (mp_inturn > 1) and not (current_mp == max_mp) then
-            if current_mp < (max_mp * 0.25) then 
+            if current_mp < (max_mp * 0.25) then
               crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><red> (" .. current_mp .. "/" .. max_mp .. ")</red>")
-            elseif current_mp < (max_mp * 0.50) then 
-              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><yellow> (" .. current_mp .. "/" .. max_mp .. ")</yellow>")            
+            elseif current_mp < (max_mp * 0.50) then
+              crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><yellow> (" .. current_mp .. "/" .. max_mp .. ")</yellow>")
             else
               crawl.mpr("<lightcyan>You regain " .. mp_inturn .. " magic</lightcyan><green> (" .. current_mp .. "/" .. max_mp .. ")</green>")
             end
           end
         end
-  
+
         --On losing magic
         if current_mp < previous_mp then
           if current_mp <= (max_mp / 5) then
-            crawl.mpr("<lightcyan>You now have </lightcyan><red>" .. current_mp .. "/" ..max_mp .." magic.</red>")      
+            crawl.mpr("<lightcyan>You now have </lightcyan><red>" .. current_mp .. "/" ..max_mp .." magic.</red>")
           elseif current_mp <= (max_mp / 2) then
             crawl.mpr("<lightcyan>You now have </lightcyan><yellow>" .. current_mp .. "/" ..max_mp .." magic.</yellow>")
           else
@@ -262,7 +263,7 @@ ae += <boomerang
         end
       end
     end
-    
+
     --Set previous hp/mp and form at end of turn
     previous_hp = current_hp
     previous_mp = current_mp
