@@ -16,6 +16,7 @@ b43-fwcutter
 base
 base-devel
 bat
+bitwarden-cli
 bluedevil
 blueman
 brave-browser
