@@ -165,8 +165,8 @@ workspace 1 output DP-0
 
 ## Bindings
 bindsym $mod+Return exec i3-sensible-terminal -e fish
-bindsym Print exec --no-startup-id flameshot gui
-bindsym ctrl+Home exec --no-startup-id flameshot gui
+bindsym Print exec --no-startup-id spectacle -r
+bindsym ctrl+Home exec --no-startup-id spectacle -r
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -195,3 +195,8 @@ exec systemctl --user start autostart.target
 # bindsym $mod+t exec --no-startup-id pkill picom
 # bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 # bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+
+
+
+
+# exec_always ~/disable-caps.sh

@@ -1,9 +1,0 @@
-[Unit]
-Description=Run wallpaper downloader daily and on boot
-
-[Timer]
-OnCalendar=*-*-* 7:00:00
-Persistent=true
-
-[Install]
-WantedBy=timers.target

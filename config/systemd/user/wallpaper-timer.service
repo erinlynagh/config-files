@@ -2,4 +2,4 @@
 Description=<service description>
 
 [Service]
-ExecStart=~/wallpaper-timer.sh 7m
+ExecStart=/home/erin/wallpaper-timer.sh 7m

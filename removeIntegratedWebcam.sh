@@ -11,6 +11,7 @@ else
             notify-send "Integrated webcam removed."
         else
             notify-send "Failed to remove integrated webcam."
+            exit 1
         fi
     fi
 

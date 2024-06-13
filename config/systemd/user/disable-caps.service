@@ -1,0 +1,8 @@
+[Unit]
+Description=disables the caps key on start
+
+[Service]
+ExecStart=/home/erin/disable-caps.sh
+
+[Install]
+WantedBy=graphical-session.target

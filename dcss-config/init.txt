@@ -6,7 +6,7 @@ name = Erin
 autofight_stop = 80
 autofight_caught = true
 explore_delay = 20
-explore_wall_bias = 3
+explore_wall_bias = 7
 show_more = false
 auto_butcher = true
 equip_unequip=1
@@ -16,7 +16,8 @@ trap_item_highlight = reverse
 autopickup_search = true
 default_manual_training = true
 show_more = false
-travel_open_doors = approach
+# open, avoid, approach
+travel_open_doors = avoid 
 
 tile_font_msg_size = 20
 tile_font_crt_size = 20
