@@ -26,6 +26,7 @@ btop-gpu-git
 btrfs-progs
 bzip2
 caffeine-ng
+cartridges
 catapult-bin
 ccache
 chaotic-keyring
@@ -70,11 +71,13 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 gwenview
+heroic-games-launcher-bin
 htop
 i3-wm
 inetutils
 intel-ucode
 inxi
+itch-setup-bin
 jfsutils
 kaccounts-providers
 kamera
@@ -210,10 +213,10 @@ sudo
 sysfsutils
 systemd
 systemsettings
-telegram-desktop
 termdown
 terminus-font
 texinfo
+transmission-gtk
 ttf-dejavu
 ttf-twemoji
 udiskie
@@ -222,6 +225,7 @@ unarchiver
 update-grub
 usb_modeswitch
 usbutils
+vesktop
 vi
 wget
 which
