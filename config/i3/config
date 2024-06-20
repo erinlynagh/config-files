@@ -138,14 +138,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace
 bindsym $mod+Shift+r restart
 
-# Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-
-# Volume Controls
-bindsym XF86AudioRaiseVolume exec "pamixer -i 5"
-bindsym XF86AudioLowerVolume exec "pamixer -d 5"
-bindsym XF86AudioMute exec "pamixer -t"
 
 ## Dracula Theme
 # class                 border  bground text    indicator child_border
@@ -173,6 +165,15 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec "gummy -p +10"
+bindsym XF86MonBrightnessDown exec "gummy -p -10"
+
+# Volume Controls
+bindsym XF86AudioRaiseVolume exec "pamixer -i 5"
+bindsym XF86AudioLowerVolume exec "pamixer -d 5"
+bindsym XF86AudioMute exec "pamixer -t"
+
 ## Execute
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
@@ -180,6 +181,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
+exec --no-startup-id gummy start
 exec .screenlayout/main.sh
 exec i3-sensible-terminal -e yay
 
@@ -195,8 +197,4 @@ exec systemctl --user start autostart.target
 # bindsym $mod+t exec --no-startup-id pkill picom
 # bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 # bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-
-
-
-
 # exec_always ~/disable-caps.sh

@@ -16,6 +16,9 @@ application/x-desktop=micro-alacritty.desktop
 image/jpeg=feh.desktop
 image/png=feh.desktop
 image/webp=feh.desktop
+x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
+application/sdp=micro.desktop
+x-scheme-handler/discord-1221314350216646828=discord-1221314350216646828.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -28,5 +31,6 @@ application/x-desktop=micro-alacritty.desktop;
 image/jpeg=feh.desktop
 image/webp=feh.desktop
 application/x-executable=micro-alacritty.desktop;
+application/sdp=micro.desktop;
 
 [Removed Associations]

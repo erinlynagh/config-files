@@ -1,0 +1,4 @@
+function warsim-save-backup --wraps=rm\ \~/saves.tar.gz\&\&tarz\ \~/saves.tar.gz\ /mnt/media/SteamLibrary/steamapps/common/Warsim\\\ The\\\ Realm\\\ of\\\ Aslona/Saves/\* --wraps=rm\ \~/saves.tar.gz\&\&tarz\ \~/saves.tar.gz\ /mnt/media/SteamLibrary/steamapps/common/Warsim\\\ The\\\ Realm\\\ of\\\ Aslona/Saves/\*\ \|\ echo\ -n --wraps=rm\ -f\ \~/saves.tar.gz\&\&tarz\ \~/saves.tar.gz\ /mnt/media/SteamLibrary/steamapps/common/Warsim\\\ The\\\ Realm\\\ of\\\ Aslona/Saves/\*\ \|\ echo\ -n --description alias\ warsim-save-backup=rm\ -f\ \~/saves.tar.gz\&\&tarz\ \~/saves.tar.gz\ /mnt/media/SteamLibrary/steamapps/common/Warsim\\\ The\\\ Realm\\\ of\\\ Aslona/Saves/\*\ \|\ echo\ -n
+  rm -f ~/saves.tar.gz&&tarz ~/saves.tar.gz /mnt/media/SteamLibrary/steamapps/common/Warsim\ The\ Realm\ of\ Aslona/Saves/* | echo -n $argv
+        
+end
