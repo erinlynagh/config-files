@@ -19,6 +19,7 @@ bat
 bitwarden-cli
 bluedevil
 blueman
+bluez-utils
 brave-browser
 breeze-gtk
 breeze5
@@ -44,7 +45,6 @@ diffutils
 dmidecode
 dmraid
 dnsmasq
-dolphin-emu
 dosfstools
 dracula-gtk-theme-git
 dracula-icons-theme
@@ -62,7 +62,6 @@ ffmpegthumbs
 fish
 glibc-locales
 gnome-themes-extra
-gparted
 grub
 grub-btrfs
 grub-theme-manjaro
@@ -80,6 +79,7 @@ intel-ucode
 inxi
 itch-setup-bin
 jfsutils
+jre-openjdk
 kaccounts-providers
 kamera
 kate
@@ -114,16 +114,23 @@ lib32-libcanberra
 lib32-libva-intel-driver
 lib32-libva-mesa-driver
 lib32-mesa-utils
+lib32-openal
+lib32-openssl-1.1
 libcanberra
 libdvdcss
 libpng12
+libretro-core-info
+libretro-mgba
+libretro-mupen64plus-next
 libva-intel-driver
 libva-mesa-driver
 linux69
 linux69-nvidia
 logrotate
 lsd
+lutris
 lvm2
+lxappearance
 man-db
 man-pages
 manjaro-alsa
@@ -202,6 +209,7 @@ qt6-virtualkeyboard
 rare
 reiserfsprogs
 repgrep
+retroarch
 rofi
 rsync
 s-nail
@@ -235,6 +243,7 @@ vesktop
 vi
 wget
 which
+wine-ge-custom
 wireless-regdb
 wpa_supplicant
 xclip
@@ -249,7 +258,6 @@ xfsprogs
 xorg-mkfontscale
 xorg-server
 xorg-twm
-xorg-xev
 xorg-xinit
 xorg-xkill
 yay
