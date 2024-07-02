@@ -5,6 +5,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-sans-fonts
 advancecomp
+adw-gtk3
 alacritty
 alsa-firmware
 alsa-utils
@@ -59,6 +60,7 @@ fastfetch
 feh
 ffmpeg
 ffmpegthumbs
+filelight
 fish
 glibc-locales
 gnome-themes-extra
@@ -127,6 +129,7 @@ libva-mesa-driver
 linux69
 linux69-nvidia
 logrotate
+love
 lsd
 lutris
 lvm2
@@ -142,6 +145,7 @@ manjaro-pipewire
 manjaro-release
 manjaro-system
 manjaro-zsh-config
+marksman
 mdadm
 memtest86+
 memtest86+-efi
@@ -232,6 +236,7 @@ terminus-font
 texinfo
 transmission-gtk
 ttf-dejavu
+ttf-jetbrains-mono
 ttf-twemoji
 udiskie
 udisks2
@@ -241,6 +246,7 @@ usb_modeswitch
 usbutils
 vesktop
 vi
+visual-studio-code-bin
 wget
 which
 wine-ge-custom

@@ -76,8 +76,11 @@ foreground = "#f1fa8c"
 background = "#282a36"
 
 [font.normal]
-family="Hack Nerd Font"
+family="JetBrains Mono"
 style = "Regular"
+
+# family="Hack Nerd Font"
+# style = "Regular"
 
 [font.offset]
 x = 0
