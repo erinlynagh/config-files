@@ -32,9 +32,22 @@ if [[ $1 == "-e" ]]; then
     git pull
     make -j4 TILES=y
     ln -sf /mnt/media/git/crawl/crawl-ref/source/crawl /mnt/media/Games/crawl-trunk/crawl
+    elif [[ $1 == "-uc" ]]; then
+    cd $crawlBuildDir
+    git pull
+    make -j4    
+    ln -sf /mnt/media/git/crawl/crawl-ref/source/crawl /mnt/media/Games/crawl-trunk/crawl
     elif [[ $1 == "-t" ]]; then
     cd ~/.crawl
     $crawlTrunkDir/crawl
+     elif [[ $1 == "-hell" ]]; then
+    cd ~/.crawl
+    /mnt/media/git/hellcrawl/crawl-ref/source/crawl
+    elif [[ $1 == "-bloat" ]]; then
+    cd ~/.crawl
+    /mnt/media/git/bloatcrawl2/crawl-ref/source/crawl
+    elif [[ $1 == "-c" ]]; then
+    crawl  
 else
     crawl-tiles
 fi
