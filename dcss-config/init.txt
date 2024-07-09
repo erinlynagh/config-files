@@ -1,26 +1,78 @@
-# https://crawl.kelbi.org/crawl/rcfiles/crawl-git/Nomi.rc
-# my current default settings
 name = Erin
+note_hp_percent = 30
 
-# to make u stop being bad
-autofight_stop = 80
-autofight_caught = true
-explore_delay = 20
-explore_wall_bias = 7
-show_more = false
+ae := autopickup_exceptions
+ae += <curare
+ae += <dispersal
+
 auto_butcher = true
-equip_unequip = 1
-explore_auto_rest = true
 
-# general settings
-trap_item_highlight = reverse
+autofight_caught = true
+autofight_stop = 80
+
 autopickup_search = true
+
+confirm_action += death's door
+confirm_action += revivification
+confirm_action += silence
+confirm_action += torment
+
 default_manual_training = false
+
+drop_filter += useless_item, forbidden
+
+easy_confirm = all
+
+equip_unequip = 1
+
+explore_auto_rest = true
+explore_delay = 20
+explore_greedy_visit = artefacts,glowing_items,stacks
+explore_stop = artefacts,altars,branches,portals,runed_doors,greedy_pickup_smart
+explore_stop_pickup_ignore += scroll, potion, wand, stone, dart, boomerang, javelin
+explore_wall_bias = 7
+
+fire_order = silver javelin, javelin, silver boomerang, boomerang, curare-tipped dart, poisoned dart, stone
+
+force_more_message += A sentinel's mark forms upon you
+force_more_message += acquirement
+force_more_message += calcifying dust hits
+force_more_message += finished your manual
+force_more_message += flesh start
+force_more_message += floating eye
+force_more_message += fumble
+force_more_message += hits you.*distortion
+force_more_message += Ouch! That really hurt!
+force_more_message += phantom blinks!
+force_more_message += potion of experience
+force_more_message += Space bends around you
+force_more_message += Space warps horribly around you
+force_more_message += Training target
+force_more_message += very hungry
+force_more_message += wearing a (* shield|buckler)
+force_more_message += You are slowing down
+force_more_message += your body is wracked
+
+item_slot += identify:r
+
+note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance, manual
+note_items = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance
+
+note_messages = cast .* Abyss
+note_messages = protects you from harm
+note_messages = shaft
+note_messages = You pass through the gate
+note_messages = Your scales start
+note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra, basilisk
+
+ood_interesting = 3
+
+rest_wait_ancestor = true
+rest_wait_both = true
+
 show_more = false
-# open, avoid, approach
-# travel_open_doors = avoid
-travel_open_doors = false
-mouse_input = false
+
+sort_menus = true:equipped,art,ego,glowing,identified,basename,qualname,>qty
 
 tile_font_msg_size = 20
 tile_font_crt_size = 20
@@ -28,62 +80,9 @@ tile_font_stat_size = 20
 tile_font_tip_size = 20
 tile_font_lbl_size = 20
 
-ood_interesting = 8
-note_hp_percent = 10
-note_items = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance
-rest_wait_both = true
-rest_wait_ancestor = true
+trap_item_highlight = reverse
 
-confirm_action += revivification
-confirm_action += death's door
-confirm_action += torment
-confirm_action += silence
-
-# item slots
-item_slot += identify:r
-item_slot += stones:g
-item_slot += poisoned dart:f
-item_slot += dispersal:i
-item_slot += boomerang:e
-item_slot += javelin:h
-
-: if (you.god() == "Trog" or you.class() == "Fighter") then
-item_slot += axe:a
-item_slot += mace:b
-item_slot += flail:b
-item_slot += club:b
-item_slot += whip:b
-item_slot += ingstar:b
-: end
-
-# messages, show more, etc
-force_more_message += floating eye
-force_more_message += Ouch! That really hurt!
-force_more_message += flesh start
-force_more_message += very hungry
-force_more_message += calcifying dust hits
-force_more_message += You are slowing down
-force_more_message += Space warps horribly around you
-force_more_message += your body is wracked
-force_more_message += phantom blinks!
-#force_more_message += You feel yourself slow down
-force_more_message += hits you.*distortion
-force_more_message += Space bends around you
-force_more_message += fumble
-force_more_message += wearing a (* shield|buckler)
-force_more_message += A sentinel's mark forms upon you
-force_more_message += Training target
-force_more_message += finished your manual
-force_more_message += potion of experience
-force_more_message += acquirement
-
-note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance, manual
-note_messages = You pass through the gate
-note_messages = cast .* Abyss
-note_messages = Your scales start
-note_messages = protects you from harm
-note_messages = shaft
-note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra, basilisk
+travel_open_doors = false
 
 : if you.god() == "Jiyva" then
 ignore = Jiyva gurgles merrily
@@ -93,13 +92,6 @@ ignore = You hear.*splatter
 ignore = Jiyva alters your body
 : end
 
-# autopickups
-ae := autopickup_exceptions
-ae += scrolls? of (vulnerability|amnesia|enchant|brand)
-
 : if (you.race() == "Ogre" or you.race() == "Troll") then
 ae += <large rock
 : end
-
-ae += <dispersal
-ae += <curare

@@ -62,12 +62,13 @@ def updateDictionary(dictionary, line, matchString, extractFunction, dictKey, fl
         except:
             print(line)
 
+
 def main():
     morguePath = "/mnt/media/git/personal/dcss_morgue"
     matchStrings = ["Game seed:", "level ", "The game lasted", "Began as",
                     "Began as", "Began as", "You worshipped", "Escaped with the Orb", "}:", "XL"]
     # Basically the transform function applied to the line to get the data we want
-    
+
     extractFunctions = [lambda x: int(x.split(":")[1].split(",")[0].strip()),  # seed
                         lambda x: int(x.split(" ")[0]),  # score
                         lambda x: x.strip().split(" ")[3],  # time
