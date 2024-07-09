@@ -9,15 +9,17 @@ explore_delay = 20
 explore_wall_bias = 7
 show_more = false
 auto_butcher = true
-equip_unequip=1
+equip_unequip = 1
+explore_auto_rest = true
 
 # general settings
 trap_item_highlight = reverse
 autopickup_search = true
-default_manual_training = true
+default_manual_training = false
 show_more = false
 # open, avoid, approach
-travel_open_doors = avoid
+# travel_open_doors = avoid
+travel_open_doors = false
 mouse_input = false
 
 tile_font_msg_size = 20
@@ -72,6 +74,8 @@ force_more_message += wearing a (* shield|buckler)
 force_more_message += A sentinel's mark forms upon you
 force_more_message += Training target
 force_more_message += finished your manual
+force_more_message += potion of experience
+force_more_message += acquirement
 
 note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance, manual
 note_messages = You pass through the gate
