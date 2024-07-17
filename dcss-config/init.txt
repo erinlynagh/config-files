@@ -12,12 +12,13 @@ autofight_stop = 80
 
 autopickup_search = true
 
-confirm_action += death's door
-confirm_action += revivification
-confirm_action += silence
-confirm_action += torment
+confirm_action += Death's Door
+confirm_action += Revivification
+confirm_acttion += Grave Claw
+confirm_action += Silence
+confirm_action += Torment
 
-default_manual_training = false
+default_manual_training = true
 
 drop_filter += useless_item, forbidden
 

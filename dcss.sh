@@ -1,9 +1,12 @@
 #!/bin/bash
 
-crawlTrunkDir=/mnt/media/Games/crawl-trunk/
-crawlBuildDir=/mnt/media/git/crawl/crawl-ref/source/
-crawlMorgueDir=/mnt/media/git/personal/dcss_morgue/
-crawlSettingsDir=/mnt/media/git/config-files/dcss-config/
+mainDir=/mnt/media
+crawlTrunkDir=$mainDir/Games/crawl-trunk/
+crawlBuildDir=$mainDir/git/crawl/crawl-ref/source/
+crawlMorgueDir=$mainDir/git/personal/dcss_morgue/
+crawlSettingsDir=$mainDir/git/config-files/dcss-config/
+hellDir=$mainDir/Games/hellcrawl
+bloatDir=$mainDir/Games/bloatcrawl
 
 
 # u: tiles update (for trunk)
@@ -12,7 +15,7 @@ crawlSettingsDir=/mnt/media/git/config-files/dcss-config/
 # e: edit the init file and save
 # t: play trunk
 # other: play main branch
-
+cd ~/.crawl
 if [[ $1 == "-e" ]]; then
     micro ~/.crawl/init.txt
     elif [[ $1 == "-h" ]]; then
@@ -21,31 +24,33 @@ if [[ $1 == "-e" ]]; then
     echo "s: show stats"
     echo "t: play trunk"
     echo "u: update trunk"
+    echo "uc: update trunk (console)"
+    echo "hell: play hellcrawl (variant)"
+    echo "bloat: play bloatcrawl (variant)"
+    echo "c: play console"
     echo "other: play dungeon crawl"
     elif [[ $1 == "-s" ]]; then
     cp -f ~/.crawl/morgue/*.txt $crawlMorgueDir
     cp -f ~/.crawl/morgue/*.lst $crawlMorgueDir
     cp -f ~/.crawl/saves/scores $crawlMorgueDir
-    alacritty -e python /mnt/media/git/config-files/dcss-config/dcssStats.py
+    python $mainDir/git/config-files/dcss-config/dcssStats.py
     elif [[ $1 == "-u" ]]; then
     cd $crawlBuildDir
     git pull
-    make -j4 TILES=y
-    ln -sf /mnt/media/git/crawl/crawl-ref/source/crawl /mnt/media/Games/crawl-trunk/crawl
+    ccache make -j4 TILES=y
+    ln -sf $mainDir/git/crawl/crawl-ref/source/crawl $mainDir/Games/crawl-trunk/crawl
     elif [[ $1 == "-uc" ]]; then
     cd $crawlBuildDir
     git pull
-    make -j4    
-    ln -sf /mnt/media/git/crawl/crawl-ref/source/crawl /mnt/media/Games/crawl-trunk/crawl
+    ccache make -j4    
+    ln -sf $mainDir/git/crawl/crawl-ref/source/crawl $mainDir/Games/crawl-trunk/crawl
     elif [[ $1 == "-t" ]]; then
     cd ~/.crawl
     $crawlTrunkDir/crawl
      elif [[ $1 == "-hell" ]]; then
-    cd ~/.crawl
-    /mnt/media/git/hellcrawl/crawl-ref/source/crawl
+    $hellDir/crawl
     elif [[ $1 == "-bloat" ]]; then
-    cd ~/.crawl
-    /mnt/media/git/bloatcrawl2/crawl-ref/source/crawl
+    $bloatDir/crawl
     elif [[ $1 == "-c" ]]; then
     crawl  
 else

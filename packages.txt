@@ -208,6 +208,7 @@ poppler-data
 power-profiles-daemon
 powerdevil
 powertop
+protonvpn
 qt6-imageformats
 qt6-virtualkeyboard
 rare

@@ -1,4 +1,4 @@
-# Dungeon Crawl Stone Soup 0.32-a0-1535-gb4869f84db macro file
+# Bloatcrawl 2 2.3.0-a0-568-g763ebf1e5c macro file
 # WARNING: This file is entirely auto-generated.
 
 # Key Mappings:
@@ -24,11 +24,14 @@ A:o
 M:\{-255}
 A:.
 
+M:\{-250}
+A:o
+
+M:\{-247}
+A:5
+
 M:\{-205}
 A:Q
-
-M:\{-39}
-A:zi
 
 M:\{13}
 A:f
@@ -42,20 +45,14 @@ A:\{9}
 M:-
 A:Q
 
-M:0
-A:0
+M:R
+A:rr!
 
 M:S
 A:M
 
-M:W
-A:e
-
 M:s
 A:I
-
-M:w
-A:e
 
 M:z
 A:z*
