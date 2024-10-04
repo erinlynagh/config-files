@@ -5,7 +5,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-sans-fonts
 advancecomp
-adw-gtk3
+adw-gtk-theme
 alacritty
 alsa-firmware
 alsa-utils
@@ -61,6 +61,7 @@ feh
 ffmpeg
 ffmpegthumbs
 filelight
+firefox
 fish
 glibc-locales
 gnome-themes-extra
@@ -126,8 +127,8 @@ libretro-mgba
 libretro-mupen64plus-next
 libva-intel-driver
 libva-mesa-driver
-linux69
-linux69-nvidia
+linux-meta
+linux-meta-nvidia
 logrotate
 love
 lsd
