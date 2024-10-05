@@ -158,8 +158,8 @@ workspace 3 output DP-0
 
 ## Bindings
 bindsym $mod+Return exec i3-sensible-terminal -e fish
-bindsym Print exec --no-startup-id spectacle -r
-bindsym ctrl+Home exec --no-startup-id spectacle -r
+bindsym Print exec --no-startup-id flameshot
+bindsym ctrl+Home exec --no-startup-id flameshot
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -178,6 +178,7 @@ bindsym XF86AudioMute exec "pamixer -t"
 ## Execute
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
+exec --no-startup-id picom -b
 exec --no-startup-id blueman-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id ff-theme-util
