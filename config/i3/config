@@ -190,7 +190,6 @@ exec --no-startup-id pa-applet
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
 exec --no-startup-id gummy start
-exec --no-startup-id pipewire-pulse
 
 exec .screenlayout/main.sh
 exec ~/wallpaperTimer.sh
