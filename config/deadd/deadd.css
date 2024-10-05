@@ -12,8 +12,7 @@
 /* Notifications */
 
 .notification.content {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0px 15px 4px 15px;
     font-size: 16px
 
 }
@@ -27,11 +26,14 @@
 }
 
 .appname {
-	margin-top: 4px;
     font-size: 12px;
     padding: 1px 4px;
     border: 0.5px solid;
     color: #6272a4;
+}
+
+.icon {
+	padding: 1px 4px;
 }
 
 .time {
@@ -145,6 +147,6 @@ button.buttonState2:hover {
 /* Images */
 
 image.deadd-noti-center.notification.image {
-    margin-left: 10px;
+    margin-left: 2px;
     margin-right: 10px;
 }
