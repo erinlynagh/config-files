@@ -11,8 +11,12 @@ caffeine-ng
 chaotic-keyring
 chaotic-mirrorlist
 cod
+copyq
 crawl-tiles
 downgrade
+dracula-gtk-theme-git
+dracula-icons-git
+dracula-xresources-git
 fastfetch
 feh
 firefox
@@ -26,6 +30,7 @@ lazygit
 lib32-nvidia-utils
 linux
 linux-firmware
+lxappearance
 man-db
 man-pages
 micro

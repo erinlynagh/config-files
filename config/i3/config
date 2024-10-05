@@ -178,6 +178,7 @@ bindsym XF86AudioMute exec "pamixer -t"
 ## Execute
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
+exec --no-startup-id copyq
 exec --no-startup-id picom -b
 exec --no-startup-id blueman-applet
 exec --no-startup-id pa-applet
