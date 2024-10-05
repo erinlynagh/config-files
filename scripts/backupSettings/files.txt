@@ -9,4 +9,5 @@
 /home/erin/.local/share/applications/feh.desktop /local/share/applications/
 /home/erin/.crawl/*.txt /dcss-config
 /boot/loader/loader.conf /boot
+/etc/vconsole.conf /etc
 end
