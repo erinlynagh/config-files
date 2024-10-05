@@ -16,6 +16,7 @@ cloudflare-warp-bin
 cod
 copyq
 crawl-tiles
+deadd-notification-center-bin
 downgrade
 dracula-gtk-theme-git
 dracula-icons-git

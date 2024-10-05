@@ -14,6 +14,7 @@
 /home/erin/.config/micro /config/micro
 /home/erin/.config/xremap /config/xremap
 /home/erin/.config/picom /config/picom
+/home/erin/.config/deadd /config/deadd
 /home/erin/.screenlayout /screenlayout
 /etc/ly /etc/ly
 /etc/X11 /etc/X11
