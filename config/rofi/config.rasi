@@ -4,7 +4,7 @@ configuration {
     show-icons:      false;
     display-drun:    "";
     disable-history: false;
-    run-command: "firefox --search {cmd}";
+    run-shell-command: "firefox --search {cmd}";
 }
 
 * {
