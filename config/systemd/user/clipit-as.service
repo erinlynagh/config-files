@@ -1,5 +1,0 @@
-[Unit]
-Description=Starts clipit applet
-
-[Service]
-ExecStart=/usr/bin/clipit

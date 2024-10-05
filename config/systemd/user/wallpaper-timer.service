@@ -1,5 +1,0 @@
-[Unit]
-Description=<service description>
-
-[Service]
-ExecStart=/home/erin/wallpaper-timer.sh 7m
