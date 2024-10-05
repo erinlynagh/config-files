@@ -12,6 +12,7 @@ caffeine-ng
 ccache
 chaotic-keyring
 chaotic-mirrorlist
+cloudflare-warp-bin
 cod
 copyq
 crawl-tiles
@@ -67,7 +68,6 @@ transmission-gtk
 ttf-jetbrains-mono-nerd
 ttf-twemoji
 visual-studio-code-bin
-warpgui-bin
 wireplumber
 xclip
 xorg-bdftopcf
