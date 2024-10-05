@@ -13,7 +13,6 @@ ccache
 chaotic-keyring
 chaotic-mirrorlist
 cloudflare-warp-bin
-cod
 copyq
 crawl-tiles
 deadd-notification-center-bin
