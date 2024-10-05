@@ -21,6 +21,7 @@ application/sdp=micro.desktop
 x-scheme-handler/discord-1221314350216646828=discord-1221314350216646828.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/discord-378483863044882443=discord-378483863044882443.desktop
+application/x-nintendo-ds-rom=org.libretro.RetroArch.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -35,5 +36,6 @@ image/webp=feh.desktop
 application/x-executable=micro-alacritty.desktop;
 application/sdp=micro.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
+application/x-nintendo-ds-rom=org.libretro.RetroArch.desktop;
 
 [Removed Associations]
