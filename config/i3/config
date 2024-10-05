@@ -188,9 +188,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id copyq
 exec --no-startup-id picom -b
 exec --no-startup-id blueman-applet
-exec --no-startup-id pa-applet
-exec --no-startup-id ff-theme-util
-exec --no-startup-id fix_xcursor
+#exec --no-startup-id pa-applet
+#exec --no-startup-id ff-theme-util
+#exec --no-startup-id fix_xcursor
 exec --no-startup-id gummy start
 
 exec .screenlayout/main.sh
@@ -198,7 +198,7 @@ exec ~/wallpaperTimer.sh
 exec i3-sensible-terminal -e yay
 
 ## Other Autostart Managed with systemctl (https://github.com/jceb/dex)
-exec systemctl --user start autostart.target
+#exec systemctl --user start autostart.target
 
 #### unused 
 ## activates the numpad "layer"
