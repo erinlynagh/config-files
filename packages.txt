@@ -33,6 +33,7 @@ lazygit
 lib32-nvidia-utils
 linux
 linux-firmware
+localsend-bin
 lxappearance
 ly
 man-db
