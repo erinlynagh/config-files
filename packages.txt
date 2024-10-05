@@ -42,6 +42,7 @@ micro
 network-manager-applet
 networkmanager
 nvidia
+nvidia-settings
 nvidia-utils
 oh-my-posh-bin
 pacui
