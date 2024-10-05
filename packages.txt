@@ -40,10 +40,14 @@ nvidia
 nvidia-utils
 oh-my-posh-bin
 pacui
+pamixer
+pavucontrol
 pcmanfm
 picom
 pigz
 pipewire
+pipewire-alsa
+pipewire-pulse
 polybar
 rbw
 reflector

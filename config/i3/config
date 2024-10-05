@@ -185,9 +185,14 @@ exec --no-startup-id pa-applet
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
 exec --no-startup-id gummy start
+exec --no-startup-id feh --bg-fill -rz /mnt/media/Library/Pictures/Wallpapers/
+exec --no-startup-id pipewire
+exec --no-startup-id pipewire-pulse
+exec --no-startup-id wireplumber
+
+
 exec .screenlayout/main.sh
 exec i3-sensible-terminal -e yay
-
 ## Other Autostart Managed with systemctl (https://github.com/jceb/dex)
 exec systemctl --user start autostart.target
 
