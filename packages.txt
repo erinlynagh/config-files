@@ -51,6 +51,7 @@ repgrep
 rofi
 steam
 sudo
+telegram-desktop
 termdown
 texinfo
 transmission-gtk
