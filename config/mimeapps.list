@@ -19,6 +19,7 @@ image/webp=feh.desktop
 x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
 application/sdp=micro.desktop
 x-scheme-handler/discord-1221314350216646828=discord-1221314350216646828.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -32,5 +33,6 @@ image/jpeg=feh.desktop
 image/webp=feh.desktop
 application/x-executable=micro-alacritty.desktop;
 application/sdp=micro.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Removed Associations]
