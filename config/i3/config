@@ -167,8 +167,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "gummy -p +10"
-bindsym XF86MonBrightnessDown exec "gummy -p -10"
+bindsym XF86MonBrightnessUp exec "gummy -b +10"
+bindsym XF86MonBrightnessDown exec "gummy -b -10"
 
 # Volume Controls
 bindsym XF86AudioRaiseVolume exec "pamixer -i 5"
@@ -177,6 +177,8 @@ bindsym XF86AudioMute exec "pamixer -t"
 
 ## Execute
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always ~/disableCaps.sh
+
 exec --no-startup-id nm-applet
 exec --no-startup-id copyq
 exec --no-startup-id picom -b
@@ -185,14 +187,14 @@ exec --no-startup-id pa-applet
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
 exec --no-startup-id gummy start
-exec --no-startup-id feh --bg-fill -rz /mnt/media/Library/Pictures/Wallpapers/
 exec --no-startup-id pipewire
 exec --no-startup-id pipewire-pulse
 exec --no-startup-id wireplumber
 
-
 exec .screenlayout/main.sh
+exec ~/wallpaperTimer.sh
 exec i3-sensible-terminal -e yay
+
 ## Other Autostart Managed with systemctl (https://github.com/jceb/dex)
 exec systemctl --user start autostart.target
 
@@ -205,4 +207,3 @@ exec systemctl --user start autostart.target
 # bindsym $mod+t exec --no-startup-id pkill picom
 # bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 # bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-# exec_always ~/disable-caps.sh
