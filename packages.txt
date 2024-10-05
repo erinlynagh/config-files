@@ -42,7 +42,6 @@ linux
 linux-firmware
 localsend-bin
 lsd
-lutris
 lxappearance
 ly
 man-db
