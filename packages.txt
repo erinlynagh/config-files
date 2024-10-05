@@ -1,3 +1,4 @@
+advancecomp
 alacritty
 arandr
 base
@@ -8,6 +9,7 @@ blueman
 btop
 btrfs-progs
 caffeine-ng
+ccache
 chaotic-keyring
 chaotic-mirrorlist
 cod
@@ -48,6 +50,7 @@ pigz
 pipewire
 pipewire-alsa
 pipewire-pulse
+pngcrush
 polybar
 rbw
 reflector
