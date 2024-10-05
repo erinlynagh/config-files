@@ -13,6 +13,7 @@
 /home/erin/.config/rbw /config/rbw 
 /home/erin/.config/micro /config/micro
 /home/erin/.config/xremap /config/xremap
+/home/erin/.config/picom /config/picom
 /home/erin/.screenlayout /screenlayout
 /etc/ly /etc/ly
 /etc/X11 /etc/X11

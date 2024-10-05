@@ -177,6 +177,8 @@ bindsym XF86MonBrightnessDown exec "gummy -b -10"
 bindsym XF86AudioRaiseVolume exec "pamixer -i 5"
 bindsym XF86AudioLowerVolume exec "pamixer -d 5"
 bindsym XF86AudioMute exec "pamixer -t"
+bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 
 ## Execute
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -204,6 +206,4 @@ exec systemctl --user start autostart.target
 # bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
 
 # bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+t exec --no-startup-id pkill picom
-# bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 # bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
