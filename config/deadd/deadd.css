@@ -22,14 +22,14 @@
     font-size: 18px;
     margin: 10px 0px;
     text-decoration: underline;
-    color: #BD93F9;
+    color: #ff79c6;
 }
 
 .appname {
     font-size: 12px;
     padding: 1px 4px;
-    border: 0.5px solid;
-    color: #6272a4;
+    border: 0.5px solid #6272a4;
+    color: #bd93fd;
 }
 
 .icon {
@@ -41,8 +41,8 @@
 }
 
 .blurredBG.notification {
-    background:  rgba(68, 71, 90, .77);
-    border: 4px solid #282a36
+    background:  #282a36;
+    border: 4px solid #ff79c6;
 }
 
 .blurredBG.notification.critical {

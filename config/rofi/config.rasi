@@ -10,8 +10,8 @@ configuration {
 * {
     font: "JetBrains Mono Nerd Font 12";
     foreground: #f8f8f2;
-    background-color: #44475a;
-    active-background: #6272A4;
+    background-color: #282a36;
+    active-background: #ff79c6;
     urgent-background: #ff5555;
     urgent-foreground: #282a36;
     selected-background: @active-background;
