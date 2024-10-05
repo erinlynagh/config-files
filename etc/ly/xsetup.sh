@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # Xsession - run as user
 # Copyright (C) 2016 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 
@@ -40,6 +40,7 @@ case $SHELL in
     ;;
   */fish)
     [ -f /etc/profile ] && . /etc/profile
+    [ -f $HOME/.profile ] && . $HOME/.profile
     xsess_tmp=`mktemp /tmp/xsess-env-XXXXXX`
     $SHELL --login -c "/bin/sh -c 'export -p' > $xsess_tmp"
     . $xsess_tmp

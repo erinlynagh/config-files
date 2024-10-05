@@ -33,6 +33,7 @@ lib32-nvidia-utils
 linux
 linux-firmware
 lxappearance
+ly
 man-db
 man-pages
 micro
