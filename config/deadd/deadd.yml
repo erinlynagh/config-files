@@ -1,30 +1,36 @@
+# check in the example file
+
 width: 400
 notification:
   modifications:
-  - match:
-        {}
-    modify:
-      transient: false
-      timeout: 7777
-      remove-actions: true
-  - match:
-      app-name: "Spotify"
-    modify:
-      image-size: 80
-      timeout: 1
-      send-noti-closed: true
-      class-name: "Spotify"
-      action-icons: true
-      actions:
-        - previous
-        - media-skip-backward
-        - play
-        - media-playback-start
-        - next
-        - media-skip-forward
-      action-commands:
-        play: playerctl play-pause
-        previous: playerctl previous
-        next: playerctl next
-  
-
+    - match: {}
+      modify:
+        transient: false
+        timeout: 7777
+        remove-actions: true
+    - match:
+        app-name: "Spotify"
+      modify:
+        image-size: 80
+        timeout: 1
+        send-noti-closed: true
+        class-name: "Spotify"
+        action-icons: true
+        actions:
+          - previous
+          - media-skip-backward
+          - play
+          - media-playback-start
+          - next
+          - media-skip-forward
+        action-commands:
+          play: playerctl play-pause
+          previous: playerctl previous
+          next: playerctl next
+  popup:
+    default-timeout: 7777
+    max-lines-in-body: 0
+    follow-mouse: false
+    click-behavior:
+      dismiss: mouse1
+      default-action: mouse2

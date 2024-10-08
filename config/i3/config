@@ -147,10 +147,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # class                 border  bground text    indicator child_border
 client.focused          #44475a #282a36 #ff79c6 #44475a   #44475a
 client.focused_inactive #44475a #282a36 #ff79c6 #44475a   #44475a
-client.unfocused        #282A36 #282A36 #bd93f9 #282A36   #282A36
+client.unfocused        #44475a #282A36 #bd93f9 #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-client.background       #F8F8F2
+client.placeholder      #44475a #282A36 #F8F8F2 #282A36   #282A36
+client.background       #44475a
 
 #### Custom
 
