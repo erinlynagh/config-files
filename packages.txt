@@ -85,6 +85,7 @@ ttf-jetbrains-mono-nerd
 ttf-twemoji
 unzip
 visual-studio-code-bin
+whitesur-cursor-theme-git
 wireplumber
 xarchiver
 xclip
