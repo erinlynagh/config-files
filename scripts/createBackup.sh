@@ -38,11 +38,12 @@ while IFS= read -r line; do
     # split line into varaibles
     IFS=' ' read -ra ADDR <<<"$line"
     sourceFile=${ADDR[0]}
-    addressFile=$backupDirectory${ADDR[-1]}
+    addressFolder=$backupDirectory${ADDR[-1]}
     if [ ${ADDR[-1]} == "/root" ]; then
-        addressFile=$backupDirectory
+        addressFolder=$backupDirectory
     fi
-    sudo cp -fp $sourceFile $addressFile
+    sudo mkdir -p $addressFolder
+    sudo cp -fp $sourceFile $addressFolder
 done <"$input"
 
 ./excludeFiles.sh

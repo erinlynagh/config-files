@@ -4,7 +4,6 @@
 /home/erin/.config/polybar /config/polybar
 /home/erin/.config/flameshot /config/flameshot
 /home/erin/.config/rofi /config/rofi
-/home/erin/.config/clipit /config/clipit
 /home/erin/.config/fish /config/fish
 /home/erin/.config/gtk-3.0 /config/gtk-3.0
 /home/erin/.config/gtk-4.0 /config/gtk-4.0
@@ -12,10 +11,8 @@
 /home/erin/.config/alacritty /config/alacritty
 /home/erin/.config/rbw /config/rbw 
 /home/erin/.config/micro /config/micro
-/home/erin/.config/xremap /config/xremap
 /home/erin/.config/picom /config/picom
 /home/erin/.config/deadd /config/deadd
-/home/erin/.screenlayout /screenlayout
 /etc/ly /etc/ly
 /etc/X11 /etc/X11
 /boot/loader/entries /boot/entries
