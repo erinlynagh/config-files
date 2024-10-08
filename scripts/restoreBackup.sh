@@ -9,6 +9,7 @@ echo "Running other scripts"
 ./installYay.sh
 ./installChaoticAur.sh
 ./installPackages.sh
+./installPacui.sh
 ./installEmoji.sh
 ../dcss-config/addDcssToCommandLine.sh
 ./installTerminalSettings.sh
