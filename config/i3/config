@@ -182,15 +182,16 @@ bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 
 ## Execute
+exec --no-startup-id picom -b
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always ~/disableCaps.sh
 
-exec --no-startup-id nm-applet
-exec --no-startup-id copyq
-exec --no-startup-id picom -b
-exec --no-startup-id blueman-applet
 exec --no-startup-id gummy start
 exec --no-startup-id deadd-notification-center
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+exec --no-startup-id copyq
 
 exec .screenlayout/main.sh
 exec ~/wallpaperTimer.sh
@@ -200,6 +201,7 @@ exec i3-sensible-terminal -e yay
 #exec --no-startup-id fix_xcursor
 #exec --no-startup-id pa-applet
 #exec --no-startup-id ff-theme-util
+#exec --no-startup-id caffeine
 
 ## Other Autostart Managed with systemctl (https://github.com/jceb/dex)
 #exec systemctl --user start autostart.target

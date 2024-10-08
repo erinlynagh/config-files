@@ -10,4 +10,5 @@
 /home/erin/.crawl/*.txt /dcss-config
 /boot/loader/loader.conf /boot
 /etc/vconsole.conf /etc
+/etc/systemd/logind.conf /etc/systemd
 end

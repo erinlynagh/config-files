@@ -49,10 +49,12 @@ man-pages
 micro
 network-manager-applet
 networkmanager
+numlockx
 nvidia
 nvidia-settings
 nvidia-utils
 oh-my-posh-bin
+p7zip
 pacui
 pamixer
 pavucontrol
