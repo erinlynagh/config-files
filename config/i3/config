@@ -170,6 +170,8 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
+bindsym XF86TouchpadToggle exec ~/toggleTouchpad.sh
+
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "gummy -b +10"
 bindsym XF86MonBrightnessDown exec "gummy -b -10"
