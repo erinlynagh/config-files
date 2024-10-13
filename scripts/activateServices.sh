@@ -7,4 +7,6 @@ sudo systemctl enable --now bluetooth.service
 sudo systemctl enable --now ly.service
 sudo systemctl enable --now thermald.service
 sudo systemctl enable --now systemd-timesyncd.service
-systemctl enable --now warp-svc.service
+sudo systemctl enable --now warp-svc.service
+sudo systemctl enable --now fstrim.timer
+
