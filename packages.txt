@@ -15,6 +15,7 @@ chaotic-mirrorlist
 cloudflare-warp-bin
 cmake
 copyq
+cpupower-gui
 crawl-tiles
 deadd-notification-center-bin
 downgrade
@@ -27,6 +28,7 @@ firefox
 fish
 flameshot
 fwupd
+gamemode
 gummy
 i3-wm
 intel-ucode
@@ -46,6 +48,7 @@ lxappearance
 ly
 man-db
 man-pages
+mangohud
 micro
 network-manager-applet
 networkmanager

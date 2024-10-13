@@ -17,6 +17,7 @@ confirm_action += Revivification
 confirm_acttion += Grave Claw
 confirm_action += Silence
 confirm_action += Torment
+confirm_action += Blink
 
 default_manual_training = true
 
