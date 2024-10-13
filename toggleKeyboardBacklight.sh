@@ -22,7 +22,8 @@ fi
 
 # make sure the file is writable
 if [ ! -w $kbd_backlight ]; then
-    pkexec chmod +666 $kbd_backlight
+    PASSWORD=$(zenity --password --title="Authentication Required")
+    echo "$PASSWORD" | sudo -S chmod +666 $kbd_backlight
 fi
 
 # santiy check that max_brightness is an integer
