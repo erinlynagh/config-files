@@ -30,6 +30,7 @@ flameshot
 fwupd
 gamemode
 gummy
+hodoku
 i3-wm
 intel-ucode
 lazygit
