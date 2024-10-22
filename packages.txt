@@ -23,6 +23,7 @@ dracula-gtk-theme-git
 dracula-icons-git
 dracula-xresources-git
 fastfetch
+fd
 feh
 firefox
 firefox-pwa
@@ -33,6 +34,7 @@ gamemode
 gummy
 i3-wm
 intel-ucode
+jre-openjdk
 lazygit
 lib32-nvidia-utils
 libretro-beetle-psx-hw
