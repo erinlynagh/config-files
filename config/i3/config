@@ -154,11 +154,11 @@ client.background       #44475a
 
 #### Custom
 
+## Monitor Settings
 workspace_layout tabbed
-workspace 1 output DP-2
-workspace 2 output HDMI-0
-workspace 3 output DP-0
-# workspace 2 output DP-2
+# workspace 1 output DP-2
+workspace 1 output HDMI-0
+workspace 2 output DP-0
 
 ## Bindings
 bindsym $mod+Return exec i3-sensible-terminal -e fish

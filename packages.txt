@@ -25,12 +25,12 @@ dracula-xresources-git
 fastfetch
 feh
 firefox
+firefox-pwa
 fish
 flameshot
 fwupd
 gamemode
 gummy
-hodoku
 i3-wm
 intel-ucode
 lazygit
