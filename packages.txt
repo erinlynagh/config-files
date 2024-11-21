@@ -55,6 +55,7 @@ mangohud
 micro
 network-manager-applet
 networkmanager
+ntfs-3g
 numlockx
 nvidia
 nvidia-settings
