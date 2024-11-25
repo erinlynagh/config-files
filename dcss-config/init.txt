@@ -76,11 +76,11 @@ show_more = false
 
 sort_menus = true:equipped,art,ego,glowing,identified,basename,qualname,>qty
 
-tile_font_msg_size = 20
-tile_font_crt_size = 20
-tile_font_stat_size = 20
-tile_font_tip_size = 20
-tile_font_lbl_size = 20
+tile_font_msg_size = 25
+tile_font_crt_size = 25
+tile_font_stat_size = 25
+tile_font_tip_size = 25
+tile_font_lbl_size = 25
 
 trap_item_highlight = reverse
 

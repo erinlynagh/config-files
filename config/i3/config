@@ -177,8 +177,8 @@ bindsym XF86KbdBrightnessUp exec ~/toggleKeyboardBacklight.sh -i
 bindsym XF86KbdBrightnessDown exec ~/toggleKeyboardBacklight.sh -d
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "gummy -b +10"
-bindsym XF86MonBrightnessDown exec "gummy -b -10"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
 
 # Volume Controls
 bindsym XF86AudioRaiseVolume exec "pamixer -i 5"

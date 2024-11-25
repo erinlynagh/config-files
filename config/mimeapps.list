@@ -34,7 +34,7 @@ application/x-desktop=micro-alacritty.desktop;
 image/jpeg=feh.desktop
 image/webp=feh.desktop
 application/x-executable=micro-alacritty.desktop;
-application/sdp=micro.desktop;
+application/sdp=code.desktop;micro.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 application/x-nintendo-ds-rom=org.libretro.RetroArch.desktop;
 

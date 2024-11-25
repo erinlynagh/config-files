@@ -31,7 +31,6 @@ fish
 flameshot
 fwupd
 gamemode
-gummy
 i3-wm
 intel-ucode
 jre-openjdk
@@ -73,6 +72,7 @@ pipewire-alsa
 pipewire-pulse
 pngcrush
 polybar
+python-yaml
 rbw
 reflector
 repgrep
