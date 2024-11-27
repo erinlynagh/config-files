@@ -54,6 +54,7 @@ force_more_message += very hungry
 force_more_message += wearing a (* shield|buckler)
 force_more_message += You are slowing down
 force_more_message += your body is wracked
+force_more_message += have enough gold to buy
 
 item_slot += identify:r
 
