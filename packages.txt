@@ -5,7 +5,7 @@ base
 base-devel
 bat
 bitwarden-cli
-blueman
+bluez-utils
 btop
 btrfs-progs
 caffeine-ng
