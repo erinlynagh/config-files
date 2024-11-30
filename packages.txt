@@ -5,6 +5,7 @@ base
 base-devel
 bat
 bitwarden-cli
+bluetuith-bin
 bluez-utils
 btop
 btrfs-progs
@@ -18,6 +19,7 @@ copyq
 cpupower-gui
 crawl-tiles
 deadd-notification-center-bin
+dolphin-emu
 downgrade
 dracula-gtk-theme-git
 dracula-icons-git
@@ -79,7 +81,10 @@ repgrep
 retroarch
 retroarch-assets-ozone
 rofi
+rpcs3-git
 sdl2_ttf
+snes9x-gtk
+speech-dispatcher
 steam
 sudo
 telegram-desktop
