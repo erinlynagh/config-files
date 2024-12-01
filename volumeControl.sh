@@ -19,8 +19,10 @@ fi
 
 if [ "$1" == "-i" ]; then
     pamixer -i ${2:-5}
+    paplay volumeSound.wav
 elif [ "$1" == "-d" ]; then
     pamixer -d ${2:-5}
+    paplay volumeSound.wav
 elif [ "$1" == "-m" ]; then
     pamixer --mute
 else

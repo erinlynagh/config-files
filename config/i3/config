@@ -199,6 +199,7 @@ exec --no-startup-id deadd-notification-center
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id copyq
+exec --no-startup-id emote
 
 exec .screenlayout/main.sh
 exec ~/wallpaperTimer.sh

@@ -24,6 +24,7 @@ downgrade
 dracula-gtk-theme-git
 dracula-icons-git
 dracula-xresources-git
+emote
 fastfetch
 fd
 feh

@@ -1,5 +1,6 @@
 /from /to
 /home/erin/*.sh /root
+/home/erin/volumeSound.wav /root
 /home/erin/.gtkrc-2.0 /root
 /home/erin/.config/mimeapps.list /config
 /etc/pacman.conf /etc
