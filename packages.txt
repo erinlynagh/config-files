@@ -70,6 +70,7 @@ pavucontrol
 pcmanfm
 picom
 pigz
+pinta
 pipewire
 pipewire-alsa
 pipewire-pulse
