@@ -1,4 +1,4 @@
-function battery-info --wraps='upower -i /org/freedesktop/UPower/devices/battery_BAT0' --wraps=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\ \[\ \\t\]\*//\' --description alias\ battery-info=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\ \[\ \\t\]\*//\'
-  upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -e "state:" | sed 's/^[ \t]*state: [ \t]*//' $argv
+function battery-info --wraps=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\ \[\ \\t\]\*\\\(\(disc\|c\)harging\)\\\)/\\1/\' --wraps=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\ \[\ \\t\]\*//\' --wraps=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\[\ \\t\]\*\\\(.\*\\\)/\\1/\' --description alias\ battery-info=upower\ -i\ /org/freedesktop/UPower/devices/battery_BAT0\ \|\ grep\ -e\ \"state:\"\ \|\ sed\ \'s/^\[\ \\t\]\*state:\[\ \\t\]\*\\\(.\*\\\)/\\1/\'
+  upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -e "state:" | sed 's/^[ \t]*state:[ \t]*\(.*\)/\1/' $argv
         
 end
