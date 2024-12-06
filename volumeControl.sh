@@ -25,15 +25,14 @@ elif [ "$1" == "-d" ]; then
     paplay volumeSound.wav
 elif [ "$1" == "-m" ]; then
     pamixer --mute
+    notify-send "volume muted"
 else
-    pamixer -t
     if [ "$(pamixer --get-mute)" == "true" ]; then
-        # notify-send "Volume: muted"
-        exit
+        notify-send "volume unmuted"
     else
-        # notify-send "Volume: $(pamixer --get-volume)%"
-        exit
+		notify-send "volume muted"
     fi
+    pamixer -t
 fi
 
 # notify-send "Volume: $(pamixer --get-volume)%"

@@ -1,6 +1,7 @@
 advancecomp
 alacritty
 arandr
+baca-ereader-git
 base
 base-devel
 bat
