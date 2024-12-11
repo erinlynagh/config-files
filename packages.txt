@@ -1,7 +1,7 @@
 advancecomp
 alacritty
+android-tools
 arandr
-baca-ereader-git
 base
 base-devel
 bat
@@ -11,6 +11,7 @@ bluez-utils
 btop
 btrfs-progs
 caffeine-ng
+calibre
 ccache
 chaotic-keyring
 chaotic-mirrorlist
@@ -35,6 +36,7 @@ fish
 flameshot
 fwupd
 gamemode
+gdu
 i3-wm
 intel-ucode
 jre-openjdk
@@ -86,6 +88,7 @@ retroarch-assets-ozone
 rofi
 rpcs3-git
 sdl2_ttf
+simple-mtpfs
 snes9x-gtk
 speech-dispatcher
 steam

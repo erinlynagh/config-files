@@ -1,41 +1,37 @@
 [Default Applications]
-text/html=brave-browser.desktop
-x-scheme-handler/http=brave-browser.desktop
-x-scheme-handler/https=brave-browser.desktop
-x-scheme-handler/about=brave-browser.desktop
-x-scheme-handler/unknown=brave-browser.desktop
 inode/directory=pcmanfm.desktop
-application/x-shellscript=micro-alacritty.desktop
-x-scheme-handler/mailto=brave-browser.desktop
 application/x-gamecube-rom=dolphin-emu.desktop
-x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 application/x-n64-rom=simple64.desktop
 application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop
-text/plain=micro-alacritty.desktop
-application/x-desktop=micro-alacritty.desktop
 image/jpeg=feh.desktop
 image/png=feh.desktop
 image/webp=feh.desktop
-x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
-application/sdp=micro.desktop
-x-scheme-handler/discord-1221314350216646828=discord-1221314350216646828.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
+x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
+x-scheme-handler/discord-1221314350216646828=discord-1221314350216646828.desktop
 x-scheme-handler/discord-378483863044882443=discord-378483863044882443.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 application/x-nintendo-ds-rom=org.libretro.RetroArch.desktop
+application/x-shellscript=micro.desktop
+text/plain=code.desktop
+application/epub+zip=com.github.johnfactotum.Foliate.desktop
+application/pdf=com.github.johnfactotum.Foliate.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
-application/x-shellscript=micro.desktop;
+application/x-shellscript=micro.desktop;userapp-alacritty -e micro-U8Z3X2.desktop;
 application/x-gamecube-rom=dolphin-emu.desktop;
 application/x-n64-rom=simple64.desktop;
 application/vnd.nintendo.snes.rom=userapp-snes9x -xvideo -DJAFJ2.desktop;
-text/plain=micro-alacritty.desktop;
-application/x-desktop=micro-alacritty.desktop;
 image/jpeg=feh.desktop
 image/webp=feh.desktop
-application/x-executable=micro-alacritty.desktop;
 application/sdp=code.desktop;micro.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 application/x-nintendo-ds-rom=org.libretro.RetroArch.desktop;
+application/x-desktop=code.desktop;
+text/plain=code.desktop;
+application/epub+zip=com.github.johnfactotum.Foliate.desktop;
+application/pdf=com.github.johnfactotum.Foliate.desktop;
+image/vnd.djvu+multipage=com.github.johnfactotum.Foliate.desktop;
 
 [Removed Associations]
