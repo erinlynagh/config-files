@@ -1,6 +1,8 @@
+7zip
 advancecomp
 alacritty
 android-tools
+antimicrox
 arandr
 base
 base-devel
@@ -11,7 +13,6 @@ bluez-utils
 btop
 btrfs-progs
 caffeine-ng
-calibre
 ccache
 chaotic-keyring
 chaotic-mirrorlist
@@ -30,8 +31,6 @@ emote
 fastfetch
 fd
 feh
-firefox
-firefox-pwa
 fish
 flameshot
 fwupd
@@ -66,7 +65,6 @@ nvidia
 nvidia-settings
 nvidia-utils
 oh-my-posh-bin
-p7zip
 pacui
 pamixer
 pavucontrol
@@ -86,7 +84,7 @@ repgrep
 retroarch
 retroarch-assets-ozone
 rofi
-rpcs3-git
+rpcs3-bin
 sdl2_ttf
 simple-mtpfs
 snes9x-gtk
@@ -98,11 +96,15 @@ termdown
 terminus-font
 texinfo
 thermald
+thorium-browser-bin
 transmission-gtk
 ttf-jetbrains-mono-nerd
 ttf-twemoji
 unzip
+vesktop
 visual-studio-code-bin
+vlc
+wget
 whitesur-cursor-theme-git
 wireplumber
 xarchiver
@@ -143,3 +145,4 @@ xorg-xwininfo
 xorg-xwud
 yay
 zip
+zoom

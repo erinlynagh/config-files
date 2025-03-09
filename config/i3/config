@@ -200,6 +200,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id copyq
 exec --no-startup-id emote
+exec --no-startup-id caffeine start
 
 exec .screenlayout/main.sh
 exec ~/wallpaperTimer.sh
@@ -209,7 +210,6 @@ exec i3-sensible-terminal -e yay
 #exec --no-startup-id fix_xcursor
 #exec --no-startup-id pa-applet
 #exec --no-startup-id ff-theme-util
-#exec --no-startup-id caffeine
 
 ## Other Autostart Managed with systemctl (https://github.com/jceb/dex)
 #exec systemctl --user start autostart.target
