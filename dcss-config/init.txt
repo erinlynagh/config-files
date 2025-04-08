@@ -3,7 +3,7 @@ note_hp_percent = 30
 
 ae := autopickup_exceptions
 ae += <curare
-ae += <dispersal
+ae += <disjunction
 
 auto_butcher = true
 

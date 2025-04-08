@@ -162,6 +162,8 @@ workspace 2 output DP-0
 
 ## Bindings
 bindsym $mod+Return exec i3-sensible-terminal -e fish
+bindsym XF86Launch1 exec i3-sensible-terminal -e fish
+bindsym shift+XF86Launch1 exec chromium
 bindsym Print exec --no-startup-id flameshot gui
 bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop

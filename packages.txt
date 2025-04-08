@@ -96,12 +96,11 @@ termdown
 terminus-font
 texinfo
 thermald
-thorium-browser-bin
 transmission-gtk
 ttf-jetbrains-mono-nerd
 ttf-twemoji
+ungoogled-chromium-bin
 unzip
-vesktop
 visual-studio-code-bin
 vlc
 wget
