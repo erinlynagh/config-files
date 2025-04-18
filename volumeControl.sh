@@ -18,9 +18,15 @@ if [ "$1" == "-i" ] || [ "$1" == "-d" ]; then
 fi
 
 if [ "$1" == "-i" ]; then
+    if [ "$(pamixer --get-volume)" == "100" ]; then
+        exit 0
+    fi
     pamixer -i ${2:-5}
     paplay volumeSound.wav
 elif [ "$1" == "-d" ]; then
+if [ "$(pamixer --get-volume)" == "0" ]; then
+        exit 0
+    fi
     pamixer -d ${2:-5}
     paplay volumeSound.wav
 elif [ "$1" == "-m" ]; then

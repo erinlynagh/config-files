@@ -28,7 +28,7 @@ cd ~/.crawl
 if [[ $1 == "-e" ]]; then
     micro ~/.crawl/init.txt
 elif [[ $1 == "-h" || $1 == "--help" || $1 == "-help" ]]; then
-    echo "h: show this message"
+    echo "h/help: show this message"
     echo "e: edit the init file"
     echo "s: show stats"
     echo "t: play trunk"
@@ -87,8 +87,17 @@ else
     crawl-tiles
 fi
 
-#backup files
-cp ~/.crawl/morgue/*.txt $crawlMorgueDir
-cp ~/.crawl/morgue/*.lst $crawlMorgueDir
+# Backup the morgue files and settings
+oldDate=$(cat ~/.crawl/backup_timestamp)
+if [ -z "$oldDate" ]; then
+    oldDate="1970-01-01 00:00:00"
+fi
+
+find ~/.crawl/morgue/ -type f \( -name "*.txt" -o -name "*.lst" \) -newermt "$oldDate" -exec cp {} $crawlMorgueDir \;
+
+currentDate=$(date +"%Y-%m-%d %H:%M:%S")    
+echo $currentDate > ~/.crawl/backup_timestamp
+
+cp ~/.crawl/morgue/scores $crawlMorgueDir
 cp -f ~/.crawl/macro.txt $crawlSettingsDir
 cp -f ~/.crawl/init.txt $crawlSettingsDir
