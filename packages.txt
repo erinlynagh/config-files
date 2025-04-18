@@ -10,6 +10,7 @@ bat
 bitwarden-cli
 bluetuith-bin
 bluez-utils
+brogue-ce
 btop
 btrfs-progs
 caffeine-ng
@@ -23,6 +24,7 @@ cpupower-gui
 crawl-tiles
 deadd-notification-center-bin
 dolphin-emu
+dos2unix
 downgrade
 dracula-gtk-theme-git
 dracula-icons-git
@@ -84,7 +86,6 @@ repgrep
 retroarch
 retroarch-assets-ozone
 rofi
-rpcs3-bin
 sdl2_ttf
 simple-mtpfs
 snes9x-gtk
@@ -101,6 +102,7 @@ ttf-jetbrains-mono-nerd
 ttf-twemoji
 ungoogled-chromium-bin
 unzip
+vesktop
 visual-studio-code-bin
 vlc
 wget
@@ -110,6 +112,7 @@ xarchiver
 xclip
 xf86-input-synaptics
 xorg-bdftopcf
+xorg-fonts-misc
 xorg-iceauth
 xorg-mkfontscale
 xorg-server

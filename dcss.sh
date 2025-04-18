@@ -1,13 +1,22 @@
 #!/bin/bash
 
 mainDir=/mnt/media
+
 crawlTrunkDir=$mainDir/Games/crawl-trunk/
 crawlBuildDir=$mainDir/git/crawl/crawl-ref/source/
 crawlMorgueDir=$mainDir/git/personal/dcss_morgue/
 crawlSettingsDir=$mainDir/git/config-files/dcss-config/
+
 hellDir=$mainDir/Games/hellcrawl
+
 bloatDir=$mainDir/Games/bloatcrawl
+
+bcadrencrawlDir=$mainDir/Games/BcadrenCrawl
+bcadrencrawlBuildDir=$mainDir/git/BcadrenCrawl/crawl-ref/source/
+
 twoFourDir=$mainDir/Games/crawl-24/source
+
+kimchiDir=$mainDir/Games/kimchicrawl
 
 # u: tiles update (for trunk)
 # cu: console update (for trunk)
@@ -18,7 +27,7 @@ twoFourDir=$mainDir/Games/crawl-24/source
 cd ~/.crawl
 if [[ $1 == "-e" ]]; then
     micro ~/.crawl/init.txt
-elif [[ $1 == "-h" ]]; then
+elif [[ $1 == "-h" || $1 == "--help" || $1 == "-help" ]]; then
     echo "h: show this message"
     echo "e: edit the init file"
     echo "s: show stats"
@@ -27,9 +36,13 @@ elif [[ $1 == "-h" ]]; then
     echo "uc: update trunk (console)"
     echo "hell: play hellcrawl (variant)"
     echo "bloat: play bloatcrawl (variant)"
+    echo "bc: play bcadrencrawl (variant)"
+    echo "ubc: update bcadrencrawl (variant)"
+    echo "k: play kimchi (variant)"
     echo "24: play 0.24"
     echo "c: play console"
     echo "other: play dungeon crawl"
+    exit 0
 elif [[ $1 == "-s" ]]; then
     cp -f ~/.crawl/morgue/*.txt $crawlMorgueDir
     cp -f ~/.crawl/morgue/*.lst $crawlMorgueDir
@@ -45,6 +58,11 @@ elif [[ $1 == "-uc" ]]; then
     git pull
     ccache make -j4
     ln -sf $mainDir/git/crawl/crawl-ref/source/crawl $mainDir/Games/crawl-trunk/crawl
+elif [[ $1 == "-ubc" ]]; then
+    cd $bcadrencrawlBuildDir
+    git pull
+    ccache make -j4 TILES=y
+    ln -sf $mainDir/git/BcadrenCrawl/crawl-ref/source/crawl $mainDir/Games/BcadrenCrawl/crawl
 elif [[ $1 == "-t" ]]; then
     cd ~/.crawl
     $crawlTrunkDir/crawl
@@ -54,9 +72,15 @@ elif [[ $1 == "-hell" ]]; then
 elif [[ $1 == "-bloat" ]]; then
     cd $bloatDir
     $bloatDir/crawl
+elif [[ $1 == "-k" ]]; then
+    cd $kimchiDir
+    $kimchiDir/crawl
 elif [[ $1 == "-24" ]]; then
     cd $twoFourDir
     $twoFourDir/crawl
+elif [[ $1 == "-bc" ]]; then
+    cd $bcadrencrawlDir
+    $bcadrencrawlDir/crawl
 elif [[ $1 == "-c" ]]; then
     crawl
 else
