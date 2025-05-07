@@ -53,16 +53,19 @@ elif [[ $1 == "-u" ]]; then
     git pull
     ccache make -j4 TILES=y
     ln -sf $mainDir/git/crawl/crawl-ref/source/crawl $mainDir/Games/crawl-trunk/crawl
+    paplay ~/notificationSound.wav
 elif [[ $1 == "-uc" ]]; then
     cd $crawlBuildDir
     git pull
     ccache make -j4
     ln -sf $mainDir/git/crawl/crawl-ref/source/crawl $mainDir/Games/crawl-trunk/crawl
+    paplay ~/notificationSound.wav
 elif [[ $1 == "-ubc" ]]; then
     cd $bcadrencrawlBuildDir
     git pull
     ccache make -j4 TILES=y
     ln -sf $mainDir/git/BcadrenCrawl/crawl-ref/source/crawl $mainDir/Games/BcadrenCrawl/crawl
+    paplay ~/notificationSound.wav
 elif [[ $1 == "-t" ]]; then
     cd ~/.crawl
     $crawlTrunkDir/crawl

@@ -203,6 +203,8 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id copyq
 exec --no-startup-id emote
 exec --no-startup-id caffeine start
+exec --no-startup-id ~/batteryMonitor.sh
+exec protonvpn-app
 
 exec .screenlayout/main.sh
 exec ~/wallpaperTimer.sh

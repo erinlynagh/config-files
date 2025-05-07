@@ -79,6 +79,7 @@ pipewire-alsa
 pipewire-pulse
 pngcrush
 polybar
+proton-vpn-gtk-app
 python-yaml
 rbw
 reflector
@@ -89,9 +90,11 @@ rofi
 sdl2_ttf
 simple-mtpfs
 snes9x-gtk
+sourcegit-bin
 speech-dispatcher
 steam
 sudo
+systemd-resolvconf
 telegram-desktop
 termdown
 terminus-font
@@ -107,6 +110,7 @@ visual-studio-code-bin
 vlc
 wget
 whitesur-cursor-theme-git
+wireguard-tools
 wireplumber
 xarchiver
 xclip

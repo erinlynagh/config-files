@@ -14,7 +14,7 @@ autopickup_search = true
 
 confirm_action += Death's Door
 confirm_action += Revivification
-confirm_acttion += Grave Claw
+confirm_action += Grave Claw
 confirm_action += Silence
 confirm_action += Torment
 confirm_action += Blink
@@ -58,15 +58,14 @@ force_more_message += your body is wracked
 
 item_slot += identify:r
 
-note_items    = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance, manual
-note_items = experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance
+note_items += experience, acquirement, tremorstones, vane, running, of Zot, scarf of resistance, manual
 
 note_messages = cast .* Abyss
 note_messages = protects you from harm
 note_messages = shaft
 note_messages = You pass through the gate
 note_messages = Your scales start
-note_monsters = orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra, basilisk
+note_monsters += orb of fire, ancient lich, Sigmund, Grinder, Maggie, Rupert, Louise, catoblepas, hydra, basilisk
 
 ood_interesting = 3
 
