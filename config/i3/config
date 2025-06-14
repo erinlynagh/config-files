@@ -173,6 +173,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
 bindsym XF86TouchpadToggle exec ~/toggleTouchpad.sh
+# bindsym Num_Lock exec ~/numpadNotification.sh
 
 # Keyboard Backlight Brightness Controls
 bindsym XF86KbdBrightnessUp exec ~/toggleKeyboardBacklight.sh -i
@@ -220,7 +221,7 @@ exec i3-sensible-terminal -e yay
 
 ## activates the numpad "layer"
 # exec_always --no-startup-id numlockx off
-# bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
+#bindsym Num_Lock exec /home/erin/.config/xremap/fixNumpad.sh
 
 # bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
