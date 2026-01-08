@@ -29,7 +29,7 @@ easy_confirm = all
 equip_unequip = 1
 
 explore_auto_rest = true
-explore_delay = 20
+explore_delay = 7
 explore_greedy_visit = artefacts,glowing_items,stacks
 explore_stop = artefacts,altars,branches,portals,runed_doors,greedy_pickup_smart
 explore_stop_pickup_ignore += scroll, potion, wand, stone, dart, boomerang, javelin

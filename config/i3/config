@@ -164,6 +164,7 @@ workspace 2 output DP-0
 bindsym $mod+Return exec i3-sensible-terminal -e fish
 bindsym XF86Launch1 exec i3-sensible-terminal -e fish
 bindsym shift+XF86Launch1 exec chromium
+bindsym shift+Return exec chromium
 bindsym Print exec --no-startup-id flameshot gui
 bindsym ctrl+Home exec --no-startup-id flameshot gui
 bindsym ctrl+Shift+Escape exec i3-sensible-terminal -e sudo btop
@@ -173,6 +174,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec blueman-manager
 
 bindsym XF86TouchpadToggle exec ~/toggleTouchpad.sh
+
 # bindsym Num_Lock exec ~/numpadNotification.sh
 
 # Keyboard Backlight Brightness Controls
